@@ -1,0 +1,15 @@
+../Core/Src/app_protocol.c:8:9:Protocol_Crc8	4
+../Core/Src/app_protocol.c:23:13:pack_payload	1
+../Core/Src/app_protocol.c:35:13:finish_frame	5
+../Core/Src/app_protocol.c:51:20:status_to_str	6
+../Core/Src/app_protocol.c:64:20:fmt_delta	2
+../Core/Src/app_protocol.c:75:6:Protocol_BuildTEL	1
+../Core/Src/app_protocol.c:91:6:Protocol_BuildBTN	1
+../Core/Src/app_protocol.c:102:6:Protocol_BuildBOOT	2
+../Core/Src/app_protocol.c:111:6:Protocol_BuildREC	1
+../Core/Src/app_protocol.c:126:6:Protocol_BuildSTAT	1
+../Core/Src/app_protocol.c:145:6:Protocol_BuildDumpEnd	1
+../Core/Src/app_protocol.c:153:13:hex_nibble	5
+../Core/Src/app_protocol.c:161:13:parse_u32	7
+../Core/Src/app_protocol.c:175:14:next_token	3
+../Core/Src/app_protocol.c:189:15:Protocol_ParseCommandLine	20

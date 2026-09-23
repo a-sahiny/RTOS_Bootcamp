@@ -1,0 +1,2 @@
+../Core/Src/freertos.c:60:6:vApplicationStackOverflowHook	16	static
+../Core/Src/freertos.c:69:6:vApplicationMallocFailedHook	4	static

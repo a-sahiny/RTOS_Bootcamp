@@ -1,0 +1,11 @@
+../Drivers/CMSIS/Include/core_cm7.h:2491:22:SCB_CleanDCache_by_Addr	32	static,ignoring_inline_asm
+../Core/Inc/app_timestamp.h:19:24:Timestamp_Now	4	static
+../Core/Src/app_tasks.c:27:19:uart_tx_send	40	static
+../Core/Src/app_tasks.c:56:13:send_item	32	static
+../Core/Src/app_tasks.c:80:13:send_meta	24	static
+../Core/Src/app_tasks.c:90:13:dump_send_all	152	static
+../Core/Src/app_tasks.c:107:13:control_handle_command	16	static
+../Core/Src/app_tasks.c:164:13:handle_cmd_line	40	static
+../Core/Src/app_tasks.c:179:6:UartTxTask_Run	224	static
+../Core/Src/app_tasks.c:216:6:ButtonTask_Run	144	static
+../Core/Src/app_tasks.c:262:6:TelemetryTask_Run	192	static

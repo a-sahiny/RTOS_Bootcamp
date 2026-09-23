@@ -1,0 +1,5 @@
+../Core/Inc/app_timestamp.h:19:24:Timestamp_Now	1
+../Core/Src/app_hal_callbacks.c:17:6:HAL_UART_TxCpltCallback	2
+../Core/Src/app_hal_callbacks.c:29:6:HAL_UART_ErrorCallback	4
+../Core/Src/app_hal_callbacks.c:48:6:HAL_UART_RxCpltCallback	2
+../Core/Src/app_hal_callbacks.c:55:6:HAL_GPIO_EXTI_Callback	2

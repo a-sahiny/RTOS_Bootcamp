@@ -1,0 +1,3 @@
+../Core/Src/app_rtos.c:30:10:App_RunElapsedMs	8	static
+../Core/Src/app_rtos.c:35:14:require	16	static
+../Core/Src/app_rtos.c:43:6:App_RTOS_Init	224	static

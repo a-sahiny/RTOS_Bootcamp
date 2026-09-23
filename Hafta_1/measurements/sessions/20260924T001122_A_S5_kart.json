@@ -1,0 +1,11 @@
+{
+ "format": "hafta01-session-1",
+ "variant": "A",
+ "source": "kart",
+ "scenario_id": 5,
+ "period_ms": 10,
+ "load_iter": 38374,
+ "load_ms_target": 5.0,
+ "created": "2026-09-24T00:11:22",
+ "frames": []
+}

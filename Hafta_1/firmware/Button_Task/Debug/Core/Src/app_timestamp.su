@@ -1,0 +1,2 @@
+../Core/Src/app_timestamp.c:5:6:Timestamp_Init	16	static
+../Core/Src/app_timestamp.c:20:10:Timestamp_DeltaToUs	24	static

@@ -1,0 +1,4 @@
+../Core/Src/app_cmd_rx.c:11:13:rearm	8	static
+../Core/Src/app_cmd_rx.c:17:6:CmdRx_Init	8	static
+../Core/Src/app_cmd_rx.c:24:6:CmdRx_HandleByteReceived	16	static
+../Core/Src/app_cmd_rx.c:54:6:CmdRx_OnError	8	static
