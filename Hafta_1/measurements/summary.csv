@@ -1,3 +1,2 @@
 scenario_id,period_ms,load_iter,config_verified,events_total,success_count,R_min_us,R_mean_us,R_max_us,late_count_over_20ms,drop_count,tx_err_count,timeout_count,pending_count,record_loss_count,ring_overflow_count,crc_error_count,parse_error_count,cmd_crc_err_count,tel_drop_count,tel_tx_fail_count,id_mismatch_count,stage1_mean_us,stage2_mean_us,stage3_mean_us,stage4_mean_us
-0,10,39789,1,40,16,17271,91552.7,168140,15,24,0,0,0,0,0,0,0,0,0,0,0,1795.4,82.1,84112.4,5562.8
-5,10,38374,1,40,40,826,3016.4,6669,0,0,0,0,0,0,0,0,0,0,0,0,0,1584.5,210.1,524.1,697.6
+5,10,39691,1,40,40,826,2144.7,6299,0,0,0,0,0,0,0,0,0,0,0,0,0,991.9,82.5,372.9,697.5

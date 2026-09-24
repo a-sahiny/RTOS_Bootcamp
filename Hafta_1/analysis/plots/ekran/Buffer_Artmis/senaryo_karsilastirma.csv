@@ -1,0 +1,6 @@
+﻿Senaryo,Oturum,Kaynak,Periyot,Yük,Başarılı,Ort. ms,Maks. ms,> 20 ms,Başarısız / kayıp,Ayar karttan doğrulandı,load_iter,stage1_mean_us,stage2_mean_us,stage3_mean_us,stage4_mean_us
+S5,2,kart,100 ms,0 ms,40,5.74,7.47,0,0 / 0,1,0,16.7,82.8,76.8,5563.4
+S5,3,kart,20 ms,0 ms,40,6.50,10.94,0,0 / 0,1,0,17.3,82.3,835.9,5563.1
+S5,4,kart,10 ms,0 ms,40,7.61,11.38,0,0 / 0,1,0,18.6,83.2,1945.8,5563.1
+S5,5,kart,10 ms,2 ms,40,8.73,13.41,0,0 / 0,1,15384,243.5,135.7,2789.5,5563.0
+S5,6,kart,10 ms,5 ms,41,215.61,417.76,41,0 / 0,1,38442,1362.7,82.5,208601.7,5562.9
