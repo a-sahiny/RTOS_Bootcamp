@@ -13,9 +13,14 @@
 #include "app_button.h"
 #include "app_cmd_rx.h"
 #include "app_timestamp.h"
+#include "app_trace.h"
 
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 {
+    if (huart->Instance == USART6) {
+        App_Trace_TxComplete();
+        return;
+    }
     if (huart->Instance != APP_UART_INSTANCE) {
         return;
     }
@@ -28,27 +33,37 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 
 void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
 {
+    if (huart->Instance == USART6) {
+        App_Trace_Error();
+        return;
+    }
     if (huart->Instance != APP_UART_INSTANCE) {
         return;
     }
     uint32_t err = huart->ErrorCode;
 
-    /* TX DMA hatasi: UartTxTask'i tam timeout'u beklemeden uyandir. */
+    /* Bu HAL, RX veya TX DMA hatasinda iki UART durumunu da sonlandirir.
+       Tamponlar yeniden kullanilmadan once iki DMA akisini da durdur. */
     if ((err & HAL_UART_ERROR_DMA) != 0u) {
+        if (HAL_UART_Abort(huart) != HAL_OK) {
+            Error_Handler();
+        }
         g_tx_dma_error = true;
         (void)osSemaphoreRelease(TxDoneSemHandle);
     }
-    /* RX hatalari TX'i etkilemez; ama RX IT zincirini durdurabilir. */
-    if ((err & (HAL_UART_ERROR_ORE | HAL_UART_ERROR_FE |
+    /* UART RX hatalari yalnizca RX'i durdurur; TX aktarimi devam eder. */
+    if ((err & (HAL_UART_ERROR_ORE | HAL_UART_ERROR_FE | HAL_UART_ERROR_DMA |
                 HAL_UART_ERROR_NE  | HAL_UART_ERROR_PE)) != 0u) {
         CmdRx_OnError();
     }
 }
 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
-    if (huart->Instance == APP_UART_INSTANCE) {
-        CmdRx_HandleByteReceived();
+    if (huart->Instance == USART6) {
+        App_Trace_RxEvent(Size);
+    } else if (huart->Instance == APP_UART_INSTANCE) {
+        CmdRx_RxEvent();
     }
 }
 

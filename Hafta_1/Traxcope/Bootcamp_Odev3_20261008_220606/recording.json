@@ -1,0 +1,1203 @@
+{
+    "chunks": [
+        {
+            "digest": "9c3bd0cbcbf72d0a6ae8995afbb5436d08f7afd5806433caf7abf2a23498c96b",
+            "endNs": 30764087393,
+            "fileName": "chunk_001.traxrec",
+            "firstGlobalId": 1,
+            "lastGlobalId": 50000,
+            "sizeBytes": 5301760,
+            "startNs": 0
+        },
+        {
+            "digest": "ceda4bd0a26927280af051e275ad20bc34db8522684ba7e87af2c7007ec72007",
+            "endNs": 40423027018,
+            "fileName": "chunk_002.traxrec",
+            "firstGlobalId": 50001,
+            "lastGlobalId": 100000,
+            "sizeBytes": 5293380,
+            "startNs": 30764015370
+        },
+        {
+            "digest": "e0961c3470d21c66919c8eedab03561381d292434f8449b09be3896e6dc3e679",
+            "endNs": 49937006212,
+            "fileName": "chunk_003.traxrec",
+            "firstGlobalId": 100001,
+            "lastGlobalId": 150000,
+            "sizeBytes": 5258172,
+            "startNs": 40423014648
+        },
+        {
+            "digest": "0195cc2f70117315385c4c1ce8ac33d67eb8f0524067014d6fe92c72f3384472",
+            "endNs": 59446033305,
+            "fileName": "chunk_004.traxrec",
+            "firstGlobalId": 150001,
+            "lastGlobalId": 200000,
+            "sizeBytes": 5288580,
+            "startNs": 49937003342
+        },
+        {
+            "digest": "a6ac17783610e09b3e9e3b05a75da5d8608b0e72b3d0f1679c5929f30d7063ac",
+            "endNs": 69032003490,
+            "fileName": "chunk_005.traxrec",
+            "firstGlobalId": 200001,
+            "lastGlobalId": 250000,
+            "sizeBytes": 5307440,
+            "startNs": 59446033305
+        },
+        {
+            "digest": "8fa94ad46a8d3698791309b888c43a16e261975f53661f16fbfc79790d1bb3ee",
+            "endNs": 78566031615,
+            "fileName": "chunk_006.traxrec",
+            "firstGlobalId": 250001,
+            "lastGlobalId": 300000,
+            "sizeBytes": 5306000,
+            "startNs": 69032003490
+        },
+        {
+            "digest": "1db1ff466f3542e38de498375c2f50e3b1ed512e6f127b85f2c6e452f63c61f8",
+            "endNs": 88126007032,
+            "fileName": "chunk_007.traxrec",
+            "firstGlobalId": 300001,
+            "lastGlobalId": 350000,
+            "sizeBytes": 5307944,
+            "startNs": 78566019712
+        },
+        {
+            "digest": "60b2769b034ba6e2ce6ba8e19e8e112fb9d4b49e4590b8ac5634f3458d491387",
+            "endNs": 97692006500,
+            "fileName": "chunk_008.traxrec",
+            "firstGlobalId": 350001,
+            "lastGlobalId": 400000,
+            "sizeBytes": 5308048,
+            "startNs": 88126003398
+        },
+        {
+            "digest": "d167af1fef4e42105278db6ff752daad08e02f9de14a44895aece7fdf962b2fe",
+            "endNs": 107221027819,
+            "fileName": "chunk_009.traxrec",
+            "firstGlobalId": 400001,
+            "lastGlobalId": 450000,
+            "sizeBytes": 5303400,
+            "startNs": 97692003537
+        },
+        {
+            "digest": "304562c6bf6d483d7708a85c50894701eb5cc14d9a6f7ae1539af2d4ce3fcd19",
+            "endNs": 116613006574,
+            "fileName": "chunk_010.traxrec",
+            "firstGlobalId": 450001,
+            "lastGlobalId": 500000,
+            "sizeBytes": 5308588,
+            "startNs": 107221015481
+        },
+        {
+            "digest": "b2582d3dd22883c7fc2f3a5e57c161f7c0a5cc259b3c3464fbfc708fe2e26069",
+            "endNs": 126179046652,
+            "fileName": "chunk_011.traxrec",
+            "firstGlobalId": 500001,
+            "lastGlobalId": 550000,
+            "sizeBytes": 5308244,
+            "startNs": 116613003625
+        },
+        {
+            "digest": "172496581fcad2a495dd1c6e2332e946c5eed8245bda31f6e011dd1bf8f41a98",
+            "endNs": 135661003458,
+            "fileName": "chunk_012.traxrec",
+            "firstGlobalId": 550001,
+            "lastGlobalId": 600000,
+            "sizeBytes": 5284492,
+            "startNs": 126179046652
+        },
+        {
+            "digest": "b6f165f4e6bfdae86efc6c9878a9fec9f65524665404fa2d74552b45356a96ab",
+            "endNs": 142033006592,
+            "fileName": "chunk_013.traxrec",
+            "firstGlobalId": 600001,
+            "lastGlobalId": 633380,
+            "sizeBytes": 3541996,
+            "startNs": 135661003458
+        }
+    ],
+    "dataEndNs": 142033006592,
+    "dataStartNs": 0,
+    "endTime": "2026-10-08T22:08:08",
+    "formatVersion": 3,
+    "licenseStamp": {
+        "appVersion": "1.2.0",
+        "createdUtc": "2026-10-08T19:06:06Z",
+        "seal": "92405adb29ce45b8eaa140b851c036155c26e515d18de53c66bd46cd8502273b",
+        "tier": "trial"
+    },
+    "metadata": {
+        "coreCount": 1,
+        "isrPrioAsc": false,
+        "isrs": [
+            {
+                "id": 16384,
+                "name": "SysTick",
+                "priority": 15
+            },
+            {
+                "id": 16400,
+                "name": "Button_EXTI15_10",
+                "priority": 5
+            }
+        ],
+        "logs": [
+            {
+                "argCount": 2,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Ring buffer overflow: %u new alloc failures (total %u)",
+                "id": 256,
+                "level": 3,
+                "tag": "diag"
+            },
+            {
+                "argCount": 1,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Frame validation failed (total corrupt frames: %u)",
+                "id": 257,
+                "level": 3,
+                "tag": "diag"
+            },
+            {
+                "argCount": 3,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Threshold crossed: metric=%u value=%u limit=%u",
+                "id": 258,
+                "level": 4,
+                "tag": "diag"
+            },
+            {
+                "argCount": 2,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Transport backpressure: %u bytes deferred (total events: %u)",
+                "id": 259,
+                "level": 4,
+                "tag": "diag"
+            }
+        ],
+        "markers": [
+        ],
+        "osStore": {
+            "objects": [
+                {
+                    "handle": 536893624,
+                    "itemSize": 70,
+                    "length": 16,
+                    "name": "TxQueue",
+                    "objType": 0
+                },
+                {
+                    "handle": 536893308,
+                    "itemSize": 16,
+                    "length": 10,
+                    "name": "TmrQ",
+                    "objType": 0
+                },
+                {
+                    "handle": 536895272,
+                    "itemSize": 0,
+                    "length": 0,
+                    "name": "",
+                    "objType": 10
+                },
+                {
+                    "handle": 536894832,
+                    "itemSize": 65,
+                    "length": 4,
+                    "name": "CmdQueue",
+                    "objType": 0
+                },
+                {
+                    "handle": 536895184,
+                    "itemSize": 0,
+                    "length": 1,
+                    "name": "TxDoneSem",
+                    "objType": 3
+                },
+                {
+                    "handle": 536893408,
+                    "itemSize": 16,
+                    "length": 8,
+                    "name": "ButtonQueue",
+                    "objType": 0
+                }
+            ],
+            "tasks": [
+                {
+                    "entityId": 4096,
+                    "handle": 536890552,
+                    "name": "Tmr Svc",
+                    "priority": 2,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4099,
+                    "handle": 536896856,
+                    "name": "UartTxTask",
+                    "priority": 8,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4097,
+                    "handle": 536899784,
+                    "name": "TelemetryTask",
+                    "priority": 32,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4100,
+                    "handle": 536919064,
+                    "name": "TraxCtrl",
+                    "priority": 1,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4098,
+                    "handle": 536898064,
+                    "name": "ButtonTask",
+                    "priority": 24,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 1,
+                    "handle": 536889872,
+                    "name": "IDLE",
+                    "priority": 0,
+                    "stackSize": 0
+                }
+            ]
+        },
+        "streams": [
+        ],
+        "taskPrioAsc": true,
+        "traceEntities": [
+            {
+                "color": 4281808700,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 1,
+                "name": "Idle",
+                "priority": 0,
+                "stackSize": 0,
+                "type": 1
+            },
+            {
+                "color": 4288701620,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 2,
+                "name": "Scheduler",
+                "priority": 0,
+                "stackSize": 0,
+                "type": 2
+            },
+            {
+                "color": 4292638800,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 16384,
+                "name": "SysTick",
+                "priority": 15,
+                "stackSize": 0,
+                "type": 4
+            },
+            {
+                "color": 4292638800,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 16400,
+                "name": "Button_EXTI15_10",
+                "priority": 5,
+                "stackSize": 0,
+                "type": 4
+            },
+            {
+                "color": 4284141640,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4096,
+                "name": "Tmr Svc",
+                "priority": 2,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4282962125,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4097,
+                "name": "TelemetryTask",
+                "priority": 32,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4283844816,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4098,
+                "name": "ButtonTask",
+                "priority": 24,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4291840178,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4099,
+                "name": "UartTxTask",
+                "priority": 8,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4291851592,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4100,
+                "name": "TraxCtrl",
+                "priority": 1,
+                "stackSize": 0,
+                "type": 3
+            }
+        ],
+        "vars": [
+        ]
+    },
+    "probeId": 1,
+    "probeName": "Bootcamp_Odev3",
+    "startTime": "2026-10-08T22:06:06",
+    "stopReason": "session_stopped",
+    "streamGaps": [
+        {
+            "endNs": 21982085490,
+            "startNs": 21799037189
+        },
+        {
+            "endNs": 22630094282,
+            "startNs": 22447015699
+        },
+        {
+            "endNs": 23280085592,
+            "startNs": 23097034537
+        },
+        {
+            "endNs": 23917086273,
+            "startNs": 23737013370
+        },
+        {
+            "endNs": 24567112250,
+            "startNs": 24382034453
+        },
+        {
+            "endNs": 25218085583,
+            "startNs": 25035015509
+        },
+        {
+            "endNs": 25865119384,
+            "startNs": 25684015699
+        },
+        {
+            "endNs": 26514085046,
+            "startNs": 26331037277
+        },
+        {
+            "endNs": 27151084907,
+            "startNs": 26972007314
+        },
+        {
+            "endNs": 27716084916,
+            "startNs": 27532015773
+        },
+        {
+            "endNs": 28272085643,
+            "startNs": 28090028462
+        },
+        {
+            "endNs": 28827185273,
+            "startNs": 28635004333
+        },
+        {
+            "endNs": 29416084129,
+            "startNs": 29232731319
+        },
+        {
+            "endNs": 29971118597,
+            "startNs": 29789004097
+        },
+        {
+            "endNs": 30535114361,
+            "startNs": 30351004004
+        },
+        {
+            "endNs": 31099094162,
+            "startNs": 30916013171
+        },
+        {
+            "endNs": 31663084972,
+            "startNs": 31479027925
+        },
+        {
+            "endNs": 32227238078,
+            "startNs": 32045011041
+        },
+        {
+            "endNs": 32779085675,
+            "startNs": 32599004314
+        },
+        {
+            "endNs": 33342085986,
+            "startNs": 33160034120
+        },
+        {
+            "endNs": 33907184523,
+            "startNs": 33713037467
+        },
+        {
+            "endNs": 34495084166,
+            "startNs": 34312734458
+        },
+        {
+            "endNs": 35059085564,
+            "startNs": 34876007018
+        },
+        {
+            "endNs": 35623084620,
+            "startNs": 35440015425
+        },
+        {
+            "endNs": 36179085726,
+            "startNs": 35994037060
+        },
+        {
+            "endNs": 36747229449,
+            "startNs": 36560004171
+        },
+        {
+            "endNs": 37312085148,
+            "startNs": 37128034842
+        },
+        {
+            "endNs": 37876084356,
+            "startNs": 37692732662
+        },
+        {
+            "endNs": 38456085097,
+            "startNs": 38272036453
+        },
+        {
+            "endNs": 39005154138,
+            "startNs": 38822036962
+        },
+        {
+            "endNs": 39655084925,
+            "startNs": 39472004157
+        },
+        {
+            "endNs": 40304033699,
+            "startNs": 40112013370
+        },
+        {
+            "endNs": 40968084912,
+            "startNs": 40787016064
+        },
+        {
+            "endNs": 41618085578,
+            "startNs": 41435012962
+        },
+        {
+            "endNs": 42257093611,
+            "startNs": 42075010087
+        },
+        {
+            "endNs": 42906086009,
+            "startNs": 42724006995
+        },
+        {
+            "endNs": 43555085703,
+            "startNs": 43373006962
+        },
+        {
+            "endNs": 44205151717,
+            "startNs": 44021007263
+        },
+        {
+            "endNs": 44854084842,
+            "startNs": 44671007143
+        },
+        {
+            "endNs": 45504085787,
+            "startNs": 45321006967
+        },
+        {
+            "endNs": 45925266967,
+            "startNs": 45744004097
+        },
+        {
+            "endNs": 46357085185,
+            "startNs": 46174006972
+        },
+        {
+            "endNs": 46787084893,
+            "startNs": 46605007180
+        },
+        {
+            "endNs": 47207084166,
+            "startNs": 47026028513
+        },
+        {
+            "endNs": 47637095101,
+            "startNs": 47455155212
+        },
+        {
+            "endNs": 48060084518,
+            "startNs": 47877013259
+        },
+        {
+            "endNs": 48483084652,
+            "startNs": 48300027875
+        },
+        {
+            "endNs": 48913085736,
+            "startNs": 48730007064
+        },
+        {
+            "endNs": 49345236472,
+            "startNs": 49160036763
+        },
+        {
+            "endNs": 49767117217,
+            "startNs": 49586028384
+        },
+        {
+            "endNs": 50189085092,
+            "startNs": 50007028166
+        },
+        {
+            "endNs": 50610085356,
+            "startNs": 50429036680
+        },
+        {
+            "endNs": 51104091578,
+            "startNs": 50922013564
+        },
+        {
+            "endNs": 51708118115,
+            "startNs": 51525013101
+        },
+        {
+            "endNs": 52344085171,
+            "startNs": 52165007300
+        },
+        {
+            "endNs": 52993086050,
+            "startNs": 52810012930
+        },
+        {
+            "endNs": 53642085388,
+            "startNs": 53459037652
+        },
+        {
+            "endNs": 54280085101,
+            "startNs": 54099013222
+        },
+        {
+            "endNs": 54904084712,
+            "startNs": 54722034666
+        },
+        {
+            "endNs": 55471085537,
+            "startNs": 55289007152
+        },
+        {
+            "endNs": 56049085796,
+            "startNs": 55866019157
+        },
+        {
+            "endNs": 56625085328,
+            "startNs": 56443012935
+        },
+        {
+            "endNs": 57202084638,
+            "startNs": 57019034800
+        },
+        {
+            "endNs": 57780085009,
+            "startNs": 57596012986
+        },
+        {
+            "endNs": 58391236962,
+            "startNs": 58209013013
+        },
+        {
+            "endNs": 59004119060,
+            "startNs": 58823015824
+        },
+        {
+            "endNs": 59653085625,
+            "startNs": 59470037407
+        },
+        {
+            "endNs": 60291085370,
+            "startNs": 60110013268
+        },
+        {
+            "endNs": 60940117750,
+            "startNs": 60757013402
+        },
+        {
+            "endNs": 61589085569,
+            "startNs": 61406006750
+        },
+        {
+            "endNs": 62248033949,
+            "startNs": 62055015527
+        },
+        {
+            "endNs": 62945033287,
+            "startNs": 62749015680
+        },
+        {
+            "endNs": 63620114657,
+            "startNs": 63436044782
+        },
+        {
+            "endNs": 64258085750,
+            "startNs": 64077007069
+        },
+        {
+            "endNs": 64908084708,
+            "startNs": 64723036962
+        },
+        {
+            "endNs": 65546117624,
+            "startNs": 65365013379
+        },
+        {
+            "endNs": 66186084763,
+            "startNs": 66002015930
+        },
+        {
+            "endNs": 66834085500,
+            "startNs": 66652015370
+        },
+        {
+            "endNs": 67481154134,
+            "startNs": 67300028152
+        },
+        {
+            "endNs": 68119085722,
+            "startNs": 67937015773
+        },
+        {
+            "endNs": 68766083861,
+            "startNs": 68584015601
+        },
+        {
+            "endNs": 69403118013,
+            "startNs": 69221054087
+        },
+        {
+            "endNs": 70049085069,
+            "startNs": 69868004078
+        },
+        {
+            "endNs": 70698085504,
+            "startNs": 70515007185
+        },
+        {
+            "endNs": 71335081935,
+            "startNs": 71153015305
+        },
+        {
+            "endNs": 71985084699,
+            "startNs": 71800007134
+        },
+        {
+            "endNs": 72633085458,
+            "startNs": 72451007041
+        },
+        {
+            "endNs": 73272085078,
+            "startNs": 73088034236
+        },
+        {
+            "endNs": 73911084861,
+            "startNs": 73728034060
+        },
+        {
+            "endNs": 74549084518,
+            "startNs": 74368013333
+        },
+        {
+            "endNs": 75186085055,
+            "startNs": 75005007134
+        },
+        {
+            "endNs": 75834086657,
+            "startNs": 75652028402
+        },
+        {
+            "endNs": 76483085444,
+            "startNs": 76300013222
+        },
+        {
+            "endNs": 77122085513,
+            "startNs": 76940015509
+        },
+        {
+            "endNs": 77771085953,
+            "startNs": 77588004064
+        },
+        {
+            "endNs": 78325086171,
+            "startNs": 78144012884
+        },
+        {
+            "endNs": 78962085675,
+            "startNs": 78782013351
+        },
+        {
+            "endNs": 79611084962,
+            "startNs": 79428004175
+        },
+        {
+            "endNs": 80261085578,
+            "startNs": 80078012916
+        },
+        {
+            "endNs": 80899085537,
+            "startNs": 80718007319
+        },
+        {
+            "endNs": 81547085870,
+            "startNs": 81366004171
+        },
+        {
+            "endNs": 82196084773,
+            "startNs": 82014004055
+        },
+        {
+            "endNs": 82833085481,
+            "startNs": 82653013194
+        },
+        {
+            "endNs": 83484085782,
+            "startNs": 83300036726
+        },
+        {
+            "endNs": 84131084962,
+            "startNs": 83949012944
+        },
+        {
+            "endNs": 84778118870,
+            "startNs": 84597028166
+        },
+        {
+            "endNs": 85415084819,
+            "startNs": 85234031754
+        },
+        {
+            "endNs": 86054084837,
+            "startNs": 85872012958
+        },
+        {
+            "endNs": 86702117467,
+            "startNs": 86520013171
+        },
+        {
+            "endNs": 87351084865,
+            "startNs": 87169004074
+        },
+        {
+            "endNs": 87999085847,
+            "startNs": 87817015574
+        },
+        {
+            "endNs": 88649086282,
+            "startNs": 88466044078
+        },
+        {
+            "endNs": 89287084907,
+            "startNs": 89106045250
+        },
+        {
+            "endNs": 89936084615,
+            "startNs": 89753028064
+        },
+        {
+            "endNs": 90586085439,
+            "startNs": 90403034194
+        },
+        {
+            "endNs": 91224085500,
+            "startNs": 91043004189
+        },
+        {
+            "endNs": 91863085671,
+            "startNs": 91681013129
+        },
+        {
+            "endNs": 92514085402,
+            "startNs": 92330037226
+        },
+        {
+            "endNs": 93163085027,
+            "startNs": 92980004152
+        },
+        {
+            "endNs": 93801086537,
+            "startNs": 93620015972
+        },
+        {
+            "endNs": 94442085023,
+            "startNs": 94259034472
+        },
+        {
+            "endNs": 95079085847,
+            "startNs": 94899013370
+        },
+        {
+            "endNs": 95719084995,
+            "startNs": 95537007194
+        },
+        {
+            "endNs": 96357085458,
+            "startNs": 96176013143
+        },
+        {
+            "endNs": 97006085370,
+            "startNs": 96823015745
+        },
+        {
+            "endNs": 97655086398,
+            "startNs": 97473011592
+        },
+        {
+            "endNs": 98296085685,
+            "startNs": 98113031949
+        },
+        {
+            "endNs": 98957033583,
+            "startNs": 98762013138
+        },
+        {
+            "endNs": 99633119513,
+            "startNs": 99451007393
+        },
+        {
+            "endNs": 100283084870,
+            "startNs": 100098033967
+        },
+        {
+            "endNs": 100921085629,
+            "startNs": 100740013217
+        },
+        {
+            "endNs": 101571086689,
+            "startNs": 101388036912
+        },
+        {
+            "endNs": 102210085277,
+            "startNs": 102028007138
+        },
+        {
+            "endNs": 102846085879,
+            "startNs": 102662004009
+        },
+        {
+            "endNs": 103458116740,
+            "startNs": 103275018921
+        },
+        {
+            "endNs": 104071085351,
+            "startNs": 103889015606
+        },
+        {
+            "endNs": 104696086398,
+            "startNs": 104512034356
+        },
+        {
+            "endNs": 105298118268,
+            "startNs": 105118039870
+        },
+        {
+            "endNs": 105923085092,
+            "startNs": 105739007291
+        },
+        {
+            "endNs": 106538152449,
+            "startNs": 106353199212
+        },
+        {
+            "endNs": 107165085745,
+            "startNs": 106982027893
+        },
+        {
+            "endNs": 107812086574,
+            "startNs": 107632007342
+        },
+        {
+            "endNs": 108460073717,
+            "startNs": 108269013324
+        },
+        {
+            "endNs": 109145084074,
+            "startNs": 108960246023
+        },
+        {
+            "endNs": 109796093620,
+            "startNs": 109612015740
+        },
+        {
+            "endNs": 110445085055,
+            "startNs": 110262012916
+        },
+        {
+            "endNs": 111095085736,
+            "startNs": 110912015398
+        },
+        {
+            "endNs": 111732120143,
+            "startNs": 111552013347
+        },
+        {
+            "endNs": 112381085976,
+            "startNs": 112199004240
+        },
+        {
+            "endNs": 113028084592,
+            "startNs": 112848007203
+        },
+        {
+            "endNs": 113667119625,
+            "startNs": 113485013004
+        },
+        {
+            "endNs": 114305085402,
+            "startNs": 114124013337
+        },
+        {
+            "endNs": 114952086722,
+            "startNs": 114772004351
+        },
+        {
+            "endNs": 115601086263,
+            "startNs": 115419004263
+        },
+        {
+            "endNs": 116248085912,
+            "startNs": 116067012990
+        },
+        {
+            "endNs": 116897085384,
+            "startNs": 116715007250
+        },
+        {
+            "endNs": 117545084888,
+            "startNs": 117362036958
+        },
+        {
+            "endNs": 118193085550,
+            "startNs": 118012013425
+        },
+        {
+            "endNs": 118832094916,
+            "startNs": 118650013018
+        },
+        {
+            "endNs": 119481085750,
+            "startNs": 119299007231
+        },
+        {
+            "endNs": 120128085328,
+            "startNs": 119948007365
+        },
+        {
+            "endNs": 120777120574,
+            "startNs": 120594027782
+        },
+        {
+            "endNs": 121415085490,
+            "startNs": 121234007282
+        },
+        {
+            "endNs": 122065084893,
+            "startNs": 121881015699
+        },
+        {
+            "endNs": 122715086041,
+            "startNs": 122532004175
+        },
+        {
+            "endNs": 123364085550,
+            "startNs": 123180057148
+        },
+        {
+            "endNs": 124014086134,
+            "startNs": 123831013162
+        },
+        {
+            "endNs": 124653084967,
+            "startNs": 124471033847
+        },
+        {
+            "endNs": 125300119546,
+            "startNs": 125120011398
+        },
+        {
+            "endNs": 125939085583,
+            "startNs": 125758007337
+        },
+        {
+            "endNs": 126577085240,
+            "startNs": 126396034319
+        },
+        {
+            "endNs": 127227085777,
+            "startNs": 127043012981
+        },
+        {
+            "endNs": 127780240407,
+            "startNs": 127600144379
+        },
+        {
+            "endNs": 128297085949,
+            "startNs": 128117004333
+        },
+        {
+            "endNs": 128824033550,
+            "startNs": 128631027958
+        },
+        {
+            "endNs": 129376033740,
+            "startNs": 129183037564
+        },
+        {
+            "endNs": 129916084828,
+            "startNs": 129734015652
+        },
+        {
+            "endNs": 130432084550,
+            "startNs": 130251034143
+        },
+        {
+            "endNs": 130960184379,
+            "startNs": 130766013027
+        },
+        {
+            "endNs": 131512080597,
+            "startNs": 131326013337
+        },
+        {
+            "endNs": 132028084083,
+            "startNs": 131847015828
+        },
+        {
+            "endNs": 132642086407,
+            "startNs": 132461013375
+        },
+        {
+            "endNs": 133292085634,
+            "startNs": 133109036777
+        },
+        {
+            "endNs": 133939119101,
+            "startNs": 133758012837
+        },
+        {
+            "endNs": 134587084824,
+            "startNs": 134405006972
+        },
+        {
+            "endNs": 135237084967,
+            "startNs": 135055004101
+        },
+        {
+            "endNs": 135884083837,
+            "startNs": 135702013152
+        },
+        {
+            "endNs": 136531119143,
+            "startNs": 136351015870
+        },
+        {
+            "endNs": 137171085069,
+            "startNs": 136988034087
+        },
+        {
+            "endNs": 137819259527,
+            "startNs": 137637007087
+        },
+        {
+            "endNs": 138456120236,
+            "startNs": 138274004041
+        },
+        {
+            "endNs": 139084120055,
+            "startNs": 138901012925
+        },
+        {
+            "endNs": 139720033574,
+            "startNs": 139528016097
+        },
+        {
+            "endNs": 140382117375,
+            "startNs": 140199034500
+        },
+        {
+            "endNs": 141008083625,
+            "startNs": 140824737421
+        },
+        {
+            "endNs": 141646085944,
+            "startNs": 141463034361
+        }
+    ],
+    "traceLodLevels": [
+        {
+            "chunks": [
+                {
+                    "endNs": 142000000000,
+                    "fileName": "lod/L0/001.traxrec",
+                    "sizeBytes": 88408,
+                    "startNs": 21300000000
+                }
+            ],
+            "level": 0
+        },
+        {
+            "chunks": [
+                {
+                    "endNs": 142000000000,
+                    "fileName": "lod/L1/001.traxrec",
+                    "sizeBytes": 10900,
+                    "startNs": 21000000000
+                }
+            ],
+            "level": 1
+        },
+        {
+            "chunks": [
+                {
+                    "endNs": 140000000000,
+                    "fileName": "lod/L2/001.traxrec",
+                    "sizeBytes": 1382,
+                    "startNs": 20000000000
+                }
+            ],
+            "level": 2
+        }
+    ]
+}

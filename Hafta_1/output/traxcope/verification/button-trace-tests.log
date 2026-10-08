@@ -1,0 +1,1 @@
+PASS: accepted button trace, debounce, START, release, queue drop, PendSV, tick wrap

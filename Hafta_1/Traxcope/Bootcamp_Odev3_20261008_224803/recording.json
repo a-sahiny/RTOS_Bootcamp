@@ -1,0 +1,498 @@
+{
+    "chunks": [
+        {
+            "digest": "de438408d688a18730b490637a730f9ea28b6adfc0eb8f099870d29aec18eb2d",
+            "endNs": 12899033305,
+            "fileName": "chunk_001.traxrec",
+            "firstGlobalId": 1,
+            "lastGlobalId": 50000,
+            "sizeBytes": 5161136,
+            "startNs": 0
+        },
+        {
+            "digest": "d9be9bfd483573bf3180ed00960572f90b91a137df29f06b5d8492ca761a88af",
+            "endNs": 17991018287,
+            "fileName": "chunk_002.traxrec",
+            "firstGlobalId": 50001,
+            "lastGlobalId": 76396,
+            "sizeBytes": 2725216,
+            "startNs": 12899033305
+        }
+    ],
+    "dataEndNs": 17991018287,
+    "dataStartNs": 0,
+    "endTime": "2026-10-08T22:48:19",
+    "formatVersion": 3,
+    "licenseStamp": {
+        "appVersion": "1.2.0",
+        "createdUtc": "2026-10-08T19:48:03Z",
+        "seal": "1f99280a818363555b837ad4ae3ef17b54a4b99c35ad7e0ab03b795aca813ee2",
+        "tier": "trial"
+    },
+    "metadata": {
+        "coreCount": 1,
+        "isrPrioAsc": false,
+        "isrs": [
+            {
+                "id": 16384,
+                "name": "SysTick",
+                "priority": 15
+            },
+            {
+                "id": 16400,
+                "name": "Button_EXTI15_10",
+                "priority": 5
+            }
+        ],
+        "logs": [
+            {
+                "argCount": 2,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Ring buffer overflow: %u new alloc failures (total %u)",
+                "id": 256,
+                "level": 3,
+                "tag": "diag"
+            },
+            {
+                "argCount": 1,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Frame validation failed (total corrupt frames: %u)",
+                "id": 257,
+                "level": 3,
+                "tag": "diag"
+            },
+            {
+                "argCount": 3,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Threshold crossed: metric=%u value=%u limit=%u",
+                "id": 258,
+                "level": 4,
+                "tag": "diag"
+            },
+            {
+                "argCount": 2,
+                "argVarIds": [
+                ],
+                "flags": 0,
+                "format": "Transport backpressure: %u bytes deferred (total events: %u)",
+                "id": 259,
+                "level": 4,
+                "tag": "diag"
+            }
+        ],
+        "markers": [
+        ],
+        "osStore": {
+            "objects": [
+                {
+                    "handle": 536893312,
+                    "itemSize": 16,
+                    "length": 10,
+                    "name": "TmrQ",
+                    "objType": 0
+                },
+                {
+                    "handle": 536895880,
+                    "itemSize": 0,
+                    "length": 1,
+                    "name": "TxDoneSem",
+                    "objType": 3
+                },
+                {
+                    "handle": 536894320,
+                    "itemSize": 70,
+                    "length": 16,
+                    "name": "TxQueue",
+                    "objType": 0
+                },
+                {
+                    "handle": 536895528,
+                    "itemSize": 65,
+                    "length": 4,
+                    "name": "CmdQueue",
+                    "objType": 0
+                },
+                {
+                    "handle": 536895968,
+                    "itemSize": 0,
+                    "length": 0,
+                    "name": "",
+                    "objType": 10
+                },
+                {
+                    "handle": 536894104,
+                    "itemSize": 16,
+                    "length": 8,
+                    "name": "ButtonQueue",
+                    "objType": 0
+                }
+            ],
+            "tasks": [
+                {
+                    "entityId": 4101,
+                    "handle": 536919068,
+                    "name": "TraxCtrl",
+                    "priority": 1,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4096,
+                    "handle": 536890556,
+                    "name": "Tmr Svc",
+                    "priority": 2,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4100,
+                    "handle": 536893928,
+                    "name": "defaultTask",
+                    "priority": 24,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4097,
+                    "handle": 536900480,
+                    "name": "TelemetryTask",
+                    "priority": 32,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4098,
+                    "handle": 536898760,
+                    "name": "ButtonTask",
+                    "priority": 24,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 1,
+                    "handle": 536889876,
+                    "name": "IDLE",
+                    "priority": 0,
+                    "stackSize": 0
+                },
+                {
+                    "entityId": 4099,
+                    "handle": 536897552,
+                    "name": "UartTxTask",
+                    "priority": 8,
+                    "stackSize": 0
+                }
+            ]
+        },
+        "streams": [
+        ],
+        "taskPrioAsc": true,
+        "traceEntities": [
+            {
+                "color": 4281808700,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 1,
+                "name": "Idle",
+                "priority": 0,
+                "stackSize": 0,
+                "type": 1
+            },
+            {
+                "color": 4288701620,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 2,
+                "name": "Scheduler",
+                "priority": 0,
+                "stackSize": 0,
+                "type": 2
+            },
+            {
+                "color": 4292638800,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 16384,
+                "name": "SysTick",
+                "priority": 15,
+                "stackSize": 0,
+                "type": 4
+            },
+            {
+                "color": 4292638800,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 16400,
+                "name": "Button_EXTI15_10",
+                "priority": 5,
+                "stackSize": 0,
+                "type": 4
+            },
+            {
+                "color": 4284141640,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4096,
+                "name": "Tmr Svc",
+                "priority": 2,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4282962125,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4097,
+                "name": "TelemetryTask",
+                "priority": 32,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4283844816,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4098,
+                "name": "ButtonTask",
+                "priority": 24,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4291840178,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4099,
+                "name": "UartTxTask",
+                "priority": 8,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4291851592,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4100,
+                "name": "defaultTask",
+                "priority": 24,
+                "stackSize": 0,
+                "type": 3
+            },
+            {
+                "color": 4287877192,
+                "createdAt": 0,
+                "deletedAt": -1000000000,
+                "id": 4101,
+                "name": "TraxCtrl",
+                "priority": 1,
+                "stackSize": 0,
+                "type": 3
+            }
+        ],
+        "vars": [
+        ]
+    },
+    "probeId": 1,
+    "probeName": "Bootcamp_Odev3",
+    "startTime": "2026-10-08T22:48:03",
+    "stopReason": "session_stopped",
+    "streamGaps": [
+        {
+            "endNs": 3689053939,
+            "startNs": 3499004111
+        },
+        {
+            "endNs": 4039099810,
+            "startNs": 3854046217
+        },
+        {
+            "endNs": 4376100643,
+            "startNs": 4195004129
+        },
+        {
+            "endNs": 4713100495,
+            "startNs": 4530033240
+        },
+        {
+            "endNs": 5049131060,
+            "startNs": 4868029060
+        },
+        {
+            "endNs": 5386099587,
+            "startNs": 5204016046
+        },
+        {
+            "endNs": 5724098638,
+            "startNs": 5541019162
+        },
+        {
+            "endNs": 6061099842,
+            "startNs": 5879033527
+        },
+        {
+            "endNs": 6408133212,
+            "startNs": 6222022787
+        },
+        {
+            "endNs": 6744098851,
+            "startNs": 6562016125
+        },
+        {
+            "endNs": 7104046615,
+            "startNs": 6905053060
+        },
+        {
+            "endNs": 7455098550,
+            "startNs": 7270028263
+        },
+        {
+            "endNs": 7792098986,
+            "startNs": 7609032958
+        },
+        {
+            "endNs": 8128133148,
+            "startNs": 7947028611
+        },
+        {
+            "endNs": 8465100120,
+            "startNs": 8283015685
+        },
+        {
+            "endNs": 8803099717,
+            "startNs": 8620059504
+        },
+        {
+            "endNs": 9140130768,
+            "startNs": 8958033393
+        },
+        {
+            "endNs": 9488132342,
+            "startNs": 9301019435
+        },
+        {
+            "endNs": 9823098268,
+            "startNs": 9642016523
+        },
+        {
+            "endNs": 10171099615,
+            "startNs": 9984052796
+        },
+        {
+            "endNs": 10509099837,
+            "startNs": 10326003949
+        },
+        {
+            "endNs": 10846099930,
+            "startNs": 10664018652
+        },
+        {
+            "endNs": 11183099532,
+            "startNs": 11000091875
+        },
+        {
+            "endNs": 11520130787,
+            "startNs": 11339022421
+        },
+        {
+            "endNs": 11856099449,
+            "startNs": 11675016393
+        },
+        {
+            "endNs": 12193099763,
+            "startNs": 12011056111
+        },
+        {
+            "endNs": 12529099064,
+            "startNs": 12347046666
+        },
+        {
+            "endNs": 12865099986,
+            "startNs": 12684029111
+        },
+        {
+            "endNs": 13203100620,
+            "startNs": 13020032407
+        },
+        {
+            "endNs": 13540131819,
+            "startNs": 13359018939
+        },
+        {
+            "endNs": 13887109041,
+            "startNs": 13700037013
+        },
+        {
+            "endNs": 14223098495,
+            "startNs": 14042007129
+        },
+        {
+            "endNs": 14571099004,
+            "startNs": 14384046537
+        },
+        {
+            "endNs": 14907098365,
+            "startNs": 14725033467
+        },
+        {
+            "endNs": 15252132087,
+            "startNs": 15068018703
+        },
+        {
+            "endNs": 15588100333,
+            "startNs": 15406052750
+        },
+        {
+            "endNs": 15925099314,
+            "startNs": 15743018638
+        },
+        {
+            "endNs": 16262100152,
+            "startNs": 16080033351
+        },
+        {
+            "endNs": 16609049481,
+            "startNs": 16418023435
+        },
+        {
+            "endNs": 16959104490,
+            "startNs": 16774028481
+        },
+        {
+            "endNs": 17297098083,
+            "startNs": 17114022481
+        },
+        {
+            "endNs": 17645099564,
+            "startNs": 17458046416
+        },
+        {
+            "endNs": 17981131611,
+            "startNs": 17800016356
+        }
+    ],
+    "traceLodLevels": [
+        {
+            "chunks": [
+                {
+                    "endNs": 17900000000,
+                    "fileName": "lod/L0/001.traxrec",
+                    "sizeBytes": 10332,
+                    "startNs": 3300000000
+                }
+            ],
+            "level": 0
+        },
+        {
+            "chunks": [
+                {
+                    "endNs": 17000000000,
+                    "fileName": "lod/L1/001.traxrec",
+                    "sizeBytes": 1476,
+                    "startNs": 3000000000
+                }
+            ],
+            "level": 1
+        }
+    ]
+}

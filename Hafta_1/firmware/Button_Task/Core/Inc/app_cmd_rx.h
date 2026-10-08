@@ -1,7 +1,7 @@
 /**
  * app_cmd_rx.h
  *
- * PC->MCU komut kanali: USART1 RX interrupt (byte bazli HAL_UART_Receive_IT)
+ * PC->MCU komut kanali: USART1 RX circular DMA + IDLE/HT/TC
  * satir biriktirir, LF'de ham satiri CmdQueue'ya birakir. Ayristirma ve CRC
  * kontrolu UartTxTask'ta yapilir (ISR kisa kalsin, newlib ISR'dan cagrilmasin).
  *
@@ -13,13 +13,12 @@
 
 void CmdRx_Init(void);
 
-/** HAL_UART_RxCpltCallback'ten cagrilir: bayti isler, RX'i yeniden kollar. */
-void CmdRx_HandleByteReceived(void);
+/** HAL_UARTEx_RxEventCallback: DMA'nin yazdigi yeni baytlari bir kez isler. */
+void CmdRx_RxEvent(void);
 
 /**
- * HAL_UART_ErrorCallback'ten, RX kaynakli hatalarda (ORE/FE/NE/PE) cagrilir.
- * HAL, overrun gibi hatalarda RX IT zincirini durdurur; yeniden kollanmazsa
- * komut kanali (STOP/DUMP dahil) kalici olarak susar.
+ * HAL_UART_ErrorCallback'ten, RX/DMA durdurulduktan sonra cagrilir.
+ * Yarim komutu atar ve RX DMA'yi yeniden baslatir; LF ile tekrar eszamanlanir.
  */
 void CmdRx_OnError(void);
 

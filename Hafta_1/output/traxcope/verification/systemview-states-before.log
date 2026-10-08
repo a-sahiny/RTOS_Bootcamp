@@ -1,0 +1,1 @@
+Assertion failed: matching(7,high,4)==1 && eTaskGetState(high)==eBlocked, file C:\Users\Asus\Documents\GitHub\RTOS_Bootcamp\Hafta_1\tests\systemview_states\test_states.c, line 72

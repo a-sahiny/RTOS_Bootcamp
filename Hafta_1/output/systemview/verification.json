@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-05",
+  "target": "STM32F746G-DISCO",
+  "transport": {
+    "uart": "USART6",
+    "baud": 921600,
+    "tx": "PC6",
+    "rx": "PC7",
+    "format": "8N1",
+    "rx_dma": "DMA2_Stream1 / Channel5 / Normal / ReceiveToIdle",
+    "rx_buffer_bytes": 32,
+    "polling": false,
+    "default_task": "Suspended, no periodic wakeups"
+  },
+  "command_uart": {
+    "uart": "USART1",
+    "baud": 921600,
+    "rx_dma": "DMA2_Stream2 / Channel4 / Circular / IDLE+HT+TC",
+    "rx_buffer_bytes": 256
+  },
+  "build": {
+    "tool": "STM32CubeIDE 1.16.0 / GNU Tools for STM32 12.3.rel1",
+    "Debug": {
+      "errors": 0,
+      "warnings": 0,
+      "text": 60592,
+      "data": 112,
+      "bss": 49656
+    },
+    "Release": {
+      "errors": 0,
+      "warnings": 0,
+      "text": 36152,
+      "data": 112,
+      "bss": 49616
+    }
+  },
+  "host_tests": {
+    "systemview": {
+      "passed": 10,
+      "hal": "mocked; actual SEGGER libraries"
+    },
+    "usart1_rx": {
+      "passed": 16,
+      "variants": [
+        "APP_TX_MODE_LARGE_FIFO",
+        "APP_TX_MODE_DUAL_QUEUE"
+      ],
+      "hal_and_rtos_queue": "mocked; actual app_cmd_rx and app_hal_callbacks"
+    }
+  },
+  "hardware_test": "New USART1 RX DMA and polling removal not flashed or tested on hardware",
+  "artifacts": {
+    "Debug/UART_RTOS_ODEV1.elf": "4f1d382303a6f0a2d93752c198c1b3b8800a628593e3237f09c2f72e47720732",
+    "Debug/UART_RTOS_ODEV1.hex": "416028257a245856f0049b77358b1ef5590d6b207c3e49c1188f139af0be4dd3",
+    "Debug/UART_RTOS_ODEV1.map": "f46fd53988480b19f128321a0913a989b808395b14ca6f7c06bd76da3e556b09",
+    "Release/UART_RTOS_ODEV1.elf": "f669b95b457e86fd51064eb0dcc074b60b2186773c6c16b34564f9c1e29cf161",
+    "Release/UART_RTOS_ODEV1.hex": "30cee90c38130ebbebe40a8216dd629cb2a096ede76fc05187a6aa450ff695bf",
+    "Release/UART_RTOS_ODEV1.map": "500abd6f0a078cc2ecec06672bccc2935359078a0bd01b7e42b1d696316741f2"
+  },
+  "source_sha256": {
+    "Core/Src/main.c": "387fc48ec72de28b336ae442665c2cdb4b2310c22adfb3a82dcac0078642d3ba",
+    "Core/Src/app_systemview.c": "bce5bae76ff664a36e36530cf588d25a1cc3aa25eff9d50cfd0b1474102d9082",
+    "Core/Inc/app_systemview.h": "a5503016614d3137531ea727adbbf51d5aff8d5187db0523203f653a026718c7",
+    "Core/Src/app_cmd_rx.c": "3c7be10e998003481a21d1ce28442a572ac7bff80bc8765835731aef643ba77c",
+    "Core/Inc/app_cmd_rx.h": "850208c583dde1bccd10cf681f26a12c2de97d0d3c7c934bccd0f0d2176edd1a",
+    "Core/Src/app_hal_callbacks.c": "a98e4d0e6def0e38da532406e46b2d21638ed63b42a05cd05e8ca3a51b24ce47",
+    "Core/Src/stm32f7xx_hal_msp.c": "3816ec4b47dfe6b607a848387e67eaa6f80e303eb893cfbcd6e16ac4adec0752",
+    "Core/Src/stm32f7xx_it.c": "8c4d5752d4731fd3d68c8d23a32e6b6b6fc26a74958eb4406fa8335cdcc162f6",
+    "UART_RTOS_ODEV1.ioc": "de7190bbac3498ff6f84224b2d028b1bed9335e4235ba13588f0f51accc99593"
+  }
+}

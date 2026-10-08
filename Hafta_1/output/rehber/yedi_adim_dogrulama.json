@@ -1,0 +1,282 @@
+{
+  "html": "C:\\Users\\Asus\\Documents\\GitHub\\RTOS_Bootcamp\\Hafta_1\\output\\rehber\\rtos_yedi_adim_detayli.html",
+  "steps": 7,
+  "prep_sections": 1,
+  "subsections": 51,
+  "source_blocks": 51,
+  "word_count": 7984,
+  "frame_example": {
+    "content": "BTN,7,2,1500,40,PRESSED",
+    "content_length": 23,
+    "padding": 39,
+    "crc_hex": "8B",
+    "length": 64
+  },
+  "source_references": [
+    {
+      "file": "Src/app_rtos.c",
+      "start": 18,
+      "end": 28
+    },
+    {
+      "file": "Src/app_rtos.c",
+      "start": 43,
+      "end": 59
+    },
+    {
+      "file": "Src/app_rtos.c",
+      "start": 67,
+      "end": 74
+    },
+    {
+      "file": "Src/app_rtos.c",
+      "start": 76,
+      "end": 99
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 119,
+      "end": 127
+    },
+    {
+      "file": "Src/app_hal_callbacks.c",
+      "start": 55,
+      "end": 60
+    },
+    {
+      "file": "Src/app_button.c",
+      "start": 24,
+      "end": 41
+    },
+    {
+      "file": "Inc/app_timestamp.h",
+      "start": 18,
+      "end": 22
+    },
+    {
+      "file": "Inc/app_ring_buffer.h",
+      "start": 34,
+      "end": 42
+    },
+    {
+      "file": "Src/app_ring_buffer.c",
+      "start": 8,
+      "end": 10
+    },
+    {
+      "file": "Src/app_ring_buffer.c",
+      "start": 28,
+      "end": 49
+    },
+    {
+      "file": "Src/app_button.c",
+      "start": 43,
+      "end": 49
+    },
+    {
+      "file": "Inc/app_rtos.h",
+      "start": 20,
+      "end": 27
+    },
+    {
+      "file": "Src/app_button.c",
+      "start": 51,
+      "end": 54
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 216,
+      "end": 225
+    },
+    {
+      "file": "Inc/app_rtos.h",
+      "start": 29,
+      "end": 35
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 229,
+      "end": 234
+    },
+    {
+      "file": "Src/app_timestamp.c",
+      "start": 20,
+      "end": 28
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 91,
+      "end": 100
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 35,
+      "end": 49
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 23,
+      "end": 29
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 8,
+      "end": 19
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 236,
+      "end": 236
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 247,
+      "end": 255
+    },
+    {
+      "file": "Src/app_ring_buffer.c",
+      "start": 67,
+      "end": 77
+    },
+    {
+      "file": "Src/app_ring_buffer.c",
+      "start": 52,
+      "end": 65
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 300,
+      "end": 306
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 316,
+      "end": 320
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 292,
+      "end": 298
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 205,
+      "end": 211
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 56,
+      "end": 59
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 19,
+      "end": 22
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 27,
+      "end": 43
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 45,
+      "end": 54
+    },
+    {
+      "file": "Src/app_hal_callbacks.c",
+      "start": 17,
+      "end": 27
+    },
+    {
+      "file": "Src/app_hal_callbacks.c",
+      "start": 29,
+      "end": 45
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 61,
+      "end": 76
+    },
+    {
+      "file": "Src/app_ring_buffer.c",
+      "start": 90,
+      "end": 107
+    },
+    {
+      "file": "Src/app_cmd_rx.c",
+      "start": 24,
+      "end": 51
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 187,
+      "end": 191
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 164,
+      "end": 173
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 129,
+      "end": 137
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 266,
+      "end": 290
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 139,
+      "end": 150
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 90,
+      "end": 105
+    },
+    {
+      "file": "Src/app_ring_buffer.c",
+      "start": 167,
+      "end": 181
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 111,
+      "end": 124
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 64,
+      "end": 71
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 126,
+      "end": 143
+    },
+    {
+      "file": "Src/app_protocol.c",
+      "start": 145,
+      "end": 149
+    },
+    {
+      "file": "Src/app_tasks.c",
+      "start": 79,
+      "end": 86
+    }
+  ],
+  "source_hashes": {
+    "Src/app_button.c": "8c0dfbcac9e35c5bd3c0896071272800bb6426da7095564d1c3e6bc8e8c9914f",
+    "Src/app_cmd_rx.c": "1b56114c36c66794e9134351cc6bcf39cb3480bb27f2ff85871aa1d5f4cf4111",
+    "Src/app_hal_callbacks.c": "a2f726611a61a06f17fc3f67c76377280a505e5aecce28f14a90dfa3a4d09cea",
+    "Src/app_protocol.c": "4592d83c089f48ed7320ef0f9cb02f7ad946dab1ebe40478cd788f357d93f309",
+    "Src/app_ring_buffer.c": "56f001a2e2900d08a9cb552cd124ff67531a5b3a40edae6fbd8767c87e6123f9",
+    "Src/app_rtos.c": "510c3541bf307f2a09249d05d290ca3bc924d1e286ea8d06b149c01334d78b93",
+    "Src/app_tasks.c": "a6caec03be4bd107981996ad0c82755d5ea121f2b582b3225583a9dbce73f203",
+    "Src/app_timestamp.c": "cd48579b07d6169789f26fa92439e8d6be4f17c4b068d0af97e6b0b1bf98a9f4"
+  }
+}

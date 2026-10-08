@@ -1,0 +1,74 @@
+{
+  "original_files_unchanged": true,
+  "recordings": [
+    {
+      "source": "10ms_NoLoad.SVDat",
+      "source_sha256": "5abd94c81a8f8ee78a800e35ef2438fb77f70aab34e70666ddc7299594e5eb18",
+      "source_session": 9,
+      "output": "10ms_NoLoad_tek_oturum.SVDat",
+      "output_sha256": "cfa56e82b55e99af5cc61e457ad5d230253e6a551b1c98c9ab97fba59043ca11",
+      "event_count": 14239,
+      "duration_s": 10.939991291666667,
+      "telemetry_median_ms": 0.15704166666666666,
+      "production_window_occupancy_percent": {
+        "Idle": 97.46928585369362,
+        "TelemetryTask": 1.6865036127625428,
+        "UartTxTask": 0.8152902835164169,
+        "ISR#56": 0.0044183188376448555,
+        "Scheduler": 0.0016994198955315308,
+        "ButtonTask": 0.022802511294242284
+      },
+      "single_start_stop_pair": true,
+      "event_bytes_unchanged": true,
+      "decoded_events_and_timestamps_identical": true,
+      "all_packets_round_trip": true,
+      "systemview_gui_open_verified": false
+    },
+    {
+      "source": "10ms_2msLoad.SVDat",
+      "source_sha256": "5681983d192135bc4d7f364825771d64b047ae6b51c977134ea0d38e2a37d4c1",
+      "source_session": 10,
+      "output": "10ms_2msLoad_tek_oturum.SVDat",
+      "output_sha256": "2b661dfb23551c2038cba4bd034183d3a858932c6ddfba6761310b4a2e35faf8",
+      "event_count": 19294,
+      "duration_s": 13.521382180555555,
+      "telemetry_median_ms": 2.1577662037037033,
+      "production_window_occupancy_percent": {
+        "TelemetryTask": 21.69226889741694,
+        "UartTxTask": 0.8424349015346244,
+        "Idle": 77.43793008531233,
+        "ISR#56": 0.00448049479926998,
+        "Scheduler": 0.0010391822803244573,
+        "ButtonTask": 0.021846438656513305
+      },
+      "single_start_stop_pair": true,
+      "event_bytes_unchanged": true,
+      "decoded_events_and_timestamps_identical": true,
+      "all_packets_round_trip": true,
+      "systemview_gui_open_verified": false
+    },
+    {
+      "source": "10ms_5msLoad.SVDat",
+      "source_sha256": "6dfa428bb9c63988306a98d98d6f551ee6c988ff1dca3ea07a7977a4b78dc2db",
+      "source_session": 6,
+      "output": "10ms_5msLoad_tek_oturum.SVDat",
+      "output_sha256": "40c815eb7ccd235b829e4178b4477aab24c728e4c98302124ebd8ebef8d5d200",
+      "event_count": 17183,
+      "duration_s": 12.078894189814815,
+      "telemetry_median_ms": 5.158722222222223,
+      "production_window_occupancy_percent": {
+        "Idle": 47.43285335711378,
+        "TelemetryTask": 51.70295614053998,
+        "UartTxTask": 0.8407870632759267,
+        "ISR#56": 0.0038168154020407708,
+        "ButtonTask": 0.018695372397713714,
+        "Scheduler": 0.0008912512705566266
+      },
+      "single_start_stop_pair": true,
+      "event_bytes_unchanged": true,
+      "decoded_events_and_timestamps_identical": true,
+      "all_packets_round_trip": true,
+      "systemview_gui_open_verified": false
+    }
+  ]
+}

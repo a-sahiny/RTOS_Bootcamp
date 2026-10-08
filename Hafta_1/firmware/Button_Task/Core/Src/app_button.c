@@ -4,6 +4,14 @@
 #include "app_rtos.h"
 #include "app_ring_buffer.h"
 #include "app_timestamp.h"
+#include "app_trace.h"
+#if APP_TRACE_BACKEND == APP_TRACE_TRAXCOPE
+enum { TID_BUTTON_ISR = TRAX_TID_RANGE_ISR_USER_START };
+TRAX_ISR_DEFINE(TID_BUTTON_ISR, "Button_EXTI15_10", 5);
+#elif APP_TRACE_BACKEND == APP_TRACE_SYSTEMVIEW
+#include "SEGGER_SYSVIEW.h"
+#endif
+
 
 static volatile uint32_t s_last_edge_ms;
 static volatile bool     s_edge_seen;
@@ -35,6 +43,11 @@ void Button_HandleEXTI(void)
         return;
     }
 
+#if APP_TRACE_BACKEND == APP_TRACE_TRAXCOPE
+    TRAX_ISR_ENTER(TID_BUTTON_ISR);
+#elif APP_TRACE_BACKEND == APP_TRACE_SYSTEMVIEW
+    SEGGER_SYSVIEW_RecordEnterISR();
+#endif
     uint16_t event_id    = (uint16_t)(s_event_counter + 1u);
     s_event_counter      = event_id;
     uint8_t  scenario_id = g_cfg.scenario_id;
@@ -49,7 +62,12 @@ void Button_HandleEXTI(void)
     };
 
     /* ISR context: timeout 0 zorunlu. ButtonQueue (8) dolu ise DROP. */
-    if (osMessageQueuePut(ButtonQueueHandle, &evt, 0u, 0u) != osOK) {
+    if (osMessageQueuePut(ButtonQueueHandle, &evt, 0u, 100000u) != osOK) {
         RingBuffer_CloseDropIsr(evt.ring_index, event_id);
     }
+#if APP_TRACE_BACKEND == APP_TRACE_TRAXCOPE
+    TRAX_ISR_END(TID_BUTTON_ISR, SCB->ICSR & SCB_ICSR_PENDSVSET_Msk);
+#elif APP_TRACE_BACKEND == APP_TRACE_SYSTEMVIEW
+    App_SystemView_RecordISRExit();
+#endif
 }

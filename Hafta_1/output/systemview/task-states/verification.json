@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-05",
+  "build": "Debug / STM32CubeIDE GNU Tools for STM32 12.3.rel1",
+  "errors": 0,
+  "warnings": 0,
+  "size": {
+    "text": 61292,
+    "data": 112,
+    "bss": 49688,
+    "additional_state_bss": 32
+  },
+  "tests": {
+    "kernel_and_task_states": 10,
+    "uart_transport": 10,
+    "baseline_failure": "Before repair, real vTaskDelay changed the task to Blocked but emitted no Task Stop Ready event."
+  },
+  "hardware": "Not flashed or tested on target in this change. New recording required.",
+  "sources": [
+    {
+      "path": "Core/Src/app_systemview.c",
+      "sha256": "f2939f243131e3758f041905b06a95e96836263c4a05e4ff36155d1e1e6d6fe4"
+    },
+    {
+      "path": "Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h",
+      "sha256": "e5799393f449ec2a055ef70f8e0dc388090b88f796f320f4b79adaccb7cd3466"
+    },
+    {
+      "path": "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.c",
+      "sha256": "89940deb37ab0a0f60e95151f647774cdd5606b84d7149348d4a1006cbfec268"
+    },
+    {
+      "path": "Middlewares/Third_Party/FreeRTOS/Source/tasks.c",
+      "sha256": "7d6982d77f4ff8196f99365b2f908386df430782280ad5857a9db947dd143295"
+    },
+    {
+      "path": "Middlewares/Third_Party/SEGGER/FreeRTOS/SEGGER_SYSVIEW_FreeRTOS.c",
+      "sha256": "3db6363444e90b49cae78c0861228427d099af5caf6716fefb3f076672d513dd"
+    },
+    {
+      "path": "Middlewares/Third_Party/SEGGER/FreeRTOS/SEGGER_SYSVIEW_FreeRTOS.h",
+      "sha256": "408516eef8f02637a7e717620ed4839ffd52e15159efd36f475e2e4c6011d409"
+    }
+  ],
+  "artifacts": {
+    "UART_RTOS_ODEV1.elf": "a3fd110128d9b9db5030cc9a2b9e55a7d29bdfbc4b6850dcc597252cc3d64ede",
+    "UART_RTOS_ODEV1.hex": "f1d28a285934eff8e87f9460856e040f4cfea5bb9b8a968544d2104f0ace0d9b",
+    "UART_RTOS_ODEV1.map": "351fc30763a75e862324b669bf396bdc3e244037804043b6f09d17b11b577171"
+  }
+}

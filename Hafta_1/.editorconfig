@@ -1,0 +1,2 @@
+[*.{c,h,md,py,ps1,txt}]
+charset = utf-8

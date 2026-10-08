@@ -1,0 +1,7 @@
+OK
+HAFTA_DIR=C:\Users\Asus\Documents\GitHub\RTOS_Bootcamp\Hafta_1
+MEASUREMENTS_DIR=C:\Users\Asus\Documents\GitHub\RTOS_Bootcamp\Hafta_1\measurements
+PLOTS_DIR=C:\Users\Asus\Documents\GitHub\RTOS_Bootcamp\Hafta_1\analysis\plots
+CALIBRATION_FILE=C:\Users\Asus\Documents\GitHub\RTOS_Bootcamp\Hafta_1\interface\calibration.json
+measurements_exists=True
+tabs=4

@@ -1,0 +1,1882 @@
+[
+  {
+    "key": "A",
+    "title": "2 ms: tek telemetri, iki UART çalışma bölümü",
+    "start_event": 172742,
+    "end_event": 172756,
+    "rows": [
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172742,
+        "time_ms": 48.63300462962963,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172743,
+        "time_ms": 48.64692592592593,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172744,
+        "time_ms": 50.780939814814815,
+        "event": "Queue Send",
+        "args": "[14920, 536908656, 200, 0]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172745,
+        "time_ms": 50.79391203703704,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172746,
+        "time_ms": 50.80476851851852,
+        "event": "Task Block",
+        "args": "[37880, 4]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172747,
+        "time_ms": 50.81602314814815,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172748,
+        "time_ms": 50.824527777777774,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172749,
+        "time_ms": 50.84486111111111,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172750,
+        "time_ms": 50.8593287037037,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172751,
+        "time_ms": 51.535222222222224,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172752,
+        "time_ms": 51.55001851851852,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172753,
+        "time_ms": 51.56172685185185,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172754,
+        "time_ms": 51.57921759259259,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172755,
+        "time_ms": 51.59037962962963,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "A",
+        "session": 10,
+        "index": 172756,
+        "time_ms": 58.63301388888889,
+        "event": "Task Ready",
+        "args": "[37880]"
+      }
+    ]
+  },
+  {
+    "key": "B",
+    "title": "2 ms: telemetri sırasında buton, üç UART çalışma bölümü",
+    "start_event": 176852,
+    "end_event": 176881,
+    "rows": [
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176852,
+        "time_ms": 2958.633,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176853,
+        "time_ms": 2958.6472546296295,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176854,
+        "time_ms": 2960.6078888888887,
+        "event": "ISR Enter",
+        "args": "[56]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176855,
+        "time_ms": 2960.623347222222,
+        "event": "Queue Send From ISR",
+        "args": "[14704, 537198440]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176856,
+        "time_ms": 2960.632537037037,
+        "event": "Task Ready",
+        "args": "[36160]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176857,
+        "time_ms": 2960.6380185185185,
+        "event": "ISR Exit",
+        "args": "[]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176858,
+        "time_ms": 2960.836763888889,
+        "event": "Queue Send",
+        "args": "[14920, 536908656, 200, 0]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176859,
+        "time_ms": 2960.8448194444445,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176860,
+        "time_ms": 2960.854986111111,
+        "event": "Task Block",
+        "args": "[37880, 4]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176861,
+        "time_ms": 2960.8647175925926,
+        "event": "Task Run",
+        "args": "[36160]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176862,
+        "time_ms": 2960.872513888889,
+        "event": "Queue Receive",
+        "args": "[14704, 3758096384, 4294967295, 1]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176863,
+        "time_ms": 2960.976486111111,
+        "event": "Queue Send",
+        "args": "[14920, 536906932, 200, 0]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176864,
+        "time_ms": 2960.9954259259257,
+        "event": "Task Block",
+        "args": "[36160, 4]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176865,
+        "time_ms": 2961.0083055555556,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176866,
+        "time_ms": 2961.0166712962964,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176867,
+        "time_ms": 2961.0365925925926,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176868,
+        "time_ms": 2961.0503425925926,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176869,
+        "time_ms": 2961.727148148148,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176870,
+        "time_ms": 2961.738703703704,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176871,
+        "time_ms": 2961.7503657407406,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176872,
+        "time_ms": 2961.759189814815,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176873,
+        "time_ms": 2961.7790694444443,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176874,
+        "time_ms": 2961.790439814815,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176875,
+        "time_ms": 2962.4694027777778,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176876,
+        "time_ms": 2962.478476851852,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176877,
+        "time_ms": 2962.4937638888887,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176878,
+        "time_ms": 2962.507925925926,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176879,
+        "time_ms": 2962.5193935185184,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176880,
+        "time_ms": 2968.6330787037036,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "B",
+        "session": 10,
+        "index": 176881,
+        "time_ms": 2968.6470648148147,
+        "event": "Task Run",
+        "args": "[37880]"
+      }
+    ]
+  },
+  {
+    "key": "C",
+    "title": "5 ms: en uzun ButtonTask Ready beklemesi",
+    "start_event": 103165,
+    "end_event": 103182,
+    "rows": [
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103165,
+        "time_ms": 4712.787425925926,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103166,
+        "time_ms": 4714.267680555556,
+        "event": "ISR Enter",
+        "args": "[56]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103167,
+        "time_ms": 4714.283134259259,
+        "event": "Queue Send From ISR",
+        "args": "[14704, 537198440]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103168,
+        "time_ms": 4714.292143518519,
+        "event": "Task Ready",
+        "args": "[36160]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103169,
+        "time_ms": 4714.297787037037,
+        "event": "ISR Exit",
+        "args": "[]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103170,
+        "time_ms": 4717.984995370371,
+        "event": "Queue Send",
+        "args": "[14920, 536908656, 200, 0]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103171,
+        "time_ms": 4717.9977592592595,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103172,
+        "time_ms": 4718.008518518519,
+        "event": "Task Block",
+        "args": "[37880, 4]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103173,
+        "time_ms": 4718.018268518518,
+        "event": "Task Run",
+        "args": "[36160]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103174,
+        "time_ms": 4718.026268518519,
+        "event": "Queue Receive",
+        "args": "[14704, 3758096384, 4294967295, 1]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103175,
+        "time_ms": 4718.119101851852,
+        "event": "Queue Send",
+        "args": "[14920, 536906932, 200, 0]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103176,
+        "time_ms": 4718.140907407407,
+        "event": "Task Block",
+        "args": "[36160, 4]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103177,
+        "time_ms": 4718.15412962963,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103178,
+        "time_ms": 4718.172680555555,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103179,
+        "time_ms": 4718.195884259259,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103180,
+        "time_ms": 4718.2077407407405,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103181,
+        "time_ms": 4718.885712962963,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "C",
+        "session": 6,
+        "index": 103182,
+        "time_ms": 4718.894578703704,
+        "event": "Task Run",
+        "args": "[34952]"
+      }
+    ]
+  },
+  {
+    "key": "D",
+    "title": "Yüksüz: komut gelir ama UART hemen uyanmaz; üretim durur",
+    "start_event": 172172,
+    "end_event": 172201,
+    "rows": [
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172172,
+        "time_ms": 9636.489902777777,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172173,
+        "time_ms": 9636.504671296296,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172174,
+        "time_ms": 9636.516194444444,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172175,
+        "time_ms": 9636.533606481482,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172176,
+        "time_ms": 9636.545087962962,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172177,
+        "time_ms": 9636.836763888889,
+        "event": "Queue Send From ISR",
+        "args": "[32928, 537198232]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172178,
+        "time_ms": 9645.587875,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172179,
+        "time_ms": 9645.602277777778,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172180,
+        "time_ms": 9645.73100462963,
+        "event": "Queue Send",
+        "args": "[14920, 536908656, 200, 0]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172181,
+        "time_ms": 9645.739212962962,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172182,
+        "time_ms": 9645.759148148149,
+        "event": "Task Block",
+        "args": "[37880, 4]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172183,
+        "time_ms": 9645.771060185185,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172184,
+        "time_ms": 9645.779162037037,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172185,
+        "time_ms": 9645.799481481481,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172186,
+        "time_ms": 9645.810685185184,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172187,
+        "time_ms": 9646.489643518518,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172188,
+        "time_ms": 9646.504356481482,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172189,
+        "time_ms": 9646.516967592592,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172190,
+        "time_ms": 9646.540101851851,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172191,
+        "time_ms": 9646.557476851853,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172192,
+        "time_ms": 9646.569277777779,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172193,
+        "time_ms": 9655.587592592592,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172194,
+        "time_ms": 9655.601888888888,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172195,
+        "time_ms": 9655.612689814814,
+        "event": "Task Block",
+        "args": "[37880, 4]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172196,
+        "time_ms": 9655.626726851851,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172197,
+        "time_ms": 9665.587555555556,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172198,
+        "time_ms": 9665.601208333333,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172199,
+        "time_ms": 9665.617513888888,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 0, 1]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172200,
+        "time_ms": 9665.628935185185,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "D",
+        "session": 9,
+        "index": 172201,
+        "time_ms": 9665.64261111111,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      }
+    ]
+  },
+  {
+    "key": "E",
+    "title": "Yüksüz: komut sonrası DUMP ile uyumlu gönderim dizisi",
+    "start_event": 172305,
+    "end_event": 172392,
+    "rows": [
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172305,
+        "time_ms": 10025.587527777778,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172306,
+        "time_ms": 10025.601453703704,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172307,
+        "time_ms": 10025.617597222223,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 0, 1]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172308,
+        "time_ms": 10025.629175925926,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172309,
+        "time_ms": 10025.642861111111,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172310,
+        "time_ms": 10025.654037037037,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172311,
+        "time_ms": 10037.695541666666,
+        "event": "Queue Send From ISR",
+        "args": "[32928, 537198232]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172312,
+        "time_ms": 10045.587685185184,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172313,
+        "time_ms": 10045.602,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172314,
+        "time_ms": 10045.617967592592,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 0, 1]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172315,
+        "time_ms": 10045.630074074073,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172316,
+        "time_ms": 10045.793425925925,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172317,
+        "time_ms": 10045.805453703704,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172318,
+        "time_ms": 10046.483518518518,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172319,
+        "time_ms": 10046.49799537037,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172320,
+        "time_ms": 10046.665819444444,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172321,
+        "time_ms": 10046.682120370371,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172322,
+        "time_ms": 10047.35574074074,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172323,
+        "time_ms": 10047.370273148148,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172324,
+        "time_ms": 10047.535898148148,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172325,
+        "time_ms": 10047.552097222222,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172326,
+        "time_ms": 10048.225898148148,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172327,
+        "time_ms": 10048.240486111112,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172328,
+        "time_ms": 10048.406407407407,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172329,
+        "time_ms": 10048.423087962963,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172330,
+        "time_ms": 10049.096574074074,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172331,
+        "time_ms": 10049.111518518519,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172332,
+        "time_ms": 10049.276912037038,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172333,
+        "time_ms": 10049.293023148148,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172334,
+        "time_ms": 10049.966689814815,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172335,
+        "time_ms": 10049.981453703704,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172336,
+        "time_ms": 10050.150875,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172337,
+        "time_ms": 10050.16749537037,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172338,
+        "time_ms": 10050.84061574074,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172339,
+        "time_ms": 10050.854893518519,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172340,
+        "time_ms": 10051.023916666667,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172341,
+        "time_ms": 10051.040319444444,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172342,
+        "time_ms": 10051.71399537037,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172343,
+        "time_ms": 10051.728675925926,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172344,
+        "time_ms": 10051.89449074074,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172345,
+        "time_ms": 10051.910745370371,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172346,
+        "time_ms": 10052.584407407407,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172347,
+        "time_ms": 10052.59926388889,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172348,
+        "time_ms": 10052.76812962963,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172349,
+        "time_ms": 10052.784657407408,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172350,
+        "time_ms": 10053.458296296296,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172351,
+        "time_ms": 10053.473064814814,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172352,
+        "time_ms": 10053.641060185186,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172353,
+        "time_ms": 10053.657532407407,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172354,
+        "time_ms": 10054.331481481482,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172355,
+        "time_ms": 10054.346467592593,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172356,
+        "time_ms": 10054.512615740741,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172357,
+        "time_ms": 10054.529416666666,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172358,
+        "time_ms": 10055.20300925926,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172359,
+        "time_ms": 10055.217740740742,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172360,
+        "time_ms": 10055.38339351852,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172361,
+        "time_ms": 10055.399708333332,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172362,
+        "time_ms": 10056.073444444444,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172363,
+        "time_ms": 10056.088226851853,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172364,
+        "time_ms": 10056.254305555556,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172365,
+        "time_ms": 10056.27113425926,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172366,
+        "time_ms": 10056.944106481482,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172367,
+        "time_ms": 10056.95875925926,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172368,
+        "time_ms": 10057.129064814815,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172369,
+        "time_ms": 10057.145875,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172370,
+        "time_ms": 10057.818638888888,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172371,
+        "time_ms": 10057.833555555555,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172372,
+        "time_ms": 10058.002458333332,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172373,
+        "time_ms": 10058.019185185185,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172374,
+        "time_ms": 10058.689611111111,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172375,
+        "time_ms": 10058.704449074074,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172376,
+        "time_ms": 10058.855074074074,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172377,
+        "time_ms": 10058.871444444445,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172378,
+        "time_ms": 10059.540527777777,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172379,
+        "time_ms": 10059.555180555555,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172380,
+        "time_ms": 10059.657796296297,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172381,
+        "time_ms": 10059.669435185186,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172382,
+        "time_ms": 10060.347851851851,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172383,
+        "time_ms": 10060.362625,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172384,
+        "time_ms": 10060.374833333333,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172385,
+        "time_ms": 10060.392166666667,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172386,
+        "time_ms": 10060.403699074073,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172387,
+        "time_ms": 10079.587435185185,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172388,
+        "time_ms": 10079.601388888888,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172389,
+        "time_ms": 10079.617333333334,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 0, 1]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172390,
+        "time_ms": 10079.62925462963,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172391,
+        "time_ms": 10079.643319444445,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "E",
+        "session": 9,
+        "index": 172392,
+        "time_ms": 10079.654675925925,
+        "event": "Idle",
+        "args": "[]"
+      }
+    ]
+  },
+  {
+    "key": "F",
+    "title": "2 ms: kayıt aktarım beklenirken biter",
+    "start_event": 191934,
+    "end_event": 191945,
+    "rows": [
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191934,
+        "time_ms": 13511.578606481482,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191935,
+        "time_ms": 13511.590467592592,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191936,
+        "time_ms": 13518.633069444444,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191937,
+        "time_ms": 13518.64687962963,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191938,
+        "time_ms": 13520.780907407407,
+        "event": "Queue Send",
+        "args": "[14920, 536908656, 200, 0]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191939,
+        "time_ms": 13520.793527777778,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191940,
+        "time_ms": 13520.804064814814,
+        "event": "Task Block",
+        "args": "[37880, 4]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191941,
+        "time_ms": 13520.815523148149,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191942,
+        "time_ms": 13520.823976851852,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191943,
+        "time_ms": 13520.844342592593,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191944,
+        "time_ms": 13520.858787037037,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "F",
+        "session": 10,
+        "index": 191945,
+        "time_ms": 13521.382180555556,
+        "event": "Trace Stop",
+        "args": "[]"
+      }
+    ]
+  },
+  {
+    "key": "G",
+    "title": "2 ms: aynı periyotta dört UART çalışma bölümü",
+    "start_event": 174408,
+    "end_event": 174442,
+    "rows": [
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174408,
+        "time_ms": 1238.6330648148148,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174409,
+        "time_ms": 1238.6469537037037,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174410,
+        "time_ms": 1240.7808657407406,
+        "event": "Queue Send",
+        "args": "[14920, 536908656, 200, 0]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174411,
+        "time_ms": 1240.7934583333333,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174412,
+        "time_ms": 1240.8042731481482,
+        "event": "Task Block",
+        "args": "[37880, 4]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174413,
+        "time_ms": 1240.8157453703705,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174414,
+        "time_ms": 1240.8238935185186,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174415,
+        "time_ms": 1240.844412037037,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174416,
+        "time_ms": 1240.8589166666666,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174417,
+        "time_ms": 1241.5347222222222,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174418,
+        "time_ms": 1241.5494814814815,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174419,
+        "time_ms": 1241.5613472222221,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174420,
+        "time_ms": 1241.5790601851852,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174421,
+        "time_ms": 1241.590537037037,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174422,
+        "time_ms": 1245.299625,
+        "event": "ISR Enter",
+        "args": "[56]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174423,
+        "time_ms": 1245.315111111111,
+        "event": "Queue Send From ISR",
+        "args": "[14704, 537198440]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174424,
+        "time_ms": 1245.3242175925925,
+        "event": "Task Ready",
+        "args": "[36160]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174425,
+        "time_ms": 1245.3299351851851,
+        "event": "ISR Exit To Scheduler",
+        "args": "[]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174426,
+        "time_ms": 1245.3390462962964,
+        "event": "Task Run",
+        "args": "[36160]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174427,
+        "time_ms": 1245.3500416666666,
+        "event": "Queue Receive",
+        "args": "[14704, 3758096384, 4294967295, 1]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174428,
+        "time_ms": 1245.451263888889,
+        "event": "Queue Send",
+        "args": "[14920, 536906932, 200, 0]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174429,
+        "time_ms": 1245.4594861111111,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174430,
+        "time_ms": 1245.4760925925925,
+        "event": "Task Block",
+        "args": "[36160, 4]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174431,
+        "time_ms": 1245.4889907407407,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174432,
+        "time_ms": 1245.497462962963,
+        "event": "Queue Receive",
+        "args": "[14920, 3758096384, 20, 1]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174433,
+        "time_ms": 1245.5175555555556,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174434,
+        "time_ms": 1245.5288425925926,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174435,
+        "time_ms": 1246.2078333333334,
+        "event": "Task Ready",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174436,
+        "time_ms": 1246.2172685185185,
+        "event": "Task Run",
+        "args": "[34952]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174437,
+        "time_ms": 1246.232287037037,
+        "event": "Queue Receive",
+        "args": "[32928, 3758096384, 0, 1]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174438,
+        "time_ms": 1246.246398148148,
+        "event": "Task Block",
+        "args": "[34952, 4]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174439,
+        "time_ms": 1246.2579722222222,
+        "event": "Idle",
+        "args": "[]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174440,
+        "time_ms": 1248.6331898148148,
+        "event": "Task Ready",
+        "args": "[37880]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174441,
+        "time_ms": 1248.647425925926,
+        "event": "Task Run",
+        "args": "[37880]"
+      },
+      {
+        "case": "G",
+        "session": 10,
+        "index": 174442,
+        "time_ms": 1250.7815231481482,
+        "event": "Queue Send",
+        "args": "[14920, 536908656, 200, 0]"
+      }
+    ]
+  }
+]

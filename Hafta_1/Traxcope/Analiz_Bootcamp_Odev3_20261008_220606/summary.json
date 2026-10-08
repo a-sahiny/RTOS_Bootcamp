@@ -1,0 +1,302 @@
+{
+  "recording_start": "2026-10-08T22:06:06",
+  "recording_end": "2026-10-08T22:08:08",
+  "stop_reason": "session_stopped",
+  "chunks": [
+    {
+      "file": "chunk_001.traxrec",
+      "sha256": "09ef65d6a0d24aeaa97a6b4dcd363223a137c5423bc6141a305c7eb3a388337b",
+      "metadata_digest": "9c3bd0cbcbf72d0a6ae8995afbb5436d08f7afd5806433caf7abf2a23498c96b",
+      "digest_matches_file_sha256": false,
+      "bytes": 5301760,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_002.traxrec",
+      "sha256": "95fb722247ea8789d2cabeea4dba08c09318401d5a4512a9dae7a28de0582b51",
+      "metadata_digest": "ceda4bd0a26927280af051e275ad20bc34db8522684ba7e87af2c7007ec72007",
+      "digest_matches_file_sha256": false,
+      "bytes": 5293380,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_003.traxrec",
+      "sha256": "77a70e28a05b6e7f85eb850cd0e0d01b52cc91fa54a9e09964f27eee464c774e",
+      "metadata_digest": "e0961c3470d21c66919c8eedab03561381d292434f8449b09be3896e6dc3e679",
+      "digest_matches_file_sha256": false,
+      "bytes": 5258172,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_004.traxrec",
+      "sha256": "c659fbf4bc146206d988d7946115009b008bddd207a36f1bbf6bf3461ed74ecc",
+      "metadata_digest": "0195cc2f70117315385c4c1ce8ac33d67eb8f0524067014d6fe92c72f3384472",
+      "digest_matches_file_sha256": false,
+      "bytes": 5288580,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_005.traxrec",
+      "sha256": "f11b9268ee120459547ac761249e9b64dda5154fe88d63f96aea79275c536216",
+      "metadata_digest": "a6ac17783610e09b3e9e3b05a75da5d8608b0e72b3d0f1679c5929f30d7063ac",
+      "digest_matches_file_sha256": false,
+      "bytes": 5307440,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_006.traxrec",
+      "sha256": "ed13f8eacca9deb85c6be5d16f14078fe8593cd51a6488f72d80c6e2813c501b",
+      "metadata_digest": "8fa94ad46a8d3698791309b888c43a16e261975f53661f16fbfc79790d1bb3ee",
+      "digest_matches_file_sha256": false,
+      "bytes": 5306000,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_007.traxrec",
+      "sha256": "6e4e1ca783b8f8a9960540c4a909d1417ac092fd00d628cfc3109c3dc600db18",
+      "metadata_digest": "1db1ff466f3542e38de498375c2f50e3b1ed512e6f127b85f2c6e452f63c61f8",
+      "digest_matches_file_sha256": false,
+      "bytes": 5307944,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_008.traxrec",
+      "sha256": "8130a0ceadd288f3ba27324aa5f10d345a21ac42d8c3694ab591fb5a8ca4b003",
+      "metadata_digest": "60b2769b034ba6e2ce6ba8e19e8e112fb9d4b49e4590b8ac5634f3458d491387",
+      "digest_matches_file_sha256": false,
+      "bytes": 5308048,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_009.traxrec",
+      "sha256": "f92a4ab132d9a4b9a35e7584b40e0cfbdaa1619980c8da8e7d2c620c0e4427a5",
+      "metadata_digest": "d167af1fef4e42105278db6ff752daad08e02f9de14a44895aece7fdf962b2fe",
+      "digest_matches_file_sha256": false,
+      "bytes": 5303400,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_010.traxrec",
+      "sha256": "1620bea35d9de580f0e007dc182c31da09deb5095cb918e1db8c75729e2ac332",
+      "metadata_digest": "304562c6bf6d483d7708a85c50894701eb5cc14d9a6f7ae1539af2d4ce3fcd19",
+      "digest_matches_file_sha256": false,
+      "bytes": 5308588,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_011.traxrec",
+      "sha256": "a79d0ca978bbabdac6b57e7051433ffafaccc76736cd8dd5720e3c456d1519e8",
+      "metadata_digest": "b2582d3dd22883c7fc2f3a5e57c161f7c0a5cc259b3c3464fbfc708fe2e26069",
+      "digest_matches_file_sha256": false,
+      "bytes": 5308244,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_012.traxrec",
+      "sha256": "a6916a67efdfb2f14b152102718f0a647c4e51985f9f9180bacd356336673199",
+      "metadata_digest": "172496581fcad2a495dd1c6e2332e946c5eed8245bda31f6e011dd1bf8f41a98",
+      "digest_matches_file_sha256": false,
+      "bytes": 5284492,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_013.traxrec",
+      "sha256": "a3faca1e111fa34fc059e34d41dcdcbc469f70cb9745a2cc0c8d1601b805c3e1",
+      "metadata_digest": "b6f165f4e6bfdae86efc6c9878a9fec9f65524665404fa2d74552b45356a96ab",
+      "digest_matches_file_sha256": false,
+      "bytes": 3541996,
+      "event_count": 33380
+    }
+  ],
+  "events": 633380,
+  "intervals": 438001,
+  "interval_start_s": 21.322742263,
+  "interval_end_s": 142.033003675,
+  "interval_window_s": 120.710261412,
+  "gap_count": 196,
+  "gap_total_s": 35.865853397,
+  "gap_ms": {
+    "count": 196,
+    "min": 179.077593,
+    "median": 182.225493,
+    "p95": 191.060393,
+    "max": 196.017607,
+    "total": 35865.853397
+  },
+  "gap_percent_of_interval_window": 29.71234837656852,
+  "counted_interval_s": 84.73645222,
+  "excluded_intervals": 0,
+  "entity_stats": {
+    "Idle": {
+      "slice_us": {
+        "count": 85144,
+        "min": 4.019,
+        "median": 966.787,
+        "p95": 967.38,
+        "max": 972.162,
+        "total": 80382892.521999
+      },
+      "observed_cpu_percent": 94.862235,
+      "switch_in_count": 85102,
+      "ready_count": 0
+    },
+    "Scheduler": {
+      "slice_us": {
+        "count": 176159,
+        "min": 2.301,
+        "median": 2.843,
+        "p95": 3.167,
+        "max": 5.917,
+        "total": 507033.522
+      },
+      "observed_cpu_percent": 0.598365,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "SysTick": {
+      "slice_us": {
+        "count": 84833,
+        "min": 2.398,
+        "median": 8.898,
+        "p95": 12.333,
+        "max": 25.296,
+        "total": 768363.406
+      },
+      "observed_cpu_percent": 0.906768,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "Button_EXTI15_10": {
+      "slice_us": {
+        "count": 47,
+        "min": 6.074,
+        "median": 6.167,
+        "p95": 6.25,
+        "max": 6.273,
+        "total": 291.097
+      },
+      "observed_cpu_percent": 0.000344,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "Tmr Svc": {
+      "slice_us": {
+        "count": 0
+      },
+      "observed_cpu_percent": 0.0,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "TelemetryTask": {
+      "slice_us": {
+        "count": 1690,
+        "min": 11.861,
+        "median": 139.507,
+        "p95": 996.903,
+        "max": 997.296,
+        "total": 860739.674
+      },
+      "observed_cpu_percent": 1.015784,
+      "switch_in_count": 939,
+      "ready_count": 941
+    },
+    "ButtonTask": {
+      "slice_us": {
+        "count": 0
+      },
+      "observed_cpu_percent": 0.0,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "UartTxTask": {
+      "slice_us": {
+        "count": 5400,
+        "min": 3.949,
+        "median": 33.598,
+        "p95": 34.38,
+        "max": 151.996,
+        "total": 183396.103
+      },
+      "observed_cpu_percent": 0.216431,
+      "switch_in_count": 5394,
+      "ready_count": 5396
+    },
+    "TraxCtrl": {
+      "slice_us": {
+        "count": 84728,
+        "min": 4.148,
+        "median": 18.593,
+        "p95": 78.45,
+        "max": 462.102,
+        "total": 2033735.896
+      },
+      "observed_cpu_percent": 2.400072,
+      "switch_in_count": 84724,
+      "ready_count": 84048
+    }
+  },
+  "telemetry_complete_runs": 924,
+  "telemetry_cpu_us": {
+    "count": 924,
+    "min": 118.629,
+    "median": 120.743,
+    "p95": 2121.815,
+    "max": 2125.75,
+    "total": 860130.495
+  },
+  "telemetry_elapsed_us": {
+    "count": 924,
+    "min": 118.629,
+    "median": 120.743,
+    "p95": 2127.653,
+    "max": 2137.791,
+    "total": 862263.433
+  },
+  "telemetry_period_ms": {
+    "count": 852,
+    "min": 9.996491,
+    "median": 19.999769,
+    "p95": 49.999963,
+    "max": 200.000153,
+    "total": 17749.996119
+  },
+  "traxctrl_switch_interval_ms": {
+    "count": 84527,
+    "min": 0.016694,
+    "median": 0.999972,
+    "p95": 1.040745,
+    "max": 3.182093,
+    "total": 84518.158556
+  },
+  "button_observed_count": 47,
+  "button_us": {
+    "count": 47,
+    "min": 6.074,
+    "median": 6.167,
+    "p95": 6.25,
+    "max": 6.273,
+    "total": 291.097
+  },
+  "button_first_s": 28.27224405,
+  "button_last_s": 139.950836162,
+  "event_kinds": {
+    "6": 1,
+    "78": 1180,
+    "22": 85078,
+    "18": 176206,
+    "17": 176159,
+    "7": 84881,
+    "19": 90385,
+    "36": 8847,
+    "37": 5382,
+    "82": 345,
+    "83": 196,
+    "32": 1950,
+    "35": 1945,
+    "8": 803,
+    "68": 7,
+    "69": 7,
+    "67": 4,
+    "70": 4
+  }
+}

@@ -1,0 +1,2645 @@
+[
+  {
+    "session": 1,
+    "event_count": 28194,
+    "first_event": 0,
+    "last_event": 28193,
+    "duration_s": 19.596986699074073,
+    "has_stop": false,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 5991,
+      "17": 3993,
+      "6": 5986,
+      "4": 5987,
+      "90": 1997,
+      "92": 4033,
+      "96": 39,
+      "2": 76,
+      "18": 37,
+      "3": 39
+    },
+    "irq_count": 76,
+    "irq_stats_us": {
+      "n": 76,
+      "min": 6.050925925925926,
+      "mean": 21.610928362573098,
+      "median": 12.67361111111111,
+      "p95": 33.38078703703704,
+      "max": 33.72222222222222
+    },
+    "irq_with_queue": 37,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1960
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1997
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1999
+      },
+      {
+        "id": 96,
+        "queue_id": 32928,
+        "context": "Idle",
+        "count": 2
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 37
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 37
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 37
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 3989,
+        "min": 25.24074074074074,
+        "mean": 28.937000362106904,
+        "median": 28.88888888888889,
+        "p95": 29.462962962962962,
+        "max": 91.50925925925925
+      },
+      "ButtonTask": {
+        "n": 37,
+        "min": 128.875,
+        "mean": 137.0422922922923,
+        "median": 137.2314814814815,
+        "p95": 139.775,
+        "max": 139.98611111111111
+      },
+      "TelemetryTask": {
+        "n": 1960,
+        "min": 124.70833333333333,
+        "mean": 157.39366260393047,
+        "median": 157.53703703703704,
+        "p95": 158.26435185185184,
+        "max": 159.0648148148148
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1960,
+      "min": 124.70833333333333,
+      "mean": 157.39366260393047,
+      "median": 157.53703703703704,
+      "p95": 158.26435185185184,
+      "max": 159.0648148148148
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 3989,
+        "min": 8.50925925925926,
+        "mean": 22.96542459355821,
+        "median": 15.305555555555555,
+        "p95": 31.86111111111111,
+        "max": 32.55555555555556
+      },
+      "ButtonTask": {
+        "n": 37,
+        "min": 12.50462962962963,
+        "mean": 15.207957957957959,
+        "median": 15.300925925925926,
+        "p95": 15.866666666666667,
+        "max": 15.99074074074074
+      },
+      "TelemetryTask": {
+        "n": 1960,
+        "min": 7.513888888888889,
+        "mean": 13.87944775132275,
+        "median": 13.902777777777779,
+        "p95": 14.240972222222222,
+        "max": 14.944444444444445
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1960,
+    "telemetry_send_interval_us": {
+      "n": 1959,
+      "min": 9973.060185186565,
+      "mean": 9999.99987474713,
+      "median": 9999.976851851912,
+      "p95": 10001.162037036474,
+      "max": 10026.833333333954
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1959,
+      "min": 9973.060185186565,
+      "mean": 9999.99987474713,
+      "median": 9999.976851851912,
+      "p95": 10001.162037036474,
+      "max": 10026.833333333954
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.0014431545990087208,
+      "Idle": 97.44410937259062,
+      "TelemetryTask": 1.691776911355259,
+      "UartTxTask": 0.8243224511590026,
+      "ISR#56": 0.008381036231622067,
+      "Scheduler": 0.0016428498881886043,
+      "ButtonTask": 0.02832422417629495
+    },
+    "production_window": {
+      "start_us": 6172.416666666667,
+      "end_us": 19596172.171296295,
+      "duration_s": 19.58999975462963,
+      "occupancy_percent": {
+        "Idle": 97.44592234904285,
+        "TelemetryTask": 1.69151480102525,
+        "UartTxTask": 0.8242010624474544,
+        "ISR#56": 0.008384025401365338,
+        "Scheduler": 0.0016434358249442504,
+        "ButtonTask": 0.02833432625813418
+      }
+    },
+    "button_count": 37,
+    "button_isr_to_receive_us": {
+      "n": 37,
+      "min": 40.407407408580184,
+      "mean": 51.93155655672623,
+      "median": 52.912037037312984,
+      "p95": 54.63055555522442,
+      "max": 55.22222222201526
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 37,
+      "min": 144.72685185074806,
+      "mean": 153.83833833834206,
+      "median": 154.38888888806105,
+      "p95": 156.49907407239078,
+      "max": 157.36574074067175
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 17319,
+      "run_event": 17321,
+      "ready_us": 12336401.074074075,
+      "run_us": 12336417.064814815,
+      "wait_us": 15.99074074074074,
+      "visible_context_us": {
+        "ISR#56": 6.50462962962963,
+        "Scheduler": 9.48611111111111
+      }
+    },
+    "button_ready_over_1ms": 0,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 15019,
+      "run_event": 15021,
+      "ready_us": 10716180.74074074,
+      "run_us": 10716213.296296297,
+      "wait_us": 32.55555555555556,
+      "visible_context_us": {
+        "TelemetryTask": 32.55555555555556
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 5990
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 2,
+    "event_count": 23192,
+    "first_event": 28194,
+    "last_event": 51385,
+    "duration_s": 17.795366314814814,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 4862,
+      "17": 3309,
+      "6": 4857,
+      "4": 4860,
+      "90": 1557,
+      "92": 3444,
+      "2": 114,
+      "96": 58,
+      "18": 54,
+      "3": 60,
+      "11": 1
+    },
+    "irq_count": 114,
+    "irq_stats_us": {
+      "n": 114,
+      "min": 6.222222222222222,
+      "mean": 21.928281351526966,
+      "median": 12.537037037037038,
+      "p95": 33.429398148148145,
+      "max": 33.870370370370374
+    },
+    "irq_with_queue": 56,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1501
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1693
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1695
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 56
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 56
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 56
+      },
+      {
+        "id": 96,
+        "queue_id": 32928,
+        "context": "Idle",
+        "count": 2
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 3299,
+        "min": 25.462962962962962,
+        "mean": 32.1352051126604,
+        "median": 28.925925925925927,
+        "p95": 41.699074074074076,
+        "max": 191.7685185185185
+      },
+      "ButtonTask": {
+        "n": 56,
+        "min": 119.29166666666667,
+        "mean": 135.93196097883597,
+        "median": 136.81712962962962,
+        "p95": 139.82986111111111,
+        "max": 152.7037037037037
+      },
+      "TelemetryTask": {
+        "n": 1502,
+        "min": 10.930555555555555,
+        "mean": 157.175482073285,
+        "median": 157.52314814814815,
+        "p95": 158.19421296296298,
+        "max": 162.22222222222223
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1501,
+      "min": 120.93518518518519,
+      "mean": 157.27291373652133,
+      "median": 157.52314814814815,
+      "p95": 158.19444444444446,
+      "max": 162.22222222222223
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 3299,
+        "min": 8.578703703703704,
+        "mean": 22.472584284800107,
+        "median": 14.88425925925926,
+        "p95": 31.88425925925926,
+        "max": 178.74537037037038
+      },
+      "ButtonTask": {
+        "n": 56,
+        "min": 12.462962962962964,
+        "mean": 18.584160052910054,
+        "median": 15.405092592592592,
+        "p95": 24.923611111111114,
+        "max": 115.48148148148148
+      },
+      "TelemetryTask": {
+        "n": 1502,
+        "min": 7.5092592592592595,
+        "mean": 13.862695418454406,
+        "median": 13.893518518518519,
+        "p95": 14.25,
+        "max": 16.824074074074073
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1501,
+    "telemetry_send_interval_us": {
+      "n": 1500,
+      "min": 9957.388888888992,
+      "mean": 10000.017626543211,
+      "median": 9999.995370370336,
+      "p95": 10001.185416668002,
+      "max": 10040.97685185168
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1500,
+      "min": 9957.388888888992,
+      "mean": 10000.017626543211,
+      "median": 9999.995370370336,
+      "p95": 10001.185416668002,
+      "max": 10040.97685185168
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.0015148294206229701,
+      "Idle": 97.69741533975125,
+      "TelemetryTask": 1.4258647039537646,
+      "UartTxTask": 0.8115163668474784,
+      "ISR#56": 0.014047612338235186,
+      "Scheduler": 0.002833082491747818,
+      "ButtonTask": 0.04680806519690543
+    },
+    "production_window": {
+      "start_us": 1893.4212962962963,
+      "end_us": 15001919.861111112,
+      "duration_s": 15.000026439814814,
+      "occupancy_percent": {
+        "Idle": 97.39677748981597,
+        "TelemetryTask": 1.690437051208025,
+        "UartTxTask": 0.8372279378368046,
+        "ISR#56": 0.016665464451707565,
+        "Scheduler": 0.0033610434583582743,
+        "ButtonTask": 0.05553101322913069
+      }
+    },
+    "button_count": 56,
+    "button_isr_to_receive_us": {
+      "n": 56,
+      "min": 40.11111111193895,
+      "mean": 54.94634589963659,
+      "median": 53.018518519587815,
+      "p95": 55.913194444496185,
+      "max": 144.14814814925194
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 56,
+      "min": 133.29629629664123,
+      "mean": 155.50223214297355,
+      "median": 154.12500000093132,
+      "p95": 157.74884259235114,
+      "max": 236.7268518526107
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 44539,
+      "run_event": 44544,
+      "ready_us": 11161859.555555556,
+      "run_us": 11161975.037037037,
+      "wait_us": 115.48148148148148,
+      "visible_context_us": {
+        "ISR#56": 6.148148148148148,
+        "TelemetryTask": 109.33333333333333
+      }
+    },
+    "button_ready_over_1ms": 0,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 42874,
+      "run_event": 42881,
+      "ready_us": 10051768.064814815,
+      "run_us": 10051946.810185185,
+      "wait_us": 178.74537037037038,
+      "visible_context_us": {
+        "ButtonTask": 44.85648148148148,
+        "TelemetryTask": 133.88888888888889
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 4861
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 3,
+    "event_count": 4899,
+    "first_event": 51386,
+    "last_event": 56284,
+    "duration_s": 16.117043518518518,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 811,
+      "17": 807,
+      "6": 806,
+      "4": 806,
+      "92": 1612,
+      "2": 20,
+      "3": 20,
+      "11": 1
+    },
+    "irq_count": 20,
+    "irq_stats_us": {
+      "n": 20,
+      "min": 5.847222222222222,
+      "mean": 11.623148148148148,
+      "median": 12.210648148148149,
+      "p95": 12.531481481481482,
+      "max": 12.601851851851851
+    },
+    "irq_with_queue": 0,
+    "queue_events_by_context": [
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 806
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 806
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 806,
+        "min": 40.949074074074076,
+        "mean": 41.84101300431946,
+        "median": 41.83796296296296,
+        "p95": 42.30902777777778,
+        "max": 51.458333333333336
+      },
+      "ButtonTask": {
+        "n": 0
+      },
+      "TelemetryTask": {
+        "n": 0
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 0
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 806,
+        "min": 7.643518518518518,
+        "mean": 13.813258202371106,
+        "median": 13.819444444444445,
+        "p95": 14.162037037037036,
+        "max": 14.532407407407407
+      },
+      "ButtonTask": {
+        "n": 0
+      },
+      "TelemetryTask": {
+        "n": 0
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 0,
+    "telemetry_send_interval_us": {
+      "n": 0
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 0
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.0018740800442044127,
+      "Idle": 99.73050745050371,
+      "UartTxTask": 0.26617612698588516,
+      "ISR#56": 0.0014423424661964988
+    },
+    "production_window": null,
+    "button_count": 0,
+    "button_isr_to_receive_us": {
+      "n": 0
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 0
+    },
+    "worst_button_ready": null,
+    "button_ready_over_1ms": 0,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 51612,
+      "run_event": 51613,
+      "ready_us": 696562.8055555555,
+      "run_us": 696577.3379629629,
+      "wait_us": 14.532407407407407,
+      "visible_context_us": {
+        "Idle": 14.532407407407407
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 810
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 4,
+    "event_count": 20576,
+    "first_event": 56285,
+    "last_event": 76860,
+    "duration_s": 18.06595874537037,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 4329,
+      "17": 2957,
+      "6": 4324,
+      "4": 4326,
+      "92": 3200,
+      "96": 16,
+      "90": 1367,
+      "2": 20,
+      "3": 16,
+      "18": 4,
+      "11": 1
+    },
+    "irq_count": 20,
+    "irq_stats_us": {
+      "n": 20,
+      "min": 5.796296296296297,
+      "mean": 21.32037037037037,
+      "median": 19.680555555555557,
+      "p95": 33.31527777777778,
+      "max": 33.324074074074076
+    },
+    "irq_with_queue": 10,
+    "queue_events_by_context": [
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1592
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1598
+      },
+      {
+        "id": 96,
+        "queue_id": 32928,
+        "context": "Idle",
+        "count": 6
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1357
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 10
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 10
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 10
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2954,
+        "min": 27.72222222222222,
+        "mean": 30.171664597908673,
+        "median": 28.96759259259259,
+        "p95": 41.70231481481482,
+        "max": 242.33333333333334
+      },
+      "ButtonTask": {
+        "n": 10,
+        "min": 121.37962962962963,
+        "mean": 126.4574074074074,
+        "median": 122.53935185185185,
+        "p95": 136.55625,
+        "max": 137.16666666666666
+      },
+      "TelemetryTask": {
+        "n": 1360,
+        "min": 10.717592592592593,
+        "mean": 3838.177495234205,
+        "median": 4775.377314814815,
+        "p95": 4776.481481481482,
+        "max": 4806.0
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1357,
+      "min": 147.9398148148148,
+      "mean": 3846.6376197494474,
+      "median": 4775.37962962963,
+      "p95": 4776.481481481482,
+      "max": 4806.0
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2954,
+        "min": 8.768518518518519,
+        "mean": 19.20518004463502,
+        "median": 14.87962962962963,
+        "p95": 31.49074074074074,
+        "max": 156.44444444444446
+      },
+      "ButtonTask": {
+        "n": 10,
+        "min": 12.657407407407407,
+        "mean": 1304.9157407407408,
+        "median": 906.2939814814815,
+        "p95": 3693.5668981481467,
+        "max": 4196.439814814815
+      },
+      "TelemetryTask": {
+        "n": 1360,
+        "min": 8.041666666666666,
+        "mean": 13.912697440087147,
+        "median": 13.916666666666666,
+        "p95": 14.26388888888889,
+        "max": 17.22222222222222
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1357,
+    "telemetry_send_interval_us": {
+      "n": 1356,
+      "min": 9936.0,
+      "mean": 12467.276162870097,
+      "median": 10000.018518518656,
+      "p95": 10001.309027777985,
+      "max": 3355622.1944444445
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1356,
+      "min": 9936.0,
+      "mean": 12467.276162870097,
+      "median": 10000.018518518656,
+      "p95": 10001.309027777985,
+      "max": 3355622.1944444445
+    },
+    "telemetry_intervals_outside_9_11_ms": 1,
+    "occupancy_percent": {
+      "Unknown": 0.0016719084802166919,
+      "Idle": 70.30788982414435,
+      "UartTxTask": 0.699862063501433,
+      "TelemetryTask": 28.980314142275475,
+      "ISR#56": 0.0023602810867520644,
+      "ButtonTask": 0.007718373366182297,
+      "Scheduler": 0.00018340714559502872
+    },
+    "production_window": {
+      "start_us": 1159114.6712962964,
+      "end_us": 18064741.14814815,
+      "duration_s": 16.90562647685185,
+      "occupancy_percent": {
+        "Idle": 68.29273513626642,
+        "UartTxTask": 0.727982541361444,
+        "TelemetryTask": 30.96831591531616,
+        "ISR#56": 0.002522281016863047,
+        "ButtonTask": 0.008248130585739828,
+        "Scheduler": 0.0001959954533754107
+      }
+    },
+    "button_count": 10,
+    "button_isr_to_receive_us": {
+      "n": 10,
+      "min": 40.47685185261071,
+      "mean": 1339.4546296300366,
+      "median": 940.8055555559695,
+      "p95": 3727.500231481249,
+      "max": 4230.1064814813435
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 10,
+      "min": 135.49074074067175,
+      "mean": 1434.7268518522383,
+      "median": 1033.4953703703359,
+      "p95": 3820.1043981485054,
+      "max": 4322.939814815298
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 63041,
+      "run_event": 63046,
+      "ready_us": 8320639.50462963,
+      "run_us": 8324835.944444444,
+      "wait_us": 4196.439814814815,
+      "visible_context_us": {
+        "ISR#56": 6.324074074074074,
+        "TelemetryTask": 4190.11574074074
+      }
+    },
+    "button_ready_over_1ms": 4,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 72257,
+      "run_event": 72263,
+      "ready_us": 14804816.25,
+      "run_us": 14804972.694444444,
+      "wait_us": 156.44444444444446,
+      "visible_context_us": {
+        "TelemetryTask": 20.583333333333332,
+        "ButtonTask": 135.8611111111111
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 4328
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 5,
+    "event_count": 19630,
+    "first_event": 76861,
+    "last_event": 96490,
+    "duration_s": 13.836456236111111,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 4192,
+      "17": 2790,
+      "6": 4187,
+      "4": 4188,
+      "90": 1399,
+      "92": 2812,
+      "2": 15,
+      "96": 15,
+      "18": 10,
+      "3": 5,
+      "11": 1
+    },
+    "irq_count": 15,
+    "irq_stats_us": {
+      "n": 15,
+      "min": 24.11574074074074,
+      "mean": 28.898456790123458,
+      "median": 29.84259259259259,
+      "p95": 30.476388888888888,
+      "max": 30.51851851851852
+    },
+    "irq_with_queue": 15,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1384
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1399
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1398
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 15
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 15
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 15
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2788,
+        "min": 27.76851851851852,
+        "mean": 28.92762633508688,
+        "median": 28.84259259259259,
+        "p95": 29.416666666666668,
+        "max": 42.86574074074074
+      },
+      "ButtonTask": {
+        "n": 15,
+        "min": 116.35185185185185,
+        "mean": 129.45123456790122,
+        "median": 125.31018518518519,
+        "p95": 140.25787037037037,
+        "max": 142.3287037037037
+      },
+      "TelemetryTask": {
+        "n": 1384,
+        "min": 3449.8935185185187,
+        "mean": 3452.2682609451936,
+        "median": 3452.1111111111113,
+        "p95": 3453.0872685185186,
+        "max": 3485.1666666666665
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1384,
+      "min": 3449.8935185185187,
+      "mean": 3452.2682609451936,
+      "median": 3452.1111111111113,
+      "p95": 3453.0872685185186,
+      "max": 3485.1666666666665
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2788,
+        "min": 8.685185185185185,
+        "mean": 19.86716549763537,
+        "median": 15.175925925925926,
+        "p95": 22.564814814814813,
+        "max": 3295.5555555555557
+      },
+      "ButtonTask": {
+        "n": 15,
+        "min": 12.208333333333334,
+        "mean": 960.0614197530864,
+        "median": 17.425925925925927,
+        "p95": 3325.8620370370368,
+        "max": 3483.0185185185187
+      },
+      "TelemetryTask": {
+        "n": 1384,
+        "min": 7.907407407407407,
+        "mean": 14.14303013273389,
+        "median": 14.13888888888889,
+        "p95": 14.462962962962964,
+        "max": 47.23148148148148
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1384,
+    "telemetry_send_interval_us": {
+      "n": 1383,
+      "min": 9936.509259258397,
+      "mean": 10000.005138453711,
+      "median": 10000.032407407649,
+      "p95": 10001.175462962501,
+      "max": 10063.143518518656
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1383,
+      "min": 9936.509259258397,
+      "mean": 10000.005138453711,
+      "median": 10000.032407407649,
+      "p95": 10001.175462962501,
+      "max": 10063.143518518656
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.0021191668414874748,
+      "Idle": 64.49242695009308,
+      "TelemetryTask": 34.64543581834172,
+      "UartTxTask": 0.8406868866073293,
+      "ISR#56": 0.0031328603542324744,
+      "Scheduler": 0.0006762529570269733,
+      "ButtonTask": 0.015522064805137847
+    },
+    "production_window": {
+      "start_us": 5944.513888888889,
+      "end_us": 13835951.620370371,
+      "duration_s": 13.830007106481482,
+      "occupancy_percent": {
+        "Idle": 64.50334029196213,
+        "TelemetryTask": 34.636551556229534,
+        "UartTxTask": 0.8407679592877744,
+        "ISR#56": 0.003134321251712889,
+        "Scheduler": 0.0006765683034290908,
+        "ButtonTask": 0.015529302965413334
+      }
+    },
+    "button_count": 15,
+    "button_isr_to_receive_us": {
+      "n": 15,
+      "min": 38.69444444403052,
+      "mean": 992.4330246912937,
+      "median": 51.050925926305354,
+      "p95": 3355.786111111194,
+      "max": 3509.1574074067175
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 15,
+      "min": 128.32870370335877,
+      "mean": 1089.3913580245649,
+      "median": 153.92129629664123,
+      "p95": 3448.4842592591417,
+      "max": 3601.6157407406718
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 91401,
+      "run_event": 91408,
+      "ready_us": 10222541.5,
+      "run_us": 10226024.518518519,
+      "wait_us": 3483.0185185185187,
+      "visible_context_us": {
+        "ISR#56": 5.777777777777778,
+        "Scheduler": 8.805555555555555,
+        "TelemetryTask": 3468.4351851851848
+      }
+    },
+    "button_ready_over_1ms": 6,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 86963,
+      "run_event": 86966,
+      "ready_us": 7132696.444444444,
+      "run_us": 7135992.0,
+      "wait_us": 3295.5555555555557,
+      "visible_context_us": {
+        "TelemetryTask": 3295.5555555555557
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 4191
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 6,
+    "event_count": 17183,
+    "first_event": 96491,
+    "last_event": 113673,
+    "duration_s": 12.078894189814815,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 3667,
+      "17": 2439,
+      "6": 3662,
+      "4": 3662,
+      "90": 1224,
+      "92": 2464,
+      "2": 16,
+      "96": 16,
+      "3": 7,
+      "18": 9,
+      "11": 1
+    },
+    "irq_count": 16,
+    "irq_stats_us": {
+      "n": 16,
+      "min": 18.74537037037037,
+      "mean": 28.793113425925927,
+      "median": 30.136574074074076,
+      "p95": 30.453703703703706,
+      "max": 30.50925925925926
+    },
+    "irq_with_queue": 16,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1208
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1224
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1224
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 16
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 16
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 16
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2438,
+        "min": 27.88425925925926,
+        "mean": 28.92442006198159,
+        "median": 28.833333333333332,
+        "p95": 29.40277777777778,
+        "max": 43.657407407407405
+      },
+      "ButtonTask": {
+        "n": 16,
+        "min": 121.35648148148148,
+        "mean": 128.05439814814815,
+        "median": 124.34953703703704,
+        "p95": 138.15162037037038,
+        "max": 139.42592592592592
+      },
+      "TelemetryTask": {
+        "n": 1208,
+        "min": 5156.986111111111,
+        "mean": 5158.958107217317,
+        "median": 5158.722222222223,
+        "p95": 5159.669675925926,
+        "max": 5192.240740740741
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1208,
+      "min": 5156.986111111111,
+      "mean": 5158.958107217317,
+      "median": 5158.722222222223,
+      "p95": 5159.669675925926,
+      "max": 5192.240740740741
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2438,
+        "min": 8.833333333333334,
+        "mean": 22.630092972381735,
+        "median": 15.266203703703704,
+        "p95": 22.46759259259259,
+        "max": 4833.111111111111
+      },
+      "ButtonTask": {
+        "n": 16,
+        "min": 12.416666666666666,
+        "mean": 1202.3579282407406,
+        "median": 16.333333333333332,
+        "p95": 3538.1388888888887,
+        "max": 3726.125
+      },
+      "TelemetryTask": {
+        "n": 1208,
+        "min": 7.537037037037037,
+        "mean": 14.025455298013245,
+        "median": 14.037037037037036,
+        "p95": 14.375,
+        "max": 14.73611111111111
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1208,
+    "telemetry_send_interval_us": {
+      "n": 1207,
+      "min": 9936.620370370336,
+      "mean": 10000.004249900274,
+      "median": 10000.027777777985,
+      "p95": 10001.330555556156,
+      "max": 10064.245370370336
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1207,
+      "min": 9936.620370370336,
+      "mean": 10000.004249900274,
+      "median": 10000.027777777985,
+      "p95": 10001.330555556156,
+      "max": 10064.245370370336
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.002417708134687159,
+      "Idle": 47.42562816118409,
+      "TelemetryTask": 51.70771026686894,
+      "UartTxTask": 0.8408576477240646,
+      "ISR#56": 0.00381400654377185,
+      "ButtonTask": 0.01868161416059232,
+      "Scheduler": 0.0008905953838455085
+    },
+    "production_window": {
+      "start_us": 7916.726851851852,
+      "end_us": 12077921.856481481,
+      "duration_s": 12.07000512962963,
+      "occupancy_percent": {
+        "Idle": 47.43285335711378,
+        "TelemetryTask": 51.70295614053998,
+        "UartTxTask": 0.8407870632759267,
+        "ISR#56": 0.0038168154020407708,
+        "ButtonTask": 0.018695372397713714,
+        "Scheduler": 0.0008912512705566266
+      }
+    },
+    "button_count": 16,
+    "button_isr_to_receive_us": {
+      "n": 16,
+      "min": 38.62037037033588,
+      "mean": 1236.3382523149194,
+      "median": 59.56018518516794,
+      "p95": 3570.570601851912,
+      "max": 3758.587962962687
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 16,
+      "min": 130.99074074067175,
+      "mean": 1331.740162037153,
+      "median": 156.33796296361834,
+      "p95": 3662.8935185186565,
+      "max": 3851.42129629571
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 103168,
+      "run_event": 103173,
+      "ready_us": 4714292.143518519,
+      "run_us": 4718018.268518519,
+      "wait_us": 3726.125,
+      "visible_context_us": {
+        "ISR#56": 5.643518518518518,
+        "TelemetryTask": 3720.4814814814813
+      }
+    },
+    "button_ready_over_1ms": 7,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 102031,
+      "run_event": 102034,
+      "ready_us": 3903132.546296296,
+      "run_us": 3907965.657407407,
+      "wait_us": 4833.111111111111,
+      "visible_context_us": {
+        "TelemetryTask": 4833.11111111111
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 3666
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 7,
+    "event_count": 18883,
+    "first_event": 113674,
+    "last_event": 132556,
+    "duration_s": 13.180054148148148,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 4023,
+      "17": 2676,
+      "6": 4018,
+      "4": 4020,
+      "90": 1343,
+      "92": 2711,
+      "2": 25,
+      "96": 25,
+      "18": 17,
+      "3": 8,
+      "11": 1
+    },
+    "irq_count": 25,
+    "irq_stats_us": {
+      "n": 25,
+      "min": 24.35185185185185,
+      "mean": 29.86074074074074,
+      "median": 30.324074074074073,
+      "p95": 30.817592592592593,
+      "max": 30.921296296296298
+    },
+    "irq_with_queue": 25,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1318
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1343
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1343
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 25
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 25
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 25
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2675,
+        "min": 27.86111111111111,
+        "mean": 28.941979923849082,
+        "median": 28.833333333333332,
+        "p95": 29.40740740740741,
+        "max": 53.583333333333336
+      },
+      "ButtonTask": {
+        "n": 25,
+        "min": 116.59722222222223,
+        "mean": 132.53518518518518,
+        "median": 136.31944444444446,
+        "p95": 138.95833333333334,
+        "max": 150.33796296296296
+      },
+      "TelemetryTask": {
+        "n": 1318,
+        "min": 2153.439814814815,
+        "mean": 2157.9527377339405,
+        "median": 2157.7361111111113,
+        "p95": 2158.746064814815,
+        "max": 2189.6435185185187
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1318,
+      "min": 2153.439814814815,
+      "mean": 2157.9527377339405,
+      "median": 2157.7361111111113,
+      "p95": 2158.746064814815,
+      "max": 2189.6435185185187
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2675,
+        "min": 8.796296296296296,
+        "mean": 19.428670820353062,
+        "median": 15.37037037037037,
+        "p95": 22.506018518518516,
+        "max": 1536.0324074074074
+      },
+      "ButtonTask": {
+        "n": 25,
+        "min": 12.444444444444445,
+        "mean": 438.0805555555556,
+        "median": 15.125,
+        "p95": 1929.278703703703,
+        "max": 2092.574074074074
+      },
+      "TelemetryTask": {
+        "n": 1318,
+        "min": 7.222222222222222,
+        "mean": 14.031806749845444,
+        "median": 14.05787037037037,
+        "p95": 14.37037037037037,
+        "max": 14.814814814814815
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1318,
+    "telemetry_send_interval_us": {
+      "n": 1317,
+      "min": 9937.930555555504,
+      "mean": 9999.999831266347,
+      "median": 9999.97685185261,
+      "p95": 10001.300925925514,
+      "max": 10062.652777777053
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1317,
+      "min": 9937.930555555504,
+      "mean": 9999.999831266347,
+      "median": 9999.97685185261,
+      "p95": 10001.300925925514,
+      "max": 10062.652777777053
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.0022203514130451135,
+      "Idle": 77.42474011557903,
+      "TelemetryTask": 21.692846372333513,
+      "UartTxTask": 0.8457834920039754,
+      "ISR#56": 0.005664001908697829,
+      "Scheduler": 0.0011559273591699008,
+      "ButtonTask": 0.02758973940257684
+    },
+    "production_window": {
+      "start_us": 8822.550925925925,
+      "end_us": 13178822.328703703,
+      "duration_s": 13.169999777777777,
+      "occupancy_percent": {
+        "Idle": 77.426828059172,
+        "TelemetryTask": 21.692939741437158,
+        "UartTxTask": 0.8457962613537433,
+        "ISR#56": 0.0056683259765740205,
+        "Scheduler": 0.0011568098285690233,
+        "ButtonTask": 0.027610802231966065
+      }
+    },
+    "button_count": 25,
+    "button_isr_to_receive_us": {
+      "n": 25,
+      "min": 38.787037037312984,
+      "mean": 472.0411111109611,
+      "median": 50.81481481483206,
+      "p95": 1961.3814814815291,
+      "max": 2119.2222222220153
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 25,
+      "min": 132.52314814832062,
+      "mean": 657.5103703702334,
+      "median": 152.30092592630535,
+      "p95": 2188.699999999534,
+      "max": 2339.04629629571
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 120969,
+      "run_event": 120974,
+      "ready_us": 5106810.185185186,
+      "run_us": 5108902.759259259,
+      "wait_us": 2092.574074074074,
+      "visible_context_us": {
+        "ISR#56": 5.578703703703703,
+        "TelemetryTask": 2086.9953703703704
+      }
+    },
+    "button_ready_over_1ms": 5,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 125513,
+      "run_event": 125516,
+      "ready_us": 8227347.333333333,
+      "run_us": 8228883.365740741,
+      "wait_us": 1536.0324074074074,
+      "visible_context_us": {
+        "TelemetryTask": 1536.0324074074074
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 4022
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 8,
+    "event_count": 25856,
+    "first_event": 132557,
+    "last_event": 158412,
+    "duration_s": 18.212576055555555,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 5520,
+      "6": 5516,
+      "4": 5516,
+      "90": 1843,
+      "92": 3706,
+      "17": 3675,
+      "2": 21,
+      "96": 21,
+      "18": 14,
+      "3": 7,
+      "11": 1
+    },
+    "irq_count": 21,
+    "irq_stats_us": {
+      "n": 21,
+      "min": 24.39351851851852,
+      "mean": 29.353174603174605,
+      "median": 30.125,
+      "p95": 30.458333333333332,
+      "max": 30.63888888888889
+    },
+    "irq_with_queue": 21,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1822
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1843
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1842
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 21
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 21
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 21
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 3673,
+        "min": 25.055555555555557,
+        "mean": 28.892159754363675,
+        "median": 28.824074074074073,
+        "p95": 29.39351851851852,
+        "max": 44.39351851851852
+      },
+      "ButtonTask": {
+        "n": 21,
+        "min": 119.30555555555556,
+        "mean": 131.46626984126985,
+        "median": 136.3287037037037,
+        "p95": 138.74074074074073,
+        "max": 149.13888888888889
+      },
+      "TelemetryTask": {
+        "n": 1821,
+        "min": 2155.884259259259,
+        "mean": 2157.911012467712,
+        "median": 2157.7824074074074,
+        "p95": 2158.703703703704,
+        "max": 2190.2685185185187
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1821,
+      "min": 2155.884259259259,
+      "mean": 2157.911012467712,
+      "median": 2157.7824074074074,
+      "p95": 2158.703703703704,
+      "max": 2190.2685185185187
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 3673,
+        "min": 8.61111111111111,
+        "mean": 19.745933791128454,
+        "median": 15.273148148148149,
+        "p95": 22.47685185185185,
+        "max": 2029.9259259259259
+      },
+      "ButtonTask": {
+        "n": 21,
+        "min": 12.606481481481481,
+        "mean": 445.2625661375661,
+        "median": 15.13888888888889,
+        "p95": 1955.375,
+        "max": 2146.759259259259
+      },
+      "TelemetryTask": {
+        "n": 1821,
+        "min": 7.953703703703703,
+        "mean": 14.047892895641386,
+        "median": 14.050925925925926,
+        "p95": 14.38425925925926,
+        "max": 15.226851851851851
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1822,
+    "telemetry_send_interval_us": {
+      "n": 1821,
+      "min": 9675.36574074074,
+      "mean": 9999.822167307339,
+      "median": 10000.004629630595,
+      "p95": 10001.22685185261,
+      "max": 10063.268518518656
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1820,
+      "min": 9936.643518518656,
+      "mean": 10000.000440069189,
+      "median": 10000.004629630595,
+      "p95": 10001.227314815484,
+      "max": 10063.268518518656
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.001607456618801359,
+      "TelemetryTask": 21.701226058684334,
+      "UartTxTask": 0.8394789671927418,
+      "Idle": 77.43697739274903,
+      "ISR#56": 0.0033845660536233435,
+      "Scheduler": 0.000674188190964793,
+      "ButtonTask": 0.016651370510507447
+    },
+    "production_window": {
+      "start_us": 12090.208333333334,
+      "end_us": 18212091.009259257,
+      "duration_s": 18.200000800925928,
+      "occupancy_percent": {
+        "TelemetryTask": 21.692485766992256,
+        "UartTxTask": 0.83940439427733,
+        "Idle": 77.4473854043555,
+        "ISR#56": 0.0033869046128575248,
+        "Scheduler": 0.0006746540199646048,
+        "ButtonTask": 0.016662875742094654
+      }
+    },
+    "button_count": 21,
+    "button_isr_to_receive_us": {
+      "n": 21,
+      "min": 38.82870370335877,
+      "mean": 478.51763668422825,
+      "median": 50.4907407425344,
+      "p95": 1987.125,
+      "max": 2172.9259259263054
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 21,
+      "min": 131.9027777761221,
+      "mean": 576.8877865959865,
+      "median": 152.13425925932825,
+      "p95": 2079.435185185168,
+      "max": 2264.4027777779847
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 144449,
+      "run_event": 144454,
+      "ready_us": 8370010.638888889,
+      "run_us": 8372157.398148148,
+      "wait_us": 2146.759259259259,
+      "visible_context_us": {
+        "ISR#56": 5.87037037037037,
+        "TelemetryTask": 2140.8888888888887
+      }
+    },
+    "button_ready_over_1ms": 5,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 141424,
+      "run_event": 141427,
+      "ready_us": 6260102.152777778,
+      "run_us": 6262132.078703703,
+      "wait_us": 2029.9259259259259,
+      "visible_context_us": {
+        "TelemetryTask": 2029.9259259259259
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 5519
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 9,
+    "event_count": 14239,
+    "first_event": 158413,
+    "last_event": 172651,
+    "duration_s": 10.939991291666667,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 3020,
+      "17": 2040,
+      "6": 3015,
+      "4": 3015,
+      "90": 980,
+      "92": 2105,
+      "2": 15,
+      "96": 17,
+      "18": 15,
+      "11": 1
+    },
+    "irq_count": 15,
+    "irq_stats_us": {
+      "n": 15,
+      "min": 18.050925925925927,
+      "mean": 28.395061728395063,
+      "median": 30.050925925925927,
+      "p95": 30.630555555555556,
+      "max": 30.675925925925927
+    },
+    "irq_with_queue": 15,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 965
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1044
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1046
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 15
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 15
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 15
+      },
+      {
+        "id": 96,
+        "queue_id": 32928,
+        "context": "Idle",
+        "count": 2
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2034,
+        "min": 25.194444444444443,
+        "mean": 30.410694125787536,
+        "median": 28.84259259259259,
+        "p95": 29.66087962962963,
+        "max": 191.42592592592592
+      },
+      "ButtonTask": {
+        "n": 15,
+        "min": 119.49074074074075,
+        "mean": 133.62777777777777,
+        "median": 137.09722222222223,
+        "p95": 139.17731481481482,
+        "max": 140.7037037037037
+      },
+      "TelemetryTask": {
+        "n": 966,
+        "min": 10.800925925925926,
+        "mean": 156.841964764972,
+        "median": 157.03935185185185,
+        "p95": 158.01504629629628,
+        "max": 158.96759259259258
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 965,
+      "min": 120.47222222222223,
+      "mean": 156.99330262905391,
+      "median": 157.04166666666666,
+      "p95": 158.01574074074074,
+      "max": 158.96759259259258
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2034,
+        "min": 8.796296296296296,
+        "mean": 22.738557940930114,
+        "median": 15.078703703703704,
+        "p95": 31.834953703703704,
+        "max": 154.86111111111111
+      },
+      "ButtonTask": {
+        "n": 15,
+        "min": 7.592592592592593,
+        "mean": 15.508333333333333,
+        "median": 14.86574074074074,
+        "p95": 24.011111111111102,
+        "max": 29.87037037037037
+      },
+      "TelemetryTask": {
+        "n": 966,
+        "min": 7.37962962962963,
+        "mean": 14.03455448201825,
+        "median": 14.05324074074074,
+        "p95": 14.37962962962963,
+        "max": 15.273148148148149
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 965,
+    "telemetry_send_interval_us": {
+      "n": 964,
+      "min": 9972.263888888992,
+      "mean": 9999.9997646765,
+      "median": 10000.006944444496,
+      "p95": 10001.202314814529,
+      "max": 10027.199074074626
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 964,
+      "min": 9972.263888888992,
+      "mean": 9999.9997646765,
+      "median": 10000.006944444496,
+      "p95": 10001.202314814529,
+      "max": 10027.199074074626
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.002672491801644102,
+      "Idle": 97.70596756082207,
+      "TelemetryTask": 1.4878746439722583,
+      "UartTxTask": 0.7780016264731275,
+      "ISR#56": 0.0038932930984174278,
+      "Scheduler": 0.001497479017180425,
+      "ButtonTask": 0.02009290481530315
+    },
+    "production_window": {
+      "start_us": 5731.231481481482,
+      "end_us": 9645731.004629629,
+      "duration_s": 9.639999773148148,
+      "occupancy_percent": {
+        "Idle": 97.46928585369362,
+        "TelemetryTask": 1.6865036127625428,
+        "UartTxTask": 0.8152902835164169,
+        "ISR#56": 0.0044183188376448555,
+        "Scheduler": 0.0016994198955315308,
+        "ButtonTask": 0.022802511294242284
+      }
+    },
+    "button_count": 15,
+    "button_isr_to_receive_us": {
+      "n": 15,
+      "min": 38.84722222201526,
+      "mean": 49.483333333379896,
+      "median": 50.18518518470228,
+      "p95": 55.54120370382442,
+      "max": 62.06481481529772
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 15,
+      "min": 132.07407407462597,
+      "mean": 149.71296296304692,
+      "median": 151.47222222201526,
+      "p95": 158.81111111124045,
+      "max": 164.0416666669771
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 170158,
+      "run_event": 170161,
+      "ready_us": 8206500.861111111,
+      "run_us": 8206530.731481481,
+      "wait_us": 29.87037037037037,
+      "visible_context_us": {
+        "ISR#56": 5.75462962962963,
+        "Scheduler": 24.11574074074074
+      }
+    },
+    "button_ready_over_1ms": 0,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 170160,
+      "run_event": 170165,
+      "ready_us": 8206517.615740741,
+      "run_us": 8206672.476851852,
+      "wait_us": 154.86111111111111,
+      "visible_context_us": {
+        "Scheduler": 13.11574074074074,
+        "ButtonTask": 141.74537037037038
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 3019
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  },
+  {
+    "session": 10,
+    "event_count": 19294,
+    "first_event": 172652,
+    "last_event": 191945,
+    "duration_s": 13.521382180555555,
+    "has_stop": true,
+    "priorities": {
+      "defaultTask": 24,
+      "UartTxTask": 8,
+      "ButtonTask": 24,
+      "TelemetryTask": 32,
+      "Tmr Svc": 2
+    },
+    "overflow_events": 0,
+    "counts": {
+      "10": 1,
+      "24": 1,
+      "13": 1,
+      "14": 2,
+      "9": 5,
+      "21": 5,
+      "27": 1,
+      "7": 4116,
+      "6": 4112,
+      "4": 4112,
+      "90": 1373,
+      "92": 2765,
+      "17": 2739,
+      "2": 20,
+      "96": 20,
+      "18": 15,
+      "3": 5,
+      "11": 1
+    },
+    "irq_count": 20,
+    "irq_stats_us": {
+      "n": 20,
+      "min": 29.574074074074073,
+      "mean": 30.26574074074074,
+      "median": 30.314814814814817,
+      "p95": 30.548379629629633,
+      "max": 30.675925925925927
+    },
+    "irq_with_queue": 20,
+    "queue_events_by_context": [
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "TelemetryTask",
+        "count": 1353
+      },
+      {
+        "id": 92,
+        "queue_id": 14920,
+        "context": "UartTxTask",
+        "count": 1373
+      },
+      {
+        "id": 92,
+        "queue_id": 32928,
+        "context": "UartTxTask",
+        "count": 1372
+      },
+      {
+        "id": 96,
+        "queue_id": 14704,
+        "context": "ISR#56",
+        "count": 20
+      },
+      {
+        "id": 92,
+        "queue_id": 14704,
+        "context": "ButtonTask",
+        "count": 20
+      },
+      {
+        "id": 90,
+        "queue_id": 14920,
+        "context": "ButtonTask",
+        "count": 20
+      }
+    ],
+    "activation_exec_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2739,
+        "min": 25.087962962962962,
+        "mean": 28.879071842927264,
+        "median": 28.824074074074073,
+        "p95": 29.37037037037037,
+        "max": 42.65277777777778
+      },
+      "ButtonTask": {
+        "n": 20,
+        "min": 121.97222222222223,
+        "mean": 134.4638888888889,
+        "median": 136.81944444444446,
+        "p95": 140.17175925925926,
+        "max": 144.84259259259258
+      },
+      "TelemetryTask": {
+        "n": 1352,
+        "min": 2156.2175925925926,
+        "mean": 2157.8860604317333,
+        "median": 2157.7662037037035,
+        "p95": 2158.719675925926,
+        "max": 2190.9814814814813
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_full_activation_us": {
+      "n": 1352,
+      "min": 2156.2175925925926,
+      "mean": 2157.8860604317333,
+      "median": 2157.7662037037035,
+      "p95": 2158.719675925926,
+      "max": 2190.9814814814813
+    },
+    "ready_wait_us": {
+      "defaultTask": {
+        "n": 0
+      },
+      "UartTxTask": {
+        "n": 2739,
+        "min": 8.824074074074074,
+        "mean": 18.714154598190742,
+        "median": 15.74537037037037,
+        "p95": 22.47685185185185,
+        "max": 163.48611111111111
+      },
+      "ButtonTask": {
+        "n": 20,
+        "min": 14.773148148148149,
+        "mean": 242.16435185185185,
+        "median": 15.19675925925926,
+        "p95": 1320.8803240740742,
+        "max": 1377.101851851852
+      },
+      "TelemetryTask": {
+        "n": 1352,
+        "min": 13.407407407407407,
+        "mean": 14.053816020162174,
+        "median": 14.050925925925926,
+        "p95": 14.36111111111111,
+        "max": 14.680555555555555
+      },
+      "Tmr Svc": {
+        "n": 0
+      }
+    },
+    "telemetry_sends": 1353,
+    "telemetry_send_interval_us": {
+      "n": 1352,
+      "min": 9679.837962962964,
+      "mean": 9999.762656147272,
+      "median": 10000.013888888992,
+      "p95": 10001.157407407032,
+      "max": 10064.699074074626
+    },
+    "complete_telemetry_send_interval_us": {
+      "n": 1351,
+      "min": 9935.949074073695,
+      "mean": 9999.999461989746,
+      "median": 10000.013888888992,
+      "p95": 10001.157407407067,
+      "max": 10064.699074074626
+    },
+    "telemetry_intervals_outside_9_11_ms": 0,
+    "occupancy_percent": {
+      "Unknown": 0.0021633431034109732,
+      "TelemetryTask": 21.69625837591963,
+      "UartTxTask": 0.8426161982561481,
+      "Idle": 77.43161900501124,
+      "ISR#56": 0.004476722917316017,
+      "Scheduler": 0.0010383074499618215,
+      "ButtonTask": 0.02182804734229054
+    },
+    "production_window": {
+      "start_us": 10781.63425925926,
+      "end_us": 13520780.907407407,
+      "duration_s": 13.509999273148148,
+      "occupancy_percent": {
+        "TelemetryTask": 21.69226889741694,
+        "UartTxTask": 0.8424349015346244,
+        "Idle": 77.43793008531233,
+        "ISR#56": 0.00448049479926998,
+        "Scheduler": 0.0010391822803244573,
+        "ButtonTask": 0.021846438656513305
+      }
+    },
+    "button_count": 20,
+    "button_isr_to_receive_us": {
+      "n": 20,
+      "min": 49.51851851865649,
+      "mean": 276.7567129628151,
+      "median": 50.73148148134351,
+      "p95": 1353.077777777845,
+      "max": 1409.0046296296641
+    },
+    "button_isr_to_tx_queue_us": {
+      "n": 20,
+      "min": 150.9814814813435,
+      "mean": 377.30833333337216,
+      "median": 152.15277777798474,
+      "p95": 1445.8233796297573,
+      "max": 1501.4907407406718
+    },
+    "worst_button_ready": {
+      "task": "ButtonTask",
+      "ready_event": 181802,
+      "run_event": 181807,
+      "ready_us": 6459497.777777778,
+      "run_us": 6460874.87962963,
+      "wait_us": 1377.101851851852,
+      "visible_context_us": {
+        "ISR#56": 5.287037037037037,
+        "TelemetryTask": 1371.814814814815
+      }
+    },
+    "button_ready_over_1ms": 3,
+    "worst_uart_ready": {
+      "task": "UartTxTask",
+      "ready_event": 176859,
+      "run_event": 176865,
+      "ready_us": 2960844.8194444445,
+      "run_us": 2961008.3055555555,
+      "wait_us": 163.48611111111111,
+      "visible_context_us": {
+        "TelemetryTask": 19.898148148148145,
+        "ButtonTask": 143.58796296296296
+      }
+    },
+    "state_events": {
+      "27": 1,
+      "4": 4115
+    },
+    "initial_states": [
+      {
+        "task": "defaultTask",
+        "cause": 27
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      },
+      {
+        "task": "ButtonTask",
+        "cause": 4
+      },
+      {
+        "task": "Tmr Svc",
+        "cause": 4
+      },
+      {
+        "task": "TelemetryTask",
+        "cause": 4
+      },
+      {
+        "task": "UartTxTask",
+        "cause": 4
+      }
+    ],
+    "unmatched_button_enqueues": 0,
+    "anomalies": []
+  }
+]

@@ -1,0 +1,1 @@
+Assertion failed: active && queue == ButtonQueueHandle && priority == 0 && timeout == 0, file C:\Users\Asus\Documents\GitHub\RTOS_Bootcamp\Hafta_1\tests\button_trace\test_button.c, line 56

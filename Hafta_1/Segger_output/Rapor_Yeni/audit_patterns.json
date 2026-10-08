@@ -1,0 +1,517 @@
+[
+  {
+    "label": "NoLoad",
+    "session": 9,
+    "irq_interrupted_context": {
+      "Idle": 14,
+      "UartTxTask": 1
+    },
+    "uart_600_800us_waits": {
+      "n": 997,
+      "min": 685.4537037037037,
+      "mean": 690.2105808165236,
+      "median": 690.1944444444445,
+      "p95": 690.5787037037037,
+      "max": 717.7731481481482
+    },
+    "uart_19_21ms_waits": {
+      "n": 64,
+      "min": 19030.078703703704,
+      "mean": 19918.646556712964,
+      "median": 19944.604166666664,
+      "p95": 19945.34861111111,
+      "max": 19945.37962962963
+    },
+    "cycle_uart_histogram": {
+      "2": 949,
+      "4": 8,
+      "3": 7
+    },
+    "cycle_histogram_by_irq": [
+      {
+        "uart_runs": 2,
+        "button_irqs": 0,
+        "count": 949
+      },
+      {
+        "uart_runs": 4,
+        "button_irqs": 1,
+        "count": 8
+      },
+      {
+        "uart_runs": 3,
+        "button_irqs": 1,
+        "count": 7
+      }
+    ],
+    "command_queue_delay": [
+      {
+        "send_event": 172177,
+        "first_receive_event": 172189,
+        "delay_us": 9680.203703705221
+      },
+      {
+        "send_event": 172311,
+        "first_receive_event": 172315,
+        "delay_us": 7934.53240740858
+      }
+    ],
+    "dump_like_short_wait_count": 17,
+    "task_activation_run_counts": [
+      {
+        "task": "TelemetryTask",
+        "run_count": 1,
+        "count": 966
+      },
+      {
+        "task": "UartTxTask",
+        "run_count": 1,
+        "count": 2034
+      },
+      {
+        "task": "ButtonTask",
+        "run_count": 1,
+        "count": 15
+      }
+    ],
+    "last_events": [
+      {
+        "index": 172644,
+        "offset": 1327251,
+        "end": 1327254,
+        "id": 17,
+        "segment": 8,
+        "cycles": 2358645205,
+        "args": [],
+        "delta": 2388
+      },
+      {
+        "index": 172645,
+        "offset": 1327254,
+        "end": 1327262,
+        "id": 6,
+        "segment": 8,
+        "cycles": 2362950941,
+        "args": [
+          34952
+        ],
+        "delta": 4305736
+      },
+      {
+        "index": 172646,
+        "offset": 1327262,
+        "end": 1327268,
+        "id": 4,
+        "segment": 8,
+        "cycles": 2362953887,
+        "args": [
+          34952
+        ],
+        "delta": 2946
+      },
+      {
+        "index": 172647,
+        "offset": 1327268,
+        "end": 1327281,
+        "id": 92,
+        "segment": 8,
+        "cycles": 2362957379,
+        "args": [
+          14920,
+          3758096384,
+          0,
+          1
+        ],
+        "delta": 3492
+      },
+      {
+        "index": 172648,
+        "offset": 1327281,
+        "end": 1327295,
+        "id": 92,
+        "segment": 8,
+        "cycles": 2362959791,
+        "args": [
+          32928,
+          3758096384,
+          0,
+          1
+        ],
+        "delta": 2412
+      },
+      {
+        "index": 172649,
+        "offset": 1327295,
+        "end": 1327302,
+        "id": 7,
+        "segment": 8,
+        "cycles": 2362962746,
+        "args": [
+          34952,
+          4
+        ],
+        "delta": 2955
+      },
+      {
+        "index": 172650,
+        "offset": 1327302,
+        "end": 1327305,
+        "id": 17,
+        "segment": 8,
+        "cycles": 2362965171,
+        "args": [],
+        "delta": 2425
+      },
+      {
+        "index": 172651,
+        "offset": 1327305,
+        "end": 1327309,
+        "id": 11,
+        "segment": 8,
+        "cycles": 2363038119,
+        "args": [],
+        "delta": 72948
+      }
+    ]
+  },
+  {
+    "label": "2msLoad",
+    "session": 10,
+    "irq_interrupted_context": {
+      "Idle": 15,
+      "TelemetryTask": 5
+    },
+    "uart_600_800us_waits": {
+      "n": 1372,
+      "min": 689.5925925925926,
+      "mean": 690.2021379980564,
+      "median": 690.2037037037037,
+      "p95": 690.5694444444445,
+      "max": 692.2268518518518
+    },
+    "uart_19_21ms_waits": {
+      "n": 0
+    },
+    "cycle_uart_histogram": {
+      "2": 1331,
+      "4": 14,
+      "3": 6
+    },
+    "cycle_histogram_by_irq": [
+      {
+        "uart_runs": 2,
+        "button_irqs": 0,
+        "count": 1326
+      },
+      {
+        "uart_runs": 4,
+        "button_irqs": 1,
+        "count": 14
+      },
+      {
+        "uart_runs": 2,
+        "button_irqs": 1,
+        "count": 5
+      },
+      {
+        "uart_runs": 3,
+        "button_irqs": 0,
+        "count": 5
+      },
+      {
+        "uart_runs": 3,
+        "button_irqs": 1,
+        "count": 1
+      }
+    ],
+    "command_queue_delay": [],
+    "dump_like_short_wait_count": 0,
+    "task_activation_run_counts": [
+      {
+        "task": "TelemetryTask",
+        "run_count": 1,
+        "count": 1353
+      },
+      {
+        "task": "UartTxTask",
+        "run_count": 1,
+        "count": 2739
+      },
+      {
+        "task": "ButtonTask",
+        "run_count": 1,
+        "count": 20
+      }
+    ],
+    "last_events": [
+      {
+        "index": 191938,
+        "offset": 1474992,
+        "end": 1475007,
+        "id": 90,
+        "segment": 9,
+        "cycles": 2920488676,
+        "args": [
+          14920,
+          536908656,
+          200,
+          0
+        ],
+        "delta": 460950
+      },
+      {
+        "index": 191939,
+        "offset": 1475007,
+        "end": 1475013,
+        "id": 6,
+        "segment": 9,
+        "cycles": 2920491402,
+        "args": [
+          34952
+        ],
+        "delta": 2726
+      },
+      {
+        "index": 191940,
+        "offset": 1475013,
+        "end": 1475020,
+        "id": 7,
+        "segment": 9,
+        "cycles": 2920493678,
+        "args": [
+          37880,
+          4
+        ],
+        "delta": 2276
+      },
+      {
+        "index": 191941,
+        "offset": 1475020,
+        "end": 1475026,
+        "id": 4,
+        "segment": 9,
+        "cycles": 2920496153,
+        "args": [
+          34952
+        ],
+        "delta": 2475
+      },
+      {
+        "index": 191942,
+        "offset": 1475026,
+        "end": 1475039,
+        "id": 92,
+        "segment": 9,
+        "cycles": 2920497979,
+        "args": [
+          14920,
+          3758096384,
+          20,
+          1
+        ],
+        "delta": 1826
+      },
+      {
+        "index": 191943,
+        "offset": 1475039,
+        "end": 1475046,
+        "id": 7,
+        "segment": 9,
+        "cycles": 2920502378,
+        "args": [
+          34952,
+          4
+        ],
+        "delta": 4399
+      },
+      {
+        "index": 191944,
+        "offset": 1475046,
+        "end": 1475049,
+        "id": 17,
+        "segment": 9,
+        "cycles": 2920505498,
+        "args": [],
+        "delta": 3120
+      },
+      {
+        "index": 191945,
+        "offset": 1475049,
+        "end": 1475053,
+        "id": 11,
+        "segment": 9,
+        "cycles": 2920618551,
+        "args": [],
+        "delta": 113053
+      }
+    ]
+  },
+  {
+    "label": "5msLoad",
+    "session": 6,
+    "irq_interrupted_context": {
+      "TelemetryTask": 7,
+      "Idle": 8,
+      "UartTxTask": 1
+    },
+    "uart_600_800us_waits": {
+      "n": 1224,
+      "min": 688.9583333333334,
+      "mean": 690.1809413580247,
+      "median": 690.1805555555555,
+      "p95": 690.5601851851852,
+      "max": 690.8333333333334
+    },
+    "uart_19_21ms_waits": {
+      "n": 0
+    },
+    "cycle_uart_histogram": {
+      "2": 1191,
+      "3": 10,
+      "4": 6
+    },
+    "cycle_histogram_by_irq": [
+      {
+        "uart_runs": 2,
+        "button_irqs": 0,
+        "count": 1184
+      },
+      {
+        "uart_runs": 2,
+        "button_irqs": 1,
+        "count": 7
+      },
+      {
+        "uart_runs": 3,
+        "button_irqs": 0,
+        "count": 7
+      },
+      {
+        "uart_runs": 3,
+        "button_irqs": 1,
+        "count": 3
+      },
+      {
+        "uart_runs": 4,
+        "button_irqs": 1,
+        "count": 6
+      }
+    ],
+    "command_queue_delay": [],
+    "dump_like_short_wait_count": 0,
+    "task_activation_run_counts": [
+      {
+        "task": "TelemetryTask",
+        "run_count": 1,
+        "count": 1208
+      },
+      {
+        "task": "UartTxTask",
+        "run_count": 1,
+        "count": 2438
+      },
+      {
+        "task": "ButtonTask",
+        "run_count": 1,
+        "count": 16
+      }
+    ],
+    "last_events": [
+      {
+        "index": 113666,
+        "offset": 875361,
+        "end": 875368,
+        "id": 7,
+        "segment": 5,
+        "cycles": 2608844926,
+        "args": [
+          34952,
+          4
+        ],
+        "delta": 4426
+      },
+      {
+        "index": 113667,
+        "offset": 875368,
+        "end": 875371,
+        "id": 17,
+        "segment": 5,
+        "cycles": 2608848001,
+        "args": [],
+        "delta": 3075
+      },
+      {
+        "index": 113668,
+        "offset": 875371,
+        "end": 875378,
+        "id": 6,
+        "segment": 5,
+        "cycles": 2608994036,
+        "args": [
+          34952
+        ],
+        "delta": 146035
+      },
+      {
+        "index": 113669,
+        "offset": 875378,
+        "end": 875384,
+        "id": 4,
+        "segment": 5,
+        "cycles": 2608997168,
+        "args": [
+          34952
+        ],
+        "delta": 3132
+      },
+      {
+        "index": 113670,
+        "offset": 875384,
+        "end": 875398,
+        "id": 92,
+        "segment": 5,
+        "cycles": 2608999648,
+        "args": [
+          32928,
+          3758096384,
+          0,
+          1
+        ],
+        "delta": 2480
+      },
+      {
+        "index": 113671,
+        "offset": 875398,
+        "end": 875405,
+        "id": 7,
+        "segment": 5,
+        "cycles": 2609003439,
+        "args": [
+          34952,
+          4
+        ],
+        "delta": 3791
+      },
+      {
+        "index": 113672,
+        "offset": 875405,
+        "end": 875408,
+        "id": 17,
+        "segment": 5,
+        "cycles": 2609005876,
+        "args": [],
+        "delta": 2437
+      },
+      {
+        "index": 113673,
+        "offset": 875408,
+        "end": 875412,
+        "id": 11,
+        "segment": 5,
+        "cycles": 2609041145,
+        "args": [],
+        "delta": 35269
+      }
+    ]
+  }
+]

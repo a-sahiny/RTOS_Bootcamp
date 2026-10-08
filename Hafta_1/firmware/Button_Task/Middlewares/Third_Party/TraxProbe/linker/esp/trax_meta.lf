@@ -1,0 +1,190 @@
+# =============================================================================
+# TraxProbe metadata placement for ESP-IDF (ldgen linker fragment)
+# =============================================================================
+# ESP-IDF-native replacement for the generic GNU-ld `trax_meta.ld` fragment.
+#
+# WHY A FRAGMENT (.lf) AND NOT A LINKER SCRIPT (.ld):
+#   ESP-IDF builds its final linker script from a template via `ldgen`, passes
+#   every script with `-T`, and (since v6.0) links with
+#   `--orphan-handling=error`.  A standalone `.ld` using `INSERT AFTER` is
+#   fragile in that model (script order is not guaranteed, and the anchor
+#   section may be absent), and any unplaced input section becomes a hard
+#   error.  The blessed mechanism is an ldgen fragment, which injects our
+#   placements directly into the `.flash.rodata` output section
+#   (region `default_rodata_seg` = the MMU-mapped DROM window), so the records
+#   are CPU-readable at runtime and packed into the .bin's flash image.
+#
+# WHAT IT DOES (TRAX_CFG_META_STORAGE == TRAX_META_IN_FLASH):
+#   TraxProbe headers emit each metadata record into `.trax_<kind>`
+#   (trax_meta_section.h).  Here we collect those `.trax_<kind>` inputs from
+#   every archive into `.flash.rodata`, KEEP() them against --gc-sections (they
+#   are reachable only through linker symbols, never a direct C reference), and
+#   bracket each kind with `SURROUND(_trax_<kind>)`.
+#
+#   SURROUND(name) emits `_name_start` / `_name_end`.  Using `_trax_<kind>` as
+#   the name therefore yields `__trax_<kind>_start` / `__trax_<kind>_end` — the
+#   exact boundary symbols trax_meta_tx.c declares and walks to serialize the
+#   schema into the VAR_STREAM_START frame.  No C-side changes required.
+#
+#   One mapping block per kind: ldgen accepts a single refined placement line
+#   per entry, so each `.trax_<kind>` gets its own [scheme]/[mapping] pair
+#   (same structure ESP-IDF's own esp_trace/plugins fragments use).
+#
+# In TRAX_META_ELF_ONLY mode the records go to `.trax_<kind>_elf` instead, so
+# the `.trax_<kind>` inputs below are empty, the SURROUND symbols collapse to
+# zero-length ranges, and the firmware never references them — inert and safe
+# to leave registered in either mode.
+
+[sections:trax_log]
+entries:
+    .trax_log
+
+[sections:trax_log_vars]
+entries:
+    .trax_log_vars
+
+[sections:trax_var]
+entries:
+    .trax_var
+
+[sections:trax_stream_adc]
+entries:
+    .trax_stream_adc
+
+[sections:trax_stream_rotor]
+entries:
+    .trax_stream_rotor
+
+[sections:trax_isr]
+entries:
+    .trax_isr
+
+[sections:trax_marker]
+entries:
+    .trax_marker
+
+[sections:trax_sm]
+entries:
+    .trax_sm
+
+[sections:trax_trigger]
+entries:
+    .trax_trigger
+
+[sections:trax_var_formula]
+entries:
+    .trax_var_formula
+
+[sections:trax_var_filter]
+entries:
+    .trax_var_filter
+
+[scheme:trax_log_default]
+entries:
+    trax_log -> flash_rodata
+
+[scheme:trax_log_vars_default]
+entries:
+    trax_log_vars -> flash_rodata
+
+[scheme:trax_var_default]
+entries:
+    trax_var -> flash_rodata
+
+[scheme:trax_stream_adc_default]
+entries:
+    trax_stream_adc -> flash_rodata
+
+[scheme:trax_stream_rotor_default]
+entries:
+    trax_stream_rotor -> flash_rodata
+
+[scheme:trax_isr_default]
+entries:
+    trax_isr -> flash_rodata
+
+[scheme:trax_marker_default]
+entries:
+    trax_marker -> flash_rodata
+
+[scheme:trax_sm_default]
+entries:
+    trax_sm -> flash_rodata
+
+[scheme:trax_trigger_default]
+entries:
+    trax_trigger -> flash_rodata
+
+[scheme:trax_var_formula_default]
+entries:
+    trax_var_formula -> flash_rodata
+
+[scheme:trax_var_filter_default]
+entries:
+    trax_var_filter -> flash_rodata
+
+[mapping:trax_log]
+archive: *
+entries:
+    * (trax_log_default);
+        trax_log -> flash_rodata KEEP() SORT(name) SURROUND(_trax_log)
+
+[mapping:trax_log_vars]
+archive: *
+entries:
+    * (trax_log_vars_default);
+        trax_log_vars -> flash_rodata KEEP() SORT(name) SURROUND(_trax_log_vars)
+
+[mapping:trax_var]
+archive: *
+entries:
+    * (trax_var_default);
+        trax_var -> flash_rodata KEEP() SORT(name) SURROUND(_trax_var)
+
+[mapping:trax_stream_adc]
+archive: *
+entries:
+    * (trax_stream_adc_default);
+        trax_stream_adc -> flash_rodata KEEP() SORT(name) SURROUND(_trax_stream_adc)
+
+[mapping:trax_stream_rotor]
+archive: *
+entries:
+    * (trax_stream_rotor_default);
+        trax_stream_rotor -> flash_rodata KEEP() SORT(name) SURROUND(_trax_stream_rotor)
+
+[mapping:trax_isr]
+archive: *
+entries:
+    * (trax_isr_default);
+        trax_isr -> flash_rodata KEEP() SORT(name) SURROUND(_trax_isr)
+
+[mapping:trax_marker]
+archive: *
+entries:
+    * (trax_marker_default);
+        trax_marker -> flash_rodata KEEP() SORT(name) SURROUND(_trax_marker)
+
+[mapping:trax_sm]
+archive: *
+entries:
+    * (trax_sm_default);
+        trax_sm -> flash_rodata KEEP() SORT(name) SURROUND(_trax_sm)
+
+[mapping:trax_trigger]
+archive: *
+entries:
+    * (trax_trigger_default);
+        trax_trigger -> flash_rodata KEEP() SORT(name) SURROUND(_trax_trigger)
+
+[mapping:trax_var_formula]
+archive: *
+entries:
+    * (trax_var_formula_default);
+        trax_var_formula -> flash_rodata KEEP() SORT(name) SURROUND(_trax_var_formula)
+
+[mapping:trax_var_filter]
+archive: *
+entries:
+    * (trax_var_filter_default);
+        trax_var_filter -> flash_rodata KEEP() SORT(name) SURROUND(_trax_var_filter)

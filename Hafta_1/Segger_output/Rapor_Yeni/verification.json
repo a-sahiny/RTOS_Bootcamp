@@ -1,0 +1,29 @@
+{
+  "input_files": 3,
+  "unique_sessions": 10,
+  "unique_events": 191946,
+  "all_bytes_decoded": true,
+  "all_packets_round_trip": true,
+  "cumulative_prefixes_exact": true,
+  "selected_sessions": [
+    6,
+    9,
+    10
+  ],
+  "selected_overflows": 0,
+  "selected_pairing_anomalies": [],
+  "source_files_copied": 24,
+  "firmware_modified": false,
+  "hardware_firmware_identity_verified": false,
+  "source_and_input_hashes_unchanged": true,
+  "selected_csv_event_counts_checked": true,
+  "context_percentages_sum_100": true,
+  "behavioural_audit_windows": 3522,
+  "case_count": 7,
+  "question_count": 45,
+  "uart_2_3_4_run_examples_verified": true,
+  "dump_like_pattern_verified": true,
+  "record_end_censoring_verified": true,
+  "report_links_and_anchors_checked": true,
+  "utf8_checked": true
+}

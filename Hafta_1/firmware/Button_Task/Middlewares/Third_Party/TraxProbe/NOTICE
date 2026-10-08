@@ -1,0 +1,20 @@
+TraxProbe
+Copyright (c) 2026 Embedya
+
+This product contains software developed by Embedya.
+
+The TraxProbe core engine is proprietary and licensed under the TraxProbe
+Commercial License (see LICENSE-COMMERCIAL.txt).
+
+The TraxProbe porting layer (hw_port/, os/FreeRTOS/, os/BareMetal/,
+and reference transport backends) is licensed under the Apache License,
+Version 2.0 (see LICENSE-Apache-2.0.txt).
+
+--------------------------------------------------------------------------------
+Third-party components
+--------------------------------------------------------------------------------
+SEGGER RTT (Real Time Transfer)
+  Location: transports/RTT/SEGGER_RTT.c, transports/RTT/include/SEGGER_RTT.h,
+            transports/RTT/config/SEGGER_RTT_Conf.h
+  (c) 1995-2021 SEGGER Microcontroller GmbH
+  Distributed under SEGGER's license; see the headers in those files.

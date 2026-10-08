@@ -1,0 +1,22 @@
+{
+  "source_matches_built_copy": true,
+  "sdk_files_unchanged": 96,
+  "backend": "Traxcope",
+  "period_ms": 1,
+  "priority": 1,
+  "stack_words": 512,
+  "application_isr": "Button_EXTI15_10",
+  "default_task_removed": true,
+  "artifacts": {
+    "Debug": {
+      "sha256": "768150e3b9fb4176bd0a8fee5599ae52a1fbb0f9685799f6df92221816174fd6",
+      "bytes": 2017656,
+      "isr_metadata_bytes": 72
+    },
+    "Release": {
+      "sha256": "1026eb1dd90c30305094d72ccbeb03e7448ff95db68d78e83605895a0fd84ae1",
+      "bytes": 102916,
+      "isr_metadata_bytes": 72
+    }
+  }
+}

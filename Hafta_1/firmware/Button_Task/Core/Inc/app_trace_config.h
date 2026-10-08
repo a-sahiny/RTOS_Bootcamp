@@ -1,0 +1,16 @@
+#ifndef APP_TRACE_CONFIG_H
+#define APP_TRACE_CONFIG_H
+
+#define APP_TRACE_TRAXCOPE   1
+#define APP_TRACE_SYSTEMVIEW 2
+
+/* Change to APP_TRACE_SYSTEMVIEW, then clean and rebuild to switch back. */
+#ifndef APP_TRACE_BACKEND
+#define APP_TRACE_BACKEND APP_TRACE_TRAXCOPE
+#endif
+
+#if APP_TRACE_BACKEND != APP_TRACE_TRAXCOPE && APP_TRACE_BACKEND != APP_TRACE_SYSTEMVIEW
+#error "Select APP_TRACE_TRAXCOPE or APP_TRACE_SYSTEMVIEW"
+#endif
+
+#endif

@@ -64,7 +64,7 @@
 #define configTICK_RATE_HZ                       ((TickType_t)1000)
 #define configMAX_PRIORITIES                     ( 56 )
 #define configMINIMAL_STACK_SIZE                 ((uint16_t)128)
-#define configTOTAL_HEAP_SIZE                    ((size_t)24576)
+#define configTOTAL_HEAP_SIZE                    ((size_t)25600)
 #define configMAX_TASK_NAME_LEN                  ( 16 )
 #define configUSE_TRACE_FACILITY                 1
 #define configUSE_16_BIT_TICKS                   0
@@ -158,6 +158,17 @@ standard names. */
 
 /* USER CODE BEGIN Defines */
 /* Section where parameter definitions can be added (for instance, to override default ones in FreeRTOS.h) */
+#define INCLUDE_xTaskGetIdleTaskHandle 1
+#define INCLUDE_pxTaskGetStackStart 1
+#define USE_LEGACY_TRACE_API 1
+#include "app_trace_config.h"
+#if APP_TRACE_BACKEND == APP_TRACE_TRAXCOPE
+/* CMSIS-RTOS2 owns SysTick_Handler when the device header is present. */
+#undef xPortSysTickHandler
+#include "trax.h"
+#else
+#include "SEGGER_SYSVIEW_FreeRTOS.h"
+#endif
 /* USER CODE END Defines */
 
 #endif /* FREERTOS_CONFIG_H */

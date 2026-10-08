@@ -1,0 +1,127 @@
+[
+  {
+    "path": "Core/Src/app_button.c",
+    "sha256": "a38269100ed8991c0f592eae91e59fcd6fb2b9dc9afef9eb98ccb27ee873a3e2",
+    "bytes": 1640
+  },
+  {
+    "path": "Core/Src/app_tasks.c",
+    "sha256": "a6caec03be4bd107981996ad0c82755d5ea121f2b582b3225583a9dbce73f203",
+    "bytes": 11865
+  },
+  {
+    "path": "Core/Src/app_rtos.c",
+    "sha256": "0d26f0c5b7e1a3d6173931d68d752bb1d1b58fd5b783c29ae41e73b6ba5d5fc0",
+    "bytes": 3321
+  },
+  {
+    "path": "Core/Src/app_systemview.c",
+    "sha256": "605fd3ab7746a07352baf321b6bc60ee7b520c1443b975ae4b92891606dd9821",
+    "bytes": 5899
+  },
+  {
+    "path": "Core/Src/app_hal_callbacks.c",
+    "sha256": "a98e4d0e6def0e38da532406e46b2d21638ed63b42a05cd05e8ca3a51b24ce47",
+    "bytes": 2301
+  },
+  {
+    "path": "Core/Src/stm32f7xx_it.c",
+    "sha256": "ed882858cb345ab61d4b35a6cd98945b7da1860ab0340e5014bfe5d0e9a9c4a4",
+    "bytes": 7777
+  },
+  {
+    "path": "Core/Src/main.c",
+    "sha256": "387fc48ec72de28b336ae442665c2cdb4b2310c22adfb3a82dcac0078642d3ba",
+    "bytes": 11811
+  },
+  {
+    "path": "Core/Src/stm32f7xx_hal_msp.c",
+    "sha256": "3816ec4b47dfe6b607a848387e67eaa6f80e303eb893cfbcd6e16ac4adec0752",
+    "bytes": 10025
+  },
+  {
+    "path": "Core/Src/app_cmd_rx.c",
+    "sha256": "3c7be10e998003481a21d1ce28442a572ac7bff80bc8765835731aef643ba77c",
+    "bytes": 2804
+  },
+  {
+    "path": "Core/Src/app_ring_buffer.c",
+    "sha256": "56f001a2e2900d08a9cb552cd124ff67531a5b3a40edae6fbd8767c87e6123f9",
+    "bytes": 5299
+  },
+  {
+    "path": "Core/Inc/app_config.h",
+    "sha256": "d9ee9c33907e825a913fba89b6cc2fcbc24c29e54b1280292556a25758b26e5a",
+    "bytes": 5655
+  },
+  {
+    "path": "Core/Inc/FreeRTOSConfig.h",
+    "sha256": "15433ec003ff3d6427e1405348a68f82d3796d1f2264e0545973e3306c1c22f7",
+    "bytes": 7513
+  },
+  {
+    "path": "Core/Inc/SEGGER_SYSVIEW_Conf.h",
+    "sha256": "f669d99b76aed11d7fb9b6c9f1ad40c5bba0d180a6cec6306e68b7a72073ae4c",
+    "bytes": 284
+  },
+  {
+    "path": "Core/Inc/SEGGER_RTT_Conf.h",
+    "sha256": "6993e411ba996c875f871d5b812305ea2f2fa43fb61a3b26ac17a4d66c106412",
+    "bytes": 600
+  },
+  {
+    "path": "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c",
+    "sha256": "424f68d842cce7cce1423a5c0f28c049e180c296a386cff7afe0fdc131b4e292",
+    "bytes": 138107
+  },
+  {
+    "path": "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c",
+    "sha256": "fdec78fe7d7fac1c11a547e0836265b836a0a2b1758840f874a6d48b51d68145",
+    "bytes": 46430
+  },
+  {
+    "path": "Middlewares/Third_Party/SEGGER/FreeRTOS/SEGGER_SYSVIEW_FreeRTOS.h",
+    "sha256": "27e3295bf77ac74d4cf49bea50a53b81b9e13613f24d6d9264029ade803b9080",
+    "bytes": 22729
+  },
+  {
+    "path": "Middlewares/Third_Party/SEGGER/FreeRTOS/SEGGER_SYSVIEW_FreeRTOS.c",
+    "sha256": "3db6363444e90b49cae78c0861228427d099af5caf6716fefb3f076672d513dd",
+    "bytes": 11807
+  },
+  {
+    "path": "Middlewares/Third_Party/SEGGER/SystemView/SEGGER_SYSVIEW.c",
+    "sha256": "98939c849c919d0737d58eb66902eeaf555c4e05060942be70ad69d910ca7d24",
+    "bytes": 141095
+  },
+  {
+    "path": "Middlewares/Third_Party/SEGGER/SystemView/SEGGER_SYSVIEW.h",
+    "sha256": "f530f60acc79fd0fe9703e1cbef358c11b76bfce4185ca825d85b2bc73efb8c9",
+    "bytes": 28845
+  },
+  {
+    "path": "Middlewares/Third_Party/FreeRTOS/Source/tasks.c",
+    "sha256": "7d6982d77f4ff8196f99365b2f908386df430782280ad5857a9db947dd143295",
+    "bytes": 175659
+  },
+  {
+    "path": "Middlewares/Third_Party/FreeRTOS/Source/queue.c",
+    "sha256": "5d5eb57f9026b1ae201a384baed69c7ce4711fc8bbef8f644a9788d70772c401",
+    "bytes": 96319
+  },
+  {
+    "path": "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.c",
+    "sha256": "89940deb37ab0a0f60e95151f647774cdd5606b84d7149348d4a1006cbfec268",
+    "bytes": 29841
+  },
+  {
+    "path": "Debug/Core/Src/subdir.mk",
+    "sha256": "686de5a59872ad4027f20903c80371a8a5b7ab491fe74e9146430118c3820341",
+    "bytes": 4790
+  },
+  {
+    "path": "firmware\\Button_Task\\Debug\\UART_RTOS_ODEV1.elf",
+    "sha256": "aca87f24de5db14685a1d44994032ae0c3c21f521b8b8ae779e2b86440df13ac",
+    "bytes": 1769884
+  }
+]

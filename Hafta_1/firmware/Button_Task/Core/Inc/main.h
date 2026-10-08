@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#define Baudrate_Speed 921600
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

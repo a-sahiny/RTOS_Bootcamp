@@ -1,0 +1,10 @@
+PASS: handshake recovers a failed TX start within RX callback, without polling
+PASS: host START generates a SystemView sync, event stream and task-state snapshot
+PASS: burst DMA keeps the in-flight buffer stable and maintains cache
+PASS: nested interrupt masking is preserved
+PASS: recording resumes after a full trace buffer without blocking
+PASS: RX recovery and host STOP/START on the same connection
+PASS: full DMA and short IDLE batches keep every command and rearm with cache maintenance
+PASS: failed RX DMA rearm recovers in its callback and preserves the command
+PASS: UART RX recovery leaves the in-flight TX DMA buffer unchanged
+PASS: DMA faults stop both streams before buffers are reused and reception restarts

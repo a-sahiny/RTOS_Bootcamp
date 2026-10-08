@@ -1,0 +1,25 @@
+TRAXPROBE FIRMWARE SDK — LICENSE OVERVIEW
+
+Copyright (c) 2025-2026 Embedya Yazılım Donanım ve Arge Ltd. Şti.
+
+The TraxProbe firmware SDK uses a split license. The SPDX-License-Identifier
+line at the top of each source file decides which license applies to it.
+
+  Core engine (inc/, src/, config/, debug/, os/common/)
+    SPDX: LicenseRef-TraxProbe-Commercial
+    License: TraxProbe Commercial License — see LICENSE-COMMERCIAL.txt
+
+  Porting layer (hw_port/, os/FreeRTOS/, os/BareMetal/, and the reference
+  transport backends)
+    SPDX: Apache-2.0
+    License: Apache License, Version 2.0 — see LICENSE-Apache-2.0.txt
+
+  SEGGER RTT (transports/RTT/SEGGER_RTT.*, SEGGER_RTT_Conf.h)
+    License: SEGGER's license, as stated in those files
+
+See LICENSE.md for details and NOTICE for attributions.
+
+The Traxcope desktop application is licensed separately under its End User
+License Agreement (licenses/EULA.txt in the Traxcope installation).
+
+Licensing questions: info@embedya.com

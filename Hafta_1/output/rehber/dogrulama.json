@@ -1,0 +1,384 @@
+{
+  "chapters": 22,
+  "functions": [
+    {
+      "name": "Button_Init",
+      "file": "Src/app_button.c",
+      "line": 12,
+      "chapter": "10"
+    },
+    {
+      "name": "Button_ResetForScenario",
+      "file": "Src/app_button.c",
+      "line": 19,
+      "chapter": "10"
+    },
+    {
+      "name": "Button_HandleEXTI",
+      "file": "Src/app_button.c",
+      "line": 24,
+      "chapter": "10"
+    },
+    {
+      "name": "rearm",
+      "file": "Src/app_cmd_rx.c",
+      "line": 11,
+      "chapter": "07"
+    },
+    {
+      "name": "CmdRx_Init",
+      "file": "Src/app_cmd_rx.c",
+      "line": 17,
+      "chapter": "07"
+    },
+    {
+      "name": "CmdRx_HandleByteReceived",
+      "file": "Src/app_cmd_rx.c",
+      "line": 24,
+      "chapter": "07"
+    },
+    {
+      "name": "CmdRx_OnError",
+      "file": "Src/app_cmd_rx.c",
+      "line": 54,
+      "chapter": "07"
+    },
+    {
+      "name": "HAL_UART_TxCpltCallback",
+      "file": "Src/app_hal_callbacks.c",
+      "line": 17,
+      "chapter": "14"
+    },
+    {
+      "name": "HAL_UART_ErrorCallback",
+      "file": "Src/app_hal_callbacks.c",
+      "line": 29,
+      "chapter": "14"
+    },
+    {
+      "name": "HAL_UART_RxCpltCallback",
+      "file": "Src/app_hal_callbacks.c",
+      "line": 48,
+      "chapter": "14"
+    },
+    {
+      "name": "HAL_GPIO_EXTI_Callback",
+      "file": "Src/app_hal_callbacks.c",
+      "line": 55,
+      "chapter": "14"
+    },
+    {
+      "name": "Protocol_Crc8",
+      "file": "Src/app_protocol.c",
+      "line": 8,
+      "chapter": "16"
+    },
+    {
+      "name": "pack_payload",
+      "file": "Src/app_protocol.c",
+      "line": 23,
+      "chapter": "16"
+    },
+    {
+      "name": "finish_frame",
+      "file": "Src/app_protocol.c",
+      "line": 35,
+      "chapter": "16"
+    },
+    {
+      "name": "status_to_str",
+      "file": "Src/app_protocol.c",
+      "line": 51,
+      "chapter": "16"
+    },
+    {
+      "name": "fmt_delta",
+      "file": "Src/app_protocol.c",
+      "line": 64,
+      "chapter": "16"
+    },
+    {
+      "name": "Protocol_BuildTEL",
+      "file": "Src/app_protocol.c",
+      "line": 75,
+      "chapter": "16"
+    },
+    {
+      "name": "Protocol_BuildBTN",
+      "file": "Src/app_protocol.c",
+      "line": 91,
+      "chapter": "16"
+    },
+    {
+      "name": "Protocol_BuildBOOT",
+      "file": "Src/app_protocol.c",
+      "line": 102,
+      "chapter": "16"
+    },
+    {
+      "name": "Protocol_BuildREC",
+      "file": "Src/app_protocol.c",
+      "line": 111,
+      "chapter": "16"
+    },
+    {
+      "name": "Protocol_BuildSTAT",
+      "file": "Src/app_protocol.c",
+      "line": 126,
+      "chapter": "16"
+    },
+    {
+      "name": "Protocol_BuildDumpEnd",
+      "file": "Src/app_protocol.c",
+      "line": 145,
+      "chapter": "16"
+    },
+    {
+      "name": "hex_nibble",
+      "file": "Src/app_protocol.c",
+      "line": 153,
+      "chapter": "08"
+    },
+    {
+      "name": "parse_u32",
+      "file": "Src/app_protocol.c",
+      "line": 161,
+      "chapter": "08"
+    },
+    {
+      "name": "next_token",
+      "file": "Src/app_protocol.c",
+      "line": 175,
+      "chapter": "08"
+    },
+    {
+      "name": "Protocol_ParseCommandLine",
+      "file": "Src/app_protocol.c",
+      "line": 189,
+      "chapter": "08"
+    },
+    {
+      "name": "RingBuffer_Init",
+      "file": "Src/app_ring_buffer.c",
+      "line": 12,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_ResetForScenario",
+      "file": "Src/app_ring_buffer.c",
+      "line": 19,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_Alloc",
+      "file": "Src/app_ring_buffer.c",
+      "line": 28,
+      "chapter": "15"
+    },
+    {
+      "name": "slot_for",
+      "file": "Src/app_ring_buffer.c",
+      "line": 53,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_SetT1T2",
+      "file": "Src/app_ring_buffer.c",
+      "line": 67,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_SetT3",
+      "file": "Src/app_ring_buffer.c",
+      "line": 79,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_CloseSuccess",
+      "file": "Src/app_ring_buffer.c",
+      "line": 90,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_CloseDropIsr",
+      "file": "Src/app_ring_buffer.c",
+      "line": 109,
+      "chapter": "15"
+    },
+    {
+      "name": "close_with",
+      "file": "Src/app_ring_buffer.c",
+      "line": 120,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_CloseDropTx",
+      "file": "Src/app_ring_buffer.c",
+      "line": 132,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_CloseTxErr",
+      "file": "Src/app_ring_buffer.c",
+      "line": 137,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_CloseTimeout",
+      "file": "Src/app_ring_buffer.c",
+      "line": 142,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_GetCounters",
+      "file": "Src/app_ring_buffer.c",
+      "line": 147,
+      "chapter": "15"
+    },
+    {
+      "name": "inc_counter",
+      "file": "Src/app_ring_buffer.c",
+      "line": 156,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_IncCmdCrcErr",
+      "file": "Src/app_ring_buffer.c",
+      "line": 163,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_IncTelDrop",
+      "file": "Src/app_ring_buffer.c",
+      "line": 164,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_IncTelTxFail",
+      "file": "Src/app_ring_buffer.c",
+      "line": 165,
+      "chapter": "15"
+    },
+    {
+      "name": "RingBuffer_DumpNext",
+      "file": "Src/app_ring_buffer.c",
+      "line": 167,
+      "chapter": "15"
+    },
+    {
+      "name": "App_RunElapsedMs",
+      "file": "Src/app_rtos.c",
+      "line": 30,
+      "chapter": "06"
+    },
+    {
+      "name": "require",
+      "file": "Src/app_rtos.c",
+      "line": 35,
+      "chapter": "06"
+    },
+    {
+      "name": "App_RTOS_Init",
+      "file": "Src/app_rtos.c",
+      "line": 43,
+      "chapter": "06"
+    },
+    {
+      "name": "uart_tx_send",
+      "file": "Src/app_tasks.c",
+      "line": 27,
+      "chapter": "14"
+    },
+    {
+      "name": "send_item",
+      "file": "Src/app_tasks.c",
+      "line": 56,
+      "chapter": "13"
+    },
+    {
+      "name": "send_meta",
+      "file": "Src/app_tasks.c",
+      "line": 80,
+      "chapter": "13"
+    },
+    {
+      "name": "dump_send_all",
+      "file": "Src/app_tasks.c",
+      "line": 90,
+      "chapter": "17"
+    },
+    {
+      "name": "control_handle_command",
+      "file": "Src/app_tasks.c",
+      "line": 107,
+      "chapter": "09"
+    },
+    {
+      "name": "handle_cmd_line",
+      "file": "Src/app_tasks.c",
+      "line": 164,
+      "chapter": "08"
+    },
+    {
+      "name": "UartTxTask_Run",
+      "file": "Src/app_tasks.c",
+      "line": 179,
+      "chapter": "13"
+    },
+    {
+      "name": "ButtonTask_Run",
+      "file": "Src/app_tasks.c",
+      "line": 216,
+      "chapter": "11"
+    },
+    {
+      "name": "TelemetryTask_Run",
+      "file": "Src/app_tasks.c",
+      "line": 262,
+      "chapter": "12"
+    },
+    {
+      "name": "Timestamp_Init",
+      "file": "Src/app_timestamp.c",
+      "line": 5,
+      "chapter": "05"
+    },
+    {
+      "name": "Timestamp_DeltaToUs",
+      "file": "Src/app_timestamp.c",
+      "line": 20,
+      "chapter": "05"
+    },
+    {
+      "name": "Timestamp_Now",
+      "file": "Inc/app_timestamp.h",
+      "line": 19,
+      "chapter": "05"
+    }
+  ],
+  "source_blocks": 32,
+  "word_count": 10211,
+  "source_sha256": {
+    "firmware/Button_Task/Core/Src/app_button.c": "8c0dfbcac9e35c5bd3c0896071272800bb6426da7095564d1c3e6bc8e8c9914f",
+    "firmware/Button_Task/Core/Src/app_cmd_rx.c": "1b56114c36c66794e9134351cc6bcf39cb3480bb27f2ff85871aa1d5f4cf4111",
+    "firmware/Button_Task/Core/Src/app_hal_callbacks.c": "a2f726611a61a06f17fc3f67c76377280a505e5aecce28f14a90dfa3a4d09cea",
+    "firmware/Button_Task/Core/Src/app_protocol.c": "4592d83c089f48ed7320ef0f9cb02f7ad946dab1ebe40478cd788f357d93f309",
+    "firmware/Button_Task/Core/Src/app_ring_buffer.c": "56f001a2e2900d08a9cb552cd124ff67531a5b3a40edae6fbd8767c87e6123f9",
+    "firmware/Button_Task/Core/Src/app_rtos.c": "510c3541bf307f2a09249d05d290ca3bc924d1e286ea8d06b149c01334d78b93",
+    "firmware/Button_Task/Core/Src/app_tasks.c": "a6caec03be4bd107981996ad0c82755d5ea121f2b582b3225583a9dbce73f203",
+    "firmware/Button_Task/Core/Src/app_timestamp.c": "cd48579b07d6169789f26fa92439e8d6be4f17c4b068d0af97e6b0b1bf98a9f4",
+    "firmware/Button_Task/Core/Inc/app_button.h": "ebedfde0c6aa30ca5221af3aa23c9bad33c6bac5def05b73d94a03f17101ee6e",
+    "firmware/Button_Task/Core/Inc/app_cmd_rx.h": "9e205fbb7d8f37bb6fa42af701d63852aaf63a3ed431cfa5943cbe9aa44b4275",
+    "firmware/Button_Task/Core/Inc/app_config.h": "d9ee9c33907e825a913fba89b6cc2fcbc24c29e54b1280292556a25758b26e5a",
+    "firmware/Button_Task/Core/Inc/app_hw.h": "213dbe4ee44dc39f27c7811b285468773b82cf1df58573e7210093cf31e84bd1",
+    "firmware/Button_Task/Core/Inc/app_protocol.h": "aa9ec9162f8e283ab92c22daf0a57fc919752eec2eba0e32fa5755e21b56e66c",
+    "firmware/Button_Task/Core/Inc/app_ring_buffer.h": "78421008855ce7855a9f4dda703c34ef2a00eb4c246e2bb6cab970538ce4b52c",
+    "firmware/Button_Task/Core/Inc/app_rtos.h": "6f687057e30c58bf6b06ff318da5e8ea30b30abf0b962295a1fd2be52341929a",
+    "firmware/Button_Task/Core/Inc/app_timestamp.h": "ee07d9a2e4f1abb032a8fd06a3bf49e41689a2d213362a3afd77a8359e62006e",
+    "firmware/Button_Task/Core/Src/main.c": "bea1a6429ec62565082543cd89decdc01d9e861b3b90fd6595210a2e10518f62"
+  },
+  "outputs": [
+    "C:\\Users\\Asus\\Documents\\GitHub\\RTOS_Bootcamp\\Hafta_1\\output\\rehber\\rtos_kod_rehberi.html",
+    "C:\\Users\\Asus\\Documents\\GitHub\\RTOS_Bootcamp\\Hafta_1\\output\\pdf\\rtos_kod_rehberi.pdf"
+  ]
+}

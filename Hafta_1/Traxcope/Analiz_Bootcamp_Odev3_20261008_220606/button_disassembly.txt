@@ -1,0 +1,487 @@
+
+firmware/Button_Task/Debug/UART_RTOS_ODEV1.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+08000664 <Button_HandleEXTI>:
+ 8000664:	b590      	push	{r4, r7, lr}
+ 8000666:	b09d      	sub	sp, #116	@ 0x74
+ 8000668:	af00      	add	r7, sp, #0
+ 800066a:	f7ff ffb1 	bl	80005d0 <Timestamp_Now>
+ 800066e:	6678      	str	r0, [r7, #100]	@ 0x64
+ 8000670:	f002 fec6 	bl	8003400 <HAL_GetTick>
+ 8000674:	6638      	str	r0, [r7, #96]	@ 0x60
+ 8000676:	4b81      	ldr	r3, [pc, #516]	@ (800087c <Button_HandleEXTI+0x218>)
+ 8000678:	781b      	ldrb	r3, [r3, #0]
+ 800067a:	b2db      	uxtb	r3, r3
+ 800067c:	f083 0301 	eor.w	r3, r3, #1
+ 8000680:	b2db      	uxtb	r3, r3
+ 8000682:	2b00      	cmp	r3, #0
+ 8000684:	d105      	bne.n	8000692 <Button_HandleEXTI+0x2e>
+ 8000686:	4b7e      	ldr	r3, [pc, #504]	@ (8000880 <Button_HandleEXTI+0x21c>)
+ 8000688:	681b      	ldr	r3, [r3, #0]
+ 800068a:	6e3a      	ldr	r2, [r7, #96]	@ 0x60
+ 800068c:	1ad3      	subs	r3, r2, r3
+ 800068e:	2b1d      	cmp	r3, #29
+ 8000690:	d901      	bls.n	8000696 <Button_HandleEXTI+0x32>
+ 8000692:	2301      	movs	r3, #1
+ 8000694:	e000      	b.n	8000698 <Button_HandleEXTI+0x34>
+ 8000696:	2300      	movs	r3, #0
+ 8000698:	f887 305f 	strb.w	r3, [r7, #95]	@ 0x5f
+ 800069c:	f897 305f 	ldrb.w	r3, [r7, #95]	@ 0x5f
+ 80006a0:	f003 0301 	and.w	r3, r3, #1
+ 80006a4:	f887 305f 	strb.w	r3, [r7, #95]	@ 0x5f
+ 80006a8:	4a75      	ldr	r2, [pc, #468]	@ (8000880 <Button_HandleEXTI+0x21c>)
+ 80006aa:	6e3b      	ldr	r3, [r7, #96]	@ 0x60
+ 80006ac:	6013      	str	r3, [r2, #0]
+ 80006ae:	4b73      	ldr	r3, [pc, #460]	@ (800087c <Button_HandleEXTI+0x218>)
+ 80006b0:	2201      	movs	r2, #1
+ 80006b2:	701a      	strb	r2, [r3, #0]
+ 80006b4:	f44f 6100 	mov.w	r1, #2048	@ 0x800
+ 80006b8:	4872      	ldr	r0, [pc, #456]	@ (8000884 <Button_HandleEXTI+0x220>)
+ 80006ba:	f003 fd51 	bl	8004160 <HAL_GPIO_ReadPin>
+ 80006be:	4603      	mov	r3, r0
+ 80006c0:	2b01      	cmp	r3, #1
+ 80006c2:	bf0c      	ite	eq
+ 80006c4:	2301      	moveq	r3, #1
+ 80006c6:	2300      	movne	r3, #0
+ 80006c8:	f887 305e 	strb.w	r3, [r7, #94]	@ 0x5e
+ 80006cc:	f897 305f 	ldrb.w	r3, [r7, #95]	@ 0x5f
+ 80006d0:	f083 0301 	eor.w	r3, r3, #1
+ 80006d4:	b2db      	uxtb	r3, r3
+ 80006d6:	2b00      	cmp	r3, #0
+ 80006d8:	f040 81e7 	bne.w	8000aaa <Button_HandleEXTI+0x446>
+ 80006dc:	f897 305e 	ldrb.w	r3, [r7, #94]	@ 0x5e
+ 80006e0:	f083 0301 	eor.w	r3, r3, #1
+ 80006e4:	b2db      	uxtb	r3, r3
+ 80006e6:	2b00      	cmp	r3, #0
+ 80006e8:	f040 81df 	bne.w	8000aaa <Button_HandleEXTI+0x446>
+ 80006ec:	4b66      	ldr	r3, [pc, #408]	@ (8000888 <Button_HandleEXTI+0x224>)
+ 80006ee:	781b      	ldrb	r3, [r3, #0]
+ 80006f0:	b2db      	uxtb	r3, r3
+ 80006f2:	f083 0301 	eor.w	r3, r3, #1
+ 80006f6:	b2db      	uxtb	r3, r3
+ 80006f8:	2b00      	cmp	r3, #0
+ 80006fa:	f040 81d6 	bne.w	8000aaa <Button_HandleEXTI+0x446>
+ 80006fe:	4b63      	ldr	r3, [pc, #396]	@ (800088c <Button_HandleEXTI+0x228>)
+ 8000700:	785b      	ldrb	r3, [r3, #1]
+ 8000702:	b2db      	uxtb	r3, r3
+ 8000704:	2b00      	cmp	r3, #0
+ 8000706:	f000 80c7 	beq.w	8000898 <Button_HandleEXTI+0x234>
+ 800070a:	2300      	movs	r3, #0
+ 800070c:	65bb      	str	r3, [r7, #88]	@ 0x58
+ 800070e:	2304      	movs	r3, #4
+ 8000710:	f8a7 3056 	strh.w	r3, [r7, #86]	@ 0x56
+ 8000714:	f3ef 8310 	mrs	r3, PRIMASK
+ 8000718:	623b      	str	r3, [r7, #32]
+ 800071a:	6a3b      	ldr	r3, [r7, #32]
+ 800071c:	653b      	str	r3, [r7, #80]	@ 0x50
+ 800071e:	b672      	cpsid	i
+ 8000720:	bf00      	nop
+ 8000722:	4b5b      	ldr	r3, [pc, #364]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 8000724:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 8000728:	685b      	ldr	r3, [r3, #4]
+ 800072a:	64fb      	str	r3, [r7, #76]	@ 0x4c
+ 800072c:	4b58      	ldr	r3, [pc, #352]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 800072e:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 8000732:	681b      	ldr	r3, [r3, #0]
+ 8000734:	64bb      	str	r3, [r7, #72]	@ 0x48
+ 8000736:	6cba      	ldr	r2, [r7, #72]	@ 0x48
+ 8000738:	6cfb      	ldr	r3, [r7, #76]	@ 0x4c
+ 800073a:	429a      	cmp	r2, r3
+ 800073c:	d34e      	bcc.n	80007dc <Button_HandleEXTI+0x178>
+ 800073e:	4b54      	ldr	r3, [pc, #336]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 8000740:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 8000744:	691a      	ldr	r2, [r3, #16]
+ 8000746:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 8000748:	1ad3      	subs	r3, r2, r3
+ 800074a:	109b      	asrs	r3, r3, #2
+ 800074c:	647b      	str	r3, [r7, #68]	@ 0x44
+ 800074e:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 8000752:	6c7a      	ldr	r2, [r7, #68]	@ 0x44
+ 8000754:	429a      	cmp	r2, r3
+ 8000756:	d911      	bls.n	800077c <Button_HandleEXTI+0x118>
+ 8000758:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 800075a:	66fb      	str	r3, [r7, #108]	@ 0x6c
+ 800075c:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 8000760:	009b      	lsls	r3, r3, #2
+ 8000762:	6cba      	ldr	r2, [r7, #72]	@ 0x48
+ 8000764:	4413      	add	r3, r2
+ 8000766:	64bb      	str	r3, [r7, #72]	@ 0x48
+ 8000768:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 800076a:	2200      	movs	r2, #0
+ 800076c:	601a      	str	r2, [r3, #0]
+ 800076e:	4b48      	ldr	r3, [pc, #288]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 8000770:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 8000774:	461a      	mov	r2, r3
+ 8000776:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 8000778:	6013      	str	r3, [r2, #0]
+ 800077a:	e051      	b.n	8000820 <Button_HandleEXTI+0x1bc>
+ 800077c:	4b44      	ldr	r3, [pc, #272]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 800077e:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 8000782:	689b      	ldr	r3, [r3, #8]
+ 8000784:	6cfa      	ldr	r2, [r7, #76]	@ 0x4c
+ 8000786:	1ad3      	subs	r3, r2, r3
+ 8000788:	109b      	asrs	r3, r3, #2
+ 800078a:	461a      	mov	r2, r3
+ 800078c:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 8000790:	429a      	cmp	r2, r3
+ 8000792:	d91b      	bls.n	80007cc <Button_HandleEXTI+0x168>
+ 8000794:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 8000796:	f44f 3280 	mov.w	r2, #65536	@ 0x10000
+ 800079a:	601a      	str	r2, [r3, #0]
+ 800079c:	4b3c      	ldr	r3, [pc, #240]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 800079e:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 80007a2:	689b      	ldr	r3, [r3, #8]
+ 80007a4:	66fb      	str	r3, [r7, #108]	@ 0x6c
+ 80007a6:	6efb      	ldr	r3, [r7, #108]	@ 0x6c
+ 80007a8:	2200      	movs	r2, #0
+ 80007aa:	601a      	str	r2, [r3, #0]
+ 80007ac:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 80007b0:	009b      	lsls	r3, r3, #2
+ 80007b2:	6efa      	ldr	r2, [r7, #108]	@ 0x6c
+ 80007b4:	4413      	add	r3, r2
+ 80007b6:	64bb      	str	r3, [r7, #72]	@ 0x48
+ 80007b8:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 80007ba:	2200      	movs	r2, #0
+ 80007bc:	601a      	str	r2, [r3, #0]
+ 80007be:	4b34      	ldr	r3, [pc, #208]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 80007c0:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 80007c4:	461a      	mov	r2, r3
+ 80007c6:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 80007c8:	6013      	str	r3, [r2, #0]
+ 80007ca:	e029      	b.n	8000820 <Button_HandleEXTI+0x1bc>
+ 80007cc:	2300      	movs	r3, #0
+ 80007ce:	66fb      	str	r3, [r7, #108]	@ 0x6c
+ 80007d0:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 80007d4:	4618      	mov	r0, r3
+ 80007d6:	f013 fa5d 	bl	8013c94 <trax_buffer_on_alloc_fail>
+ 80007da:	e021      	b.n	8000820 <Button_HandleEXTI+0x1bc>
+ 80007dc:	6cfa      	ldr	r2, [r7, #76]	@ 0x4c
+ 80007de:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 80007e0:	1ad3      	subs	r3, r2, r3
+ 80007e2:	109b      	asrs	r3, r3, #2
+ 80007e4:	461a      	mov	r2, r3
+ 80007e6:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 80007ea:	429a      	cmp	r2, r3
+ 80007ec:	d911      	bls.n	8000812 <Button_HandleEXTI+0x1ae>
+ 80007ee:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 80007f0:	66fb      	str	r3, [r7, #108]	@ 0x6c
+ 80007f2:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 80007f6:	009b      	lsls	r3, r3, #2
+ 80007f8:	6cba      	ldr	r2, [r7, #72]	@ 0x48
+ 80007fa:	4413      	add	r3, r2
+ 80007fc:	64bb      	str	r3, [r7, #72]	@ 0x48
+ 80007fe:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 8000800:	2200      	movs	r2, #0
+ 8000802:	601a      	str	r2, [r3, #0]
+ 8000804:	4b22      	ldr	r3, [pc, #136]	@ (8000890 <Button_HandleEXTI+0x22c>)
+ 8000806:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 800080a:	461a      	mov	r2, r3
+ 800080c:	6cbb      	ldr	r3, [r7, #72]	@ 0x48
+ 800080e:	6013      	str	r3, [r2, #0]
+ 8000810:	e006      	b.n	8000820 <Button_HandleEXTI+0x1bc>
+ 8000812:	2300      	movs	r3, #0
+ 8000814:	66fb      	str	r3, [r7, #108]	@ 0x6c
+ 8000816:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 800081a:	4618      	mov	r0, r3
+ 800081c:	f013 fa3a 	bl	8013c94 <trax_buffer_on_alloc_fail>
+ 8000820:	6efb      	ldr	r3, [r7, #108]	@ 0x6c
+ 8000822:	2b00      	cmp	r3, #0
+ 8000824:	d024      	beq.n	8000870 <Button_HandleEXTI+0x20c>
+ 8000826:	6efb      	ldr	r3, [r7, #108]	@ 0x6c
+ 8000828:	65bb      	str	r3, [r7, #88]	@ 0x58
+ 800082a:	6efb      	ldr	r3, [r7, #108]	@ 0x6c
+ 800082c:	3304      	adds	r3, #4
+ 800082e:	66fb      	str	r3, [r7, #108]	@ 0x6c
+ 8000830:	6efc      	ldr	r4, [r7, #108]	@ 0x6c
+ 8000832:	1d23      	adds	r3, r4, #4
+ 8000834:	66fb      	str	r3, [r7, #108]	@ 0x6c
+ 8000836:	f7ff fed7 	bl	80005e8 <trax_hw_port_timepacked_get32>
+ 800083a:	4603      	mov	r3, r0
+ 800083c:	6023      	str	r3, [r4, #0]
+ 800083e:	6efb      	ldr	r3, [r7, #108]	@ 0x6c
+ 8000840:	1d1a      	adds	r2, r3, #4
+ 8000842:	66fa      	str	r2, [r7, #108]	@ 0x6c
+ 8000844:	f244 0210 	movw	r2, #16400	@ 0x4010
+ 8000848:	601a      	str	r2, [r3, #0]
+ 800084a:	6efb      	ldr	r3, [r7, #108]	@ 0x6c
+ 800084c:	1d1a      	adds	r2, r3, #4
+ 800084e:	66fa      	str	r2, [r7, #108]	@ 0x6c
+ 8000850:	2200      	movs	r2, #0
+ 8000852:	601a      	str	r2, [r3, #0]
+ 8000854:	f8b7 3056 	ldrh.w	r3, [r7, #86]	@ 0x56
+ 8000858:	041b      	lsls	r3, r3, #16
+ 800085a:	4a0e      	ldr	r2, [pc, #56]	@ (8000894 <Button_HandleEXTI+0x230>)
+ 800085c:	8812      	ldrh	r2, [r2, #0]
+ 800085e:	431a      	orrs	r2, r3
+ 8000860:	6dbb      	ldr	r3, [r7, #88]	@ 0x58
+ 8000862:	601a      	str	r2, [r3, #0]
+ 8000864:	4b0b      	ldr	r3, [pc, #44]	@ (8000894 <Button_HandleEXTI+0x230>)
+ 8000866:	881b      	ldrh	r3, [r3, #0]
+ 8000868:	3301      	adds	r3, #1
+ 800086a:	b29a      	uxth	r2, r3
+ 800086c:	4b09      	ldr	r3, [pc, #36]	@ (8000894 <Button_HandleEXTI+0x230>)
+ 800086e:	801a      	strh	r2, [r3, #0]
+ 8000870:	6d3b      	ldr	r3, [r7, #80]	@ 0x50
+ 8000872:	61fb      	str	r3, [r7, #28]
+ 8000874:	69fb      	ldr	r3, [r7, #28]
+ 8000876:	f383 8810 	msr	PRIMASK, r3
+ 800087a:	e017      	b.n	80008ac <Button_HandleEXTI+0x248>
+ 800087c:	200000a0 	.word	0x200000a0
+ 8000880:	2000009c 	.word	0x2000009c
+ 8000884:	40022000 	.word	0x40022000
+ 8000888:	2000224c 	.word	0x2000224c
+ 800088c:	20010b54 	.word	0x20010b54
+ 8000890:	2000c978 	.word	0x2000c978
+ 8000894:	20010a8a 	.word	0x20010a8a
+ 8000898:	4b86      	ldr	r3, [pc, #536]	@ (8000ab4 <Button_HandleEXTI+0x450>)
+ 800089a:	7c1b      	ldrb	r3, [r3, #16]
+ 800089c:	b2db      	uxtb	r3, r3
+ 800089e:	2b00      	cmp	r3, #0
+ 80008a0:	d004      	beq.n	80008ac <Button_HandleEXTI+0x248>
+ 80008a2:	4b84      	ldr	r3, [pc, #528]	@ (8000ab4 <Button_HandleEXTI+0x450>)
+ 80008a4:	6a5b      	ldr	r3, [r3, #36]	@ 0x24
+ 80008a6:	3301      	adds	r3, #1
+ 80008a8:	4a82      	ldr	r2, [pc, #520]	@ (8000ab4 <Button_HandleEXTI+0x450>)
+ 80008aa:	6253      	str	r3, [r2, #36]	@ 0x24
+ 80008ac:	4b82      	ldr	r3, [pc, #520]	@ (8000ab8 <Button_HandleEXTI+0x454>)
+ 80008ae:	881b      	ldrh	r3, [r3, #0]
+ 80008b0:	b29b      	uxth	r3, r3
+ 80008b2:	3301      	adds	r3, #1
+ 80008b4:	f8a7 3042 	strh.w	r3, [r7, #66]	@ 0x42
+ 80008b8:	4a7f      	ldr	r2, [pc, #508]	@ (8000ab8 <Button_HandleEXTI+0x454>)
+ 80008ba:	f8b7 3042 	ldrh.w	r3, [r7, #66]	@ 0x42
+ 80008be:	8013      	strh	r3, [r2, #0]
+ 80008c0:	4b7e      	ldr	r3, [pc, #504]	@ (8000abc <Button_HandleEXTI+0x458>)
+ 80008c2:	7a1b      	ldrb	r3, [r3, #8]
+ 80008c4:	f887 3041 	strb.w	r3, [r7, #65]	@ 0x41
+ 80008c8:	4b7d      	ldr	r3, [pc, #500]	@ (8000ac0 <Button_HandleEXTI+0x45c>)
+ 80008ca:	681b      	ldr	r3, [r3, #0]
+ 80008cc:	6e3a      	ldr	r2, [r7, #96]	@ 0x60
+ 80008ce:	1ad3      	subs	r3, r2, r3
+ 80008d0:	63fb      	str	r3, [r7, #60]	@ 0x3c
+ 80008d2:	6e7b      	ldr	r3, [r7, #100]	@ 0x64
+ 80008d4:	607b      	str	r3, [r7, #4]
+ 80008d6:	6bfb      	ldr	r3, [r7, #60]	@ 0x3c
+ 80008d8:	60bb      	str	r3, [r7, #8]
+ 80008da:	f8b7 3042 	ldrh.w	r3, [r7, #66]	@ 0x42
+ 80008de:	81bb      	strh	r3, [r7, #12]
+ 80008e0:	f897 1041 	ldrb.w	r1, [r7, #65]	@ 0x41
+ 80008e4:	f8b7 0042 	ldrh.w	r0, [r7, #66]	@ 0x42
+ 80008e8:	6bfb      	ldr	r3, [r7, #60]	@ 0x3c
+ 80008ea:	6e7a      	ldr	r2, [r7, #100]	@ 0x64
+ 80008ec:	f000 fede 	bl	80016ac <RingBuffer_Alloc>
+ 80008f0:	4603      	mov	r3, r0
+ 80008f2:	81fb      	strh	r3, [r7, #14]
+ 80008f4:	f897 3041 	ldrb.w	r3, [r7, #65]	@ 0x41
+ 80008f8:	743b      	strb	r3, [r7, #16]
+ 80008fa:	4b72      	ldr	r3, [pc, #456]	@ (8000ac4 <Button_HandleEXTI+0x460>)
+ 80008fc:	6818      	ldr	r0, [r3, #0]
+ 80008fe:	1d39      	adds	r1, r7, #4
+ 8000900:	2364      	movs	r3, #100	@ 0x64
+ 8000902:	2200      	movs	r2, #0
+ 8000904:	f007 f970 	bl	8007be8 <osMessageQueuePut>
+ 8000908:	4603      	mov	r3, r0
+ 800090a:	2b00      	cmp	r3, #0
+ 800090c:	d006      	beq.n	800091c <Button_HandleEXTI+0x2b8>
+ 800090e:	89fb      	ldrh	r3, [r7, #14]
+ 8000910:	f8b7 2042 	ldrh.w	r2, [r7, #66]	@ 0x42
+ 8000914:	4611      	mov	r1, r2
+ 8000916:	4618      	mov	r0, r3
+ 8000918:	f000 ffe6 	bl	80018e8 <RingBuffer_CloseDropIsr>
+ 800091c:	4b6a      	ldr	r3, [pc, #424]	@ (8000ac8 <Button_HandleEXTI+0x464>)
+ 800091e:	685b      	ldr	r3, [r3, #4]
+ 8000920:	f003 5380 	and.w	r3, r3, #268435456	@ 0x10000000
+ 8000924:	2b00      	cmp	r3, #0
+ 8000926:	f040 80c1 	bne.w	8000aac <Button_HandleEXTI+0x448>
+ 800092a:	4b62      	ldr	r3, [pc, #392]	@ (8000ab4 <Button_HandleEXTI+0x450>)
+ 800092c:	785b      	ldrb	r3, [r3, #1]
+ 800092e:	b2db      	uxtb	r3, r3
+ 8000930:	2b00      	cmp	r3, #0
+ 8000932:	f000 80af 	beq.w	8000a94 <Button_HandleEXTI+0x430>
+ 8000936:	2300      	movs	r3, #0
+ 8000938:	63bb      	str	r3, [r7, #56]	@ 0x38
+ 800093a:	2304      	movs	r3, #4
+ 800093c:	86fb      	strh	r3, [r7, #54]	@ 0x36
+ 800093e:	f3ef 8310 	mrs	r3, PRIMASK
+ 8000942:	61bb      	str	r3, [r7, #24]
+ 8000944:	69bb      	ldr	r3, [r7, #24]
+ 8000946:	633b      	str	r3, [r7, #48]	@ 0x30
+ 8000948:	b672      	cpsid	i
+ 800094a:	bf00      	nop
+ 800094c:	4b5f      	ldr	r3, [pc, #380]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 800094e:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 8000952:	685b      	ldr	r3, [r3, #4]
+ 8000954:	62fb      	str	r3, [r7, #44]	@ 0x2c
+ 8000956:	4b5d      	ldr	r3, [pc, #372]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 8000958:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 800095c:	681b      	ldr	r3, [r3, #0]
+ 800095e:	62bb      	str	r3, [r7, #40]	@ 0x28
+ 8000960:	6aba      	ldr	r2, [r7, #40]	@ 0x28
+ 8000962:	6afb      	ldr	r3, [r7, #44]	@ 0x2c
+ 8000964:	429a      	cmp	r2, r3
+ 8000966:	d349      	bcc.n	80009fc <Button_HandleEXTI+0x398>
+ 8000968:	4b58      	ldr	r3, [pc, #352]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 800096a:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 800096e:	691a      	ldr	r2, [r3, #16]
+ 8000970:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 8000972:	1ad3      	subs	r3, r2, r3
+ 8000974:	109b      	asrs	r3, r3, #2
+ 8000976:	627b      	str	r3, [r7, #36]	@ 0x24
+ 8000978:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 800097a:	6a7a      	ldr	r2, [r7, #36]	@ 0x24
+ 800097c:	429a      	cmp	r2, r3
+ 800097e:	d910      	bls.n	80009a2 <Button_HandleEXTI+0x33e>
+ 8000980:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 8000982:	66bb      	str	r3, [r7, #104]	@ 0x68
+ 8000984:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 8000986:	009b      	lsls	r3, r3, #2
+ 8000988:	6aba      	ldr	r2, [r7, #40]	@ 0x28
+ 800098a:	4413      	add	r3, r2
+ 800098c:	62bb      	str	r3, [r7, #40]	@ 0x28
+ 800098e:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 8000990:	2200      	movs	r2, #0
+ 8000992:	601a      	str	r2, [r3, #0]
+ 8000994:	4b4d      	ldr	r3, [pc, #308]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 8000996:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 800099a:	461a      	mov	r2, r3
+ 800099c:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 800099e:	6013      	str	r3, [r2, #0]
+ 80009a0:	e04b      	b.n	8000a3a <Button_HandleEXTI+0x3d6>
+ 80009a2:	4b4a      	ldr	r3, [pc, #296]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 80009a4:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 80009a8:	689b      	ldr	r3, [r3, #8]
+ 80009aa:	6afa      	ldr	r2, [r7, #44]	@ 0x2c
+ 80009ac:	1ad3      	subs	r3, r2, r3
+ 80009ae:	109b      	asrs	r3, r3, #2
+ 80009b0:	461a      	mov	r2, r3
+ 80009b2:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 80009b4:	429a      	cmp	r2, r3
+ 80009b6:	d91a      	bls.n	80009ee <Button_HandleEXTI+0x38a>
+ 80009b8:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 80009ba:	f44f 3280 	mov.w	r2, #65536	@ 0x10000
+ 80009be:	601a      	str	r2, [r3, #0]
+ 80009c0:	4b42      	ldr	r3, [pc, #264]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 80009c2:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 80009c6:	689b      	ldr	r3, [r3, #8]
+ 80009c8:	66bb      	str	r3, [r7, #104]	@ 0x68
+ 80009ca:	6ebb      	ldr	r3, [r7, #104]	@ 0x68
+ 80009cc:	2200      	movs	r2, #0
+ 80009ce:	601a      	str	r2, [r3, #0]
+ 80009d0:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 80009d2:	009b      	lsls	r3, r3, #2
+ 80009d4:	6eba      	ldr	r2, [r7, #104]	@ 0x68
+ 80009d6:	4413      	add	r3, r2
+ 80009d8:	62bb      	str	r3, [r7, #40]	@ 0x28
+ 80009da:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 80009dc:	2200      	movs	r2, #0
+ 80009de:	601a      	str	r2, [r3, #0]
+ 80009e0:	4b3a      	ldr	r3, [pc, #232]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 80009e2:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 80009e6:	461a      	mov	r2, r3
+ 80009e8:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 80009ea:	6013      	str	r3, [r2, #0]
+ 80009ec:	e025      	b.n	8000a3a <Button_HandleEXTI+0x3d6>
+ 80009ee:	2300      	movs	r3, #0
+ 80009f0:	66bb      	str	r3, [r7, #104]	@ 0x68
+ 80009f2:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 80009f4:	4618      	mov	r0, r3
+ 80009f6:	f013 f94d 	bl	8013c94 <trax_buffer_on_alloc_fail>
+ 80009fa:	e01e      	b.n	8000a3a <Button_HandleEXTI+0x3d6>
+ 80009fc:	6afa      	ldr	r2, [r7, #44]	@ 0x2c
+ 80009fe:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 8000a00:	1ad3      	subs	r3, r2, r3
+ 8000a02:	109b      	asrs	r3, r3, #2
+ 8000a04:	461a      	mov	r2, r3
+ 8000a06:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 8000a08:	429a      	cmp	r2, r3
+ 8000a0a:	d910      	bls.n	8000a2e <Button_HandleEXTI+0x3ca>
+ 8000a0c:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 8000a0e:	66bb      	str	r3, [r7, #104]	@ 0x68
+ 8000a10:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 8000a12:	009b      	lsls	r3, r3, #2
+ 8000a14:	6aba      	ldr	r2, [r7, #40]	@ 0x28
+ 8000a16:	4413      	add	r3, r2
+ 8000a18:	62bb      	str	r3, [r7, #40]	@ 0x28
+ 8000a1a:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 8000a1c:	2200      	movs	r2, #0
+ 8000a1e:	601a      	str	r2, [r3, #0]
+ 8000a20:	4b2a      	ldr	r3, [pc, #168]	@ (8000acc <Button_HandleEXTI+0x468>)
+ 8000a22:	f503 4380 	add.w	r3, r3, #16384	@ 0x4000
+ 8000a26:	461a      	mov	r2, r3
+ 8000a28:	6abb      	ldr	r3, [r7, #40]	@ 0x28
+ 8000a2a:	6013      	str	r3, [r2, #0]
+ 8000a2c:	e005      	b.n	8000a3a <Button_HandleEXTI+0x3d6>
+ 8000a2e:	2300      	movs	r3, #0
+ 8000a30:	66bb      	str	r3, [r7, #104]	@ 0x68
+ 8000a32:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 8000a34:	4618      	mov	r0, r3
+ 8000a36:	f013 f92d 	bl	8013c94 <trax_buffer_on_alloc_fail>
+ 8000a3a:	6ebb      	ldr	r3, [r7, #104]	@ 0x68
+ 8000a3c:	2b00      	cmp	r3, #0
+ 8000a3e:	d023      	beq.n	8000a88 <Button_HandleEXTI+0x424>
+ 8000a40:	6ebb      	ldr	r3, [r7, #104]	@ 0x68
+ 8000a42:	63bb      	str	r3, [r7, #56]	@ 0x38
+ 8000a44:	6ebb      	ldr	r3, [r7, #104]	@ 0x68
+ 8000a46:	3304      	adds	r3, #4
+ 8000a48:	66bb      	str	r3, [r7, #104]	@ 0x68
+ 8000a4a:	6ebc      	ldr	r4, [r7, #104]	@ 0x68
+ 8000a4c:	1d23      	adds	r3, r4, #4
+ 8000a4e:	66bb      	str	r3, [r7, #104]	@ 0x68
+ 8000a50:	f7ff fdca 	bl	80005e8 <trax_hw_port_timepacked_get32>
+ 8000a54:	4603      	mov	r3, r0
+ 8000a56:	6023      	str	r3, [r4, #0]
+ 8000a58:	6ebb      	ldr	r3, [r7, #104]	@ 0x68
+ 8000a5a:	1d1a      	adds	r2, r3, #4
+ 8000a5c:	66ba      	str	r2, [r7, #104]	@ 0x68
+ 8000a5e:	f244 0210 	movw	r2, #16400	@ 0x4010
+ 8000a62:	601a      	str	r2, [r3, #0]
+ 8000a64:	6ebb      	ldr	r3, [r7, #104]	@ 0x68
+ 8000a66:	1d1a      	adds	r2, r3, #4
+ 8000a68:	66ba      	str	r2, [r7, #104]	@ 0x68
+ 8000a6a:	2201      	movs	r2, #1
+ 8000a6c:	601a      	str	r2, [r3, #0]
+ 8000a6e:	8efb      	ldrh	r3, [r7, #54]	@ 0x36
+ 8000a70:	041b      	lsls	r3, r3, #16
+ 8000a72:	4a17      	ldr	r2, [pc, #92]	@ (8000ad0 <Button_HandleEXTI+0x46c>)
+ 8000a74:	8812      	ldrh	r2, [r2, #0]
+ 8000a76:	431a      	orrs	r2, r3
+ 8000a78:	6bbb      	ldr	r3, [r7, #56]	@ 0x38
+ 8000a7a:	601a      	str	r2, [r3, #0]
+ 8000a7c:	4b14      	ldr	r3, [pc, #80]	@ (8000ad0 <Button_HandleEXTI+0x46c>)
+ 8000a7e:	881b      	ldrh	r3, [r3, #0]
+ 8000a80:	3301      	adds	r3, #1
+ 8000a82:	b29a      	uxth	r2, r3
+ 8000a84:	4b12      	ldr	r3, [pc, #72]	@ (8000ad0 <Button_HandleEXTI+0x46c>)
+ 8000a86:	801a      	strh	r2, [r3, #0]
+ 8000a88:	6b3b      	ldr	r3, [r7, #48]	@ 0x30
+ 8000a8a:	617b      	str	r3, [r7, #20]
+ 8000a8c:	697b      	ldr	r3, [r7, #20]
+ 8000a8e:	f383 8810 	msr	PRIMASK, r3
+ 8000a92:	e00b      	b.n	8000aac <Button_HandleEXTI+0x448>
+ 8000a94:	4b07      	ldr	r3, [pc, #28]	@ (8000ab4 <Button_HandleEXTI+0x450>)
+ 8000a96:	7c1b      	ldrb	r3, [r3, #16]
+ 8000a98:	b2db      	uxtb	r3, r3
+ 8000a9a:	2b00      	cmp	r3, #0
+ 8000a9c:	d006      	beq.n	8000aac <Button_HandleEXTI+0x448>
+ 8000a9e:	4b05      	ldr	r3, [pc, #20]	@ (8000ab4 <Button_HandleEXTI+0x450>)
+ 8000aa0:	6a5b      	ldr	r3, [r3, #36]	@ 0x24
+ 8000aa2:	3301      	adds	r3, #1
+ 8000aa4:	4a03      	ldr	r2, [pc, #12]	@ (8000ab4 <Button_HandleEXTI+0x450>)
+ 8000aa6:	6253      	str	r3, [r2, #36]	@ 0x24
+ 8000aa8:	e000      	b.n	8000aac <Button_HandleEXTI+0x448>
+ 8000aaa:	bf00      	nop
+ 8000aac:	3774      	adds	r7, #116	@ 0x74
+ 8000aae:	46bd      	mov	sp, r7
+ 8000ab0:	bd90      	pop	{r4, r7, pc}
+ 8000ab2:	bf00      	nop
+ 8000ab4:	20010b54 	.word	0x20010b54
+ 8000ab8:	200000a2 	.word	0x200000a2
+ 8000abc:	20000000 	.word	0x20000000
+ 8000ac0:	20002250 	.word	0x20002250
+ 8000ac4:	20002238 	.word	0x20002238
+ 8000ac8:	e000ed00 	.word	0xe000ed00
+ 8000acc:	2000c978 	.word	0x2000c978
+ 8000ad0:	20010a8a 	.word	0x20010a8a

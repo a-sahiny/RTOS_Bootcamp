@@ -1,0 +1,208 @@
+{
+  "recording_start": "2026-10-08T23:02:15",
+  "recording_end": "2026-10-08T23:03:33",
+  "stop_reason": null,
+  "chunks": [
+    {
+      "file": "chunk_001.traxrec",
+      "sha256": "abae306e3f3be921230ea613de34bf453d4a550a726e1e8268b56cb20bd4efed",
+      "metadata_digest": "8a4859ecc0205874b816c53a9545ed6366d737f770d109673ecabcb99b70f05b",
+      "digest_matches_file_sha256": false,
+      "bytes": 5158528,
+      "event_count": 50000
+    },
+    {
+      "file": "chunk_002.traxrec",
+      "sha256": "a71c11ef2a30c2a1795cd12d0ecbb842df87e6adcfdd1e450d36473a819f2886",
+      "metadata_digest": "f72d54f6014c8ce0f7670089efdf93e2259de8b638151f5cafb35d3b2871b51b",
+      "digest_matches_file_sha256": false,
+      "bytes": 1251068,
+      "event_count": 12123
+    }
+  ],
+  "events": 62123,
+  "intervals": 38797,
+  "interval_start_s": 302.65870624,
+  "interval_end_s": 314.512003365,
+  "interval_window_s": 11.853297125,
+  "gap_count": 35,
+  "gap_total_s": 6.416725856,
+  "gap_ms": {
+    "count": 35,
+    "min": 181.049995,
+    "median": 183.077477,
+    "p95": 186.051463,
+    "max": 191.039764,
+    "total": 6416.725856
+  },
+  "gap_percent_of_interval_window": 54.13452297982448,
+  "counted_interval_s": 5.421257065,
+  "excluded_intervals": 0,
+  "entity_stats": {
+    "Idle": {
+      "slice_us": {
+        "count": 5485,
+        "min": 21.032,
+        "median": 947.81,
+        "p95": 948.537,
+        "max": 951.356,
+        "total": 5094761.195
+      },
+      "observed_cpu_percent": 93.977488,
+      "switch_in_count": 5485,
+      "ready_count": 0
+    },
+    "Scheduler": {
+      "slice_us": {
+        "count": 16665,
+        "min": 2.491,
+        "median": 3.245,
+        "p95": 5.135,
+        "max": 5.495,
+        "total": 60794.638
+      },
+      "observed_cpu_percent": 1.121412,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "SysTick": {
+      "slice_us": {
+        "count": 5436,
+        "min": 2.741,
+        "median": 12.278,
+        "p95": 13.264,
+        "max": 16.861,
+        "total": 67759.706
+      },
+      "observed_cpu_percent": 1.249889,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "Button_EXTI15_10": {
+      "slice_us": {
+        "count": 28,
+        "min": 17.301,
+        "median": 17.6875,
+        "p95": 18.0,
+        "max": 20.528,
+        "total": 497.439
+      },
+      "observed_cpu_percent": 0.009176,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "Tmr Svc": {
+      "slice_us": {
+        "count": 0
+      },
+      "observed_cpu_percent": 0.0,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "TelemetryTask": {
+      "slice_us": {
+        "count": 0
+      },
+      "observed_cpu_percent": 0.0,
+      "switch_in_count": 0,
+      "ready_count": 0
+    },
+    "ButtonTask": {
+      "slice_us": {
+        "count": 33,
+        "min": 16.477,
+        "median": 114.019,
+        "p95": 114.88,
+        "max": 117.107,
+        "total": 3251.555
+      },
+      "observed_cpu_percent": 0.059978,
+      "switch_in_count": 32,
+      "ready_count": 28
+    },
+    "UartTxTask": {
+      "slice_us": {
+        "count": 312,
+        "min": 11.977,
+        "median": 32.4745,
+        "p95": 33.004,
+        "max": 39.472,
+        "total": 10034.737
+      },
+      "observed_cpu_percent": 0.1851,
+      "switch_in_count": 310,
+      "ready_count": 311
+    },
+    "defaultTask": {
+      "slice_us": {
+        "count": 5425,
+        "min": 4.18,
+        "median": 9.797,
+        "p95": 10.065,
+        "max": 13.893,
+        "total": 53184.892
+      },
+      "observed_cpu_percent": 0.981044,
+      "switch_in_count": 5425,
+      "ready_count": 5433
+    },
+    "TraxCtrl": {
+      "slice_us": {
+        "count": 5413,
+        "min": 11.042,
+        "median": 19.093,
+        "p95": 79.19,
+        "max": 296.644,
+        "total": 130972.903
+      },
+      "observed_cpu_percent": 2.415914,
+      "switch_in_count": 5413,
+      "ready_count": 5429
+    }
+  },
+  "telemetry_complete_runs": 0,
+  "telemetry_cpu_us": {
+    "count": 0
+  },
+  "telemetry_elapsed_us": {
+    "count": 0
+  },
+  "telemetry_period_ms": {
+    "count": 0
+  },
+  "traxctrl_switch_interval_ms": {
+    "count": 5377,
+    "min": 0.056625,
+    "median": 0.999958,
+    "p95": 1.004051,
+    "max": 1.171264,
+    "total": 5375.040098
+  },
+  "button_observed_count": 28,
+  "button_us": {
+    "count": 28,
+    "min": 17.301,
+    "median": 17.6875,
+    "p95": 18.0,
+    "max": 20.528,
+    "total": 497.439
+  },
+  "button_first_s": 303.13489418,
+  "button_last_s": 314.194878069,
+  "event_kinds": {
+    "6": 1,
+    "78": 133,
+    "22": 10862,
+    "18": 16670,
+    "17": 16665,
+    "7": 5465,
+    "19": 11201,
+    "36": 562,
+    "37": 336,
+    "82": 22,
+    "83": 35,
+    "32": 84,
+    "35": 84,
+    "8": 3
+  }
+}

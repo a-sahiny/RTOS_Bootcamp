@@ -1,0 +1,127 @@
+
+firmware/Button_Task/Debug/UART_RTOS_ODEV1.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+0800062c <Button_HandleEXTI>:
+ 800062c:	b580      	push	{r7, lr}
+ 800062e:	b08a      	sub	sp, #40	@ 0x28
+ 8000630:	af00      	add	r7, sp, #0
+ 8000632:	f7ff ffcd 	bl	80005d0 <Timestamp_Now>
+ 8000636:	6278      	str	r0, [r7, #36]	@ 0x24
+ 8000638:	f002 fd1c 	bl	8003074 <HAL_GetTick>
+ 800063c:	6238      	str	r0, [r7, #32]
+ 800063e:	4b3a      	ldr	r3, [pc, #232]	@ (8000728 <Button_HandleEXTI+0xfc>)
+ 8000640:	781b      	ldrb	r3, [r3, #0]
+ 8000642:	b2db      	uxtb	r3, r3
+ 8000644:	f083 0301 	eor.w	r3, r3, #1
+ 8000648:	b2db      	uxtb	r3, r3
+ 800064a:	2b00      	cmp	r3, #0
+ 800064c:	d105      	bne.n	800065a <Button_HandleEXTI+0x2e>
+ 800064e:	4b37      	ldr	r3, [pc, #220]	@ (800072c <Button_HandleEXTI+0x100>)
+ 8000650:	681b      	ldr	r3, [r3, #0]
+ 8000652:	6a3a      	ldr	r2, [r7, #32]
+ 8000654:	1ad3      	subs	r3, r2, r3
+ 8000656:	2b1d      	cmp	r3, #29
+ 8000658:	d901      	bls.n	800065e <Button_HandleEXTI+0x32>
+ 800065a:	2301      	movs	r3, #1
+ 800065c:	e000      	b.n	8000660 <Button_HandleEXTI+0x34>
+ 800065e:	2300      	movs	r3, #0
+ 8000660:	77fb      	strb	r3, [r7, #31]
+ 8000662:	7ffb      	ldrb	r3, [r7, #31]
+ 8000664:	f003 0301 	and.w	r3, r3, #1
+ 8000668:	77fb      	strb	r3, [r7, #31]
+ 800066a:	4a30      	ldr	r2, [pc, #192]	@ (800072c <Button_HandleEXTI+0x100>)
+ 800066c:	6a3b      	ldr	r3, [r7, #32]
+ 800066e:	6013      	str	r3, [r2, #0]
+ 8000670:	4b2d      	ldr	r3, [pc, #180]	@ (8000728 <Button_HandleEXTI+0xfc>)
+ 8000672:	2201      	movs	r2, #1
+ 8000674:	701a      	strb	r2, [r3, #0]
+ 8000676:	f44f 6100 	mov.w	r1, #2048	@ 0x800
+ 800067a:	482d      	ldr	r0, [pc, #180]	@ (8000730 <Button_HandleEXTI+0x104>)
+ 800067c:	f003 fbaa 	bl	8003dd4 <HAL_GPIO_ReadPin>
+ 8000680:	4603      	mov	r3, r0
+ 8000682:	2b01      	cmp	r3, #1
+ 8000684:	bf0c      	ite	eq
+ 8000686:	2301      	moveq	r3, #1
+ 8000688:	2300      	movne	r3, #0
+ 800068a:	77bb      	strb	r3, [r7, #30]
+ 800068c:	7ffb      	ldrb	r3, [r7, #31]
+ 800068e:	f083 0301 	eor.w	r3, r3, #1
+ 8000692:	b2db      	uxtb	r3, r3
+ 8000694:	2b00      	cmp	r3, #0
+ 8000696:	d142      	bne.n	800071e <Button_HandleEXTI+0xf2>
+ 8000698:	7fbb      	ldrb	r3, [r7, #30]
+ 800069a:	f083 0301 	eor.w	r3, r3, #1
+ 800069e:	b2db      	uxtb	r3, r3
+ 80006a0:	2b00      	cmp	r3, #0
+ 80006a2:	d13c      	bne.n	800071e <Button_HandleEXTI+0xf2>
+ 80006a4:	4b23      	ldr	r3, [pc, #140]	@ (8000734 <Button_HandleEXTI+0x108>)
+ 80006a6:	781b      	ldrb	r3, [r3, #0]
+ 80006a8:	b2db      	uxtb	r3, r3
+ 80006aa:	f083 0301 	eor.w	r3, r3, #1
+ 80006ae:	b2db      	uxtb	r3, r3
+ 80006b0:	2b00      	cmp	r3, #0
+ 80006b2:	d134      	bne.n	800071e <Button_HandleEXTI+0xf2>
+ 80006b4:	f00d fa38 	bl	800db28 <SEGGER_SYSVIEW_RecordEnterISR>
+ 80006b8:	4b1f      	ldr	r3, [pc, #124]	@ (8000738 <Button_HandleEXTI+0x10c>)
+ 80006ba:	881b      	ldrh	r3, [r3, #0]
+ 80006bc:	b29b      	uxth	r3, r3
+ 80006be:	3301      	adds	r3, #1
+ 80006c0:	83bb      	strh	r3, [r7, #28]
+ 80006c2:	4a1d      	ldr	r2, [pc, #116]	@ (8000738 <Button_HandleEXTI+0x10c>)
+ 80006c4:	8bbb      	ldrh	r3, [r7, #28]
+ 80006c6:	8013      	strh	r3, [r2, #0]
+ 80006c8:	4b1c      	ldr	r3, [pc, #112]	@ (800073c <Button_HandleEXTI+0x110>)
+ 80006ca:	7a1b      	ldrb	r3, [r3, #8]
+ 80006cc:	76fb      	strb	r3, [r7, #27]
+ 80006ce:	4b1c      	ldr	r3, [pc, #112]	@ (8000740 <Button_HandleEXTI+0x114>)
+ 80006d0:	681b      	ldr	r3, [r3, #0]
+ 80006d2:	6a3a      	ldr	r2, [r7, #32]
+ 80006d4:	1ad3      	subs	r3, r2, r3
+ 80006d6:	617b      	str	r3, [r7, #20]
+ 80006d8:	6a7b      	ldr	r3, [r7, #36]	@ 0x24
+ 80006da:	607b      	str	r3, [r7, #4]
+ 80006dc:	697b      	ldr	r3, [r7, #20]
+ 80006de:	60bb      	str	r3, [r7, #8]
+ 80006e0:	8bbb      	ldrh	r3, [r7, #28]
+ 80006e2:	81bb      	strh	r3, [r7, #12]
+ 80006e4:	7ef9      	ldrb	r1, [r7, #27]
+ 80006e6:	8bb8      	ldrh	r0, [r7, #28]
+ 80006e8:	697b      	ldr	r3, [r7, #20]
+ 80006ea:	6a7a      	ldr	r2, [r7, #36]	@ 0x24
+ 80006ec:	f000 fe18 	bl	8001320 <RingBuffer_Alloc>
+ 80006f0:	4603      	mov	r3, r0
+ 80006f2:	81fb      	strh	r3, [r7, #14]
+ 80006f4:	7efb      	ldrb	r3, [r7, #27]
+ 80006f6:	743b      	strb	r3, [r7, #16]
+ 80006f8:	4b12      	ldr	r3, [pc, #72]	@ (8000744 <Button_HandleEXTI+0x118>)
+ 80006fa:	6818      	ldr	r0, [r3, #0]
+ 80006fc:	1d39      	adds	r1, r7, #4
+ 80006fe:	2300      	movs	r3, #0
+ 8000700:	2200      	movs	r2, #0
+ 8000702:	f007 f989 	bl	8007a18 <osMessageQueuePut>
+ 8000706:	4603      	mov	r3, r0
+ 8000708:	2b00      	cmp	r3, #0
+ 800070a:	d005      	beq.n	8000718 <Button_HandleEXTI+0xec>
+ 800070c:	89fb      	ldrh	r3, [r7, #14]
+ 800070e:	8bba      	ldrh	r2, [r7, #28]
+ 8000710:	4611      	mov	r1, r2
+ 8000712:	4618      	mov	r0, r3
+ 8000714:	f000 ff22 	bl	800155c <RingBuffer_CloseDropIsr>
+ 8000718:	f001 fba4 	bl	8001e64 <App_SystemView_RecordISRExit>
+ 800071c:	e000      	b.n	8000720 <Button_HandleEXTI+0xf4>
+ 800071e:	bf00      	nop
+ 8000720:	3728      	adds	r7, #40	@ 0x28
+ 8000722:	46bd      	mov	sp, r7
+ 8000724:	bd80      	pop	{r7, pc}
+ 8000726:	bf00      	nop
+ 8000728:	200000a0 	.word	0x200000a0
+ 800072c:	2000009c 	.word	0x2000009c
+ 8000730:	40022000 	.word	0x40022000
+ 8000734:	2000224c 	.word	0x2000224c
+ 8000738:	200000a2 	.word	0x200000a2
+ 800073c:	20000000 	.word	0x20000000
+ 8000740:	20002250 	.word	0x20002250
+ 8000744:	20002238 	.word	0x20002238

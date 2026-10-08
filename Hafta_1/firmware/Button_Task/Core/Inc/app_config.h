@@ -34,7 +34,7 @@
 #if !defined(APP_TX_MODE_ORIGINAL) && \
     !defined(APP_TX_MODE_LARGE_FIFO) && \
     !defined(APP_TX_MODE_DUAL_QUEUE)
-#define APP_TX_MODE_LARGE_FIFO
+#define APP_TX_MODE_ORIGINAL
 #endif
 
 #if (defined(APP_TX_MODE_ORIGINAL) + \

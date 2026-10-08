@@ -1,0 +1,190 @@
+TraxProbe Commercial License
+SPDX-License-Identifier: LicenseRef-TraxProbe-Commercial
+Version 1.0
+
+Copyright (c) 2026 Embedya. All rights reserved.
+
+This TraxProbe Commercial License (the "License") is a legal agreement between
+Embedya ("Embedya", "we", "us") and the individual or legal entity that
+acquires or uses the Software ("Licensee", "you"). By downloading, copying,
+compiling, installing, or otherwise using the Software, you agree to be bound
+by this License. If you do not agree, do not use the Software.
+
+================================================================================
+1. DEFINITIONS
+================================================================================
+"Software" means the TraxProbe core engine source code, header files, object
+code, documentation, and any updates supplied by Embedya, EXCLUDING:
+  (a) files in hw_port/ and the per-RTOS/per-OS directories under os/
+      (os/FreeRTOS/, os/BareMetal/) and reference transport
+      backends, which are licensed separately under the Apache License,
+      Version 2.0 (see LICENSE-Apache-2.0.txt); and
+  (b) third-party components distributed under their own licenses (e.g.
+      SEGGER RTT under transports/RTT/, retained under SEGGER's license).
+
+"Licensee" means the individual or legal entity that has entered into a valid
+commercial agreement with Embedya for the Software, or that otherwise lawfully
+obtains and uses the Software under this License.
+
+"Core" means any file bearing the SPDX tag "LicenseRef-TraxProbe-Commercial".
+
+"Order" means the quotation, purchase order, subscription, or other written
+agreement between Embedya and Licensee that references this License and sets out
+the licensed scope, fees, seats, term, and any product-specific terms.
+
+"Documentation" means the user and integration documentation Embedya provides
+for the Software.
+
+================================================================================
+2. LICENSE GRANT
+================================================================================
+Subject to Licensee's continuing compliance with this License and the Order,
+and to payment of all applicable fees, Embedya grants Licensee a worldwide,
+non-exclusive, non-transferable, non-sublicensable, revocable license, for the
+term stated in the Order, to:
+  (a) use and compile the Core internally solely to develop, build, test, and
+      maintain Licensee's own products;
+  (b) distribute the Core only in OBJECT (binary) form, linked into Licensee's
+      own products, to Licensee's end customers; and
+  (c) integrate the Core with hardware, RTOS, and transport ports (whether
+      Embedya-supplied reference ports or ports created by Licensee against the
+      published TraxProbe porting interfaces).
+
+Where the Order does not specify scope, the grant is limited to use by
+Licensee's own engineering organization for evaluation and internal
+development, and does not include the right to distribute.
+
+================================================================================
+3. RESTRICTIONS
+================================================================================
+Except as expressly permitted in Section 2 or the Order, or by applicable law
+that cannot be contractually waived, Licensee shall NOT:
+  (a) distribute, publish, sublicense, sell, rent, lease, lend, host as a
+      service, or otherwise make the Core available in SOURCE form to any
+      third party;
+  (b) modify, adapt, translate, or create derivative works of the Core, except
+      configuration via the documented trax_config_*.h options;
+  (c) reverse engineer, decompile, or disassemble the Core, or attempt to
+      derive its source code or underlying ideas, except to the limited extent
+      applicable law expressly permits despite this limitation;
+  (d) remove, alter, or obscure any copyright, SPDX, trademark, or proprietary
+      notice in or on the Software;
+  (e) use the Core to design, develop, or market a product or service that
+      competes with TraxProbe;
+  (f) disclose the Core to any third party, the Core being the confidential
+      information and trade secret of Embedya; or
+  (g) use the Software in violation of any applicable law, including export
+      control and sanctions laws.
+
+================================================================================
+4. PORTING LAYER (APACHE-2.0) INTERACTION
+================================================================================
+The porting-layer files identified in Section 1(a) are provided under the
+Apache License, Version 2.0. Nothing in that Apache-2.0 grant conveys any right
+to the Core. The Apache-2.0 license applies only to the source of those
+specific files; the Core that they include or link against remains governed
+exclusively by this License. Licensee and third parties may freely copy,
+modify, and distribute the porting-layer files under the terms of the Apache
+License, Version 2.0, but may not use such files to circumvent the restrictions
+on the Core.
+
+================================================================================
+5. OWNERSHIP AND FEEDBACK
+================================================================================
+The Software is licensed, not sold. Embedya and its licensors retain all right,
+title, and interest in and to the Core, including all intellectual property
+rights. No rights are granted other than those expressly stated in this
+License. If Licensee provides Embedya with suggestions, feedback, or ideas
+regarding the Software, Embedya may use them without restriction or obligation.
+
+================================================================================
+6. CONFIDENTIALITY
+================================================================================
+The Core and any non-public information disclosed by Embedya are confidential.
+Licensee shall protect them using at least the same degree of care it uses for
+its own confidential information of like importance, and in no event less than
+a reasonable degree of care, and shall use them only as permitted by this
+License.
+
+================================================================================
+7. SUPPORT, MAINTENANCE, AND UPDATES
+================================================================================
+Support, maintenance, and updates are provided only if and as described in the
+Order. Any updates Embedya provides are part of the Software and are governed by
+this License unless accompanied by separate terms.
+
+================================================================================
+8. FEES AND AUDIT
+================================================================================
+Licensee shall pay all fees set out in the Order. Embedya may, on reasonable
+prior written notice and no more than once per twelve (12) months, audit
+Licensee's use of the Software to verify compliance with this License. Licensee
+shall promptly remedy any shortfall and pay fees due for any unlicensed use.
+
+================================================================================
+9. WARRANTY DISCLAIMER
+================================================================================
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT.
+EMBEDYA DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE
+WITHOUT INTERRUPTION. THE SOFTWARE IS NOT DESIGNED OR AUTHORIZED FOR USE IN
+LIFE-CRITICAL OR SAFETY-CRITICAL SYSTEMS WHERE FAILURE COULD LEAD TO DEATH,
+PERSONAL INJURY, OR SEVERE PROPERTY OR ENVIRONMENTAL DAMAGE.
+
+================================================================================
+10. LIMITATION OF LIABILITY
+================================================================================
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL EMBEDYA BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE
+DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL, ARISING OUT OF
+OR RELATED TO THE SOFTWARE OR THIS LICENSE, EVEN IF ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES. EMBEDYA'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED
+TO THIS LICENSE SHALL NOT EXCEED THE FEES PAID BY LICENSEE FOR THE SOFTWARE
+DURING THE TWELVE (12) MONTHS PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
+
+================================================================================
+11. TERM AND TERMINATION
+================================================================================
+This License is effective until terminated. It terminates automatically and
+immediately if Licensee breaches any term and, where the breach is curable,
+fails to cure it within thirty (30) days of notice. Embedya may also terminate
+in accordance with the Order. Upon termination, Licensee must cease all use of
+the Core and destroy all copies in its possession or control and, on request,
+certify such destruction. Sections 1, 3, 5, 6, 9, 10, 12, and 13 survive
+termination.
+
+================================================================================
+12. EXPORT COMPLIANCE
+================================================================================
+Licensee shall comply with all applicable export control, re-export, and
+sanctions laws and regulations, and shall not export or provide the Software to
+any prohibited country, entity, or person.
+
+================================================================================
+13. GOVERNING LAW AND DISPUTES
+================================================================================
+This License is governed by the laws of the Republic of Türkiye, without regard
+to its conflict-of-laws principles. The Istanbul Courts and Execution Offices
+(Istanbul Adliyesi Mahkemeleri ve Icra Daireleri) shall have exclusive
+jurisdiction over any dispute arising out of or relating to this License. The
+United Nations Convention on Contracts for the International Sale of Goods does
+not apply.
+
+================================================================================
+14. GENERAL
+================================================================================
+This License, together with the Order, is the entire agreement between the
+parties regarding the Software and supersedes all prior or contemporaneous
+understandings. If any provision is held unenforceable, it shall be modified to
+the minimum extent necessary and the remaining provisions shall remain in full
+force. Embedya's failure to enforce any provision is not a waiver. Licensee may
+not assign this License without Embedya's prior written consent; Embedya may
+assign it freely. In the event of a conflict between this License and the Order,
+the Order controls for the licensed scope, fees, and term.
+
+================================================================================
+CONTACT
+================================================================================
+Embedya
+For licensing inquiries: info@embedya.com

@@ -1,0 +1,5 @@
+PASS: DMA owns a stable copy; busy/oversize writes accept zero; session restart does not tear a frame
+PASS: failed TX start keeps the batch retryable and repairs stale HAL state
+PASS: fragmented commands, DMA rearming, short reads and RX ring wrapping preserve byte order
+PASS: RX overflow discards the broken command and resets the parser in task context
+PASS: RX errors preserve active TX; DMA faults abort before buffer reuse; interrupt mask is restored

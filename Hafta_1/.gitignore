@@ -1,0 +1,24 @@
+# STM32CubeIDE build directories
+Debug/
+Release/
+build/
+
+# Compiler and linker outputs
+*.o
+*.d
+*.elf
+*.axf
+*.hex
+*.bin
+*.map
+*.list
+*.su
+*.cyclo
+
+# Temporary files and tests
+/tmp/
+/test/
+/tests/
+
+# Python files
+*.py

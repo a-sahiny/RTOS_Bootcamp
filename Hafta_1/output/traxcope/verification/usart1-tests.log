@@ -1,0 +1,18 @@
+APP_TX_MODE_LARGE_FIFO
+PASS: multiple short commands, CRLF and no DMA restart on IDLE
+PASS: partial command across DMA wrap, HT/TC and IDLE
+PASS: exact full-buffer boundary and duplicate completion event
+PASS: delayed half-transfer event does not replay older bytes
+PASS: oversized line and full queue recover at the next command
+PASS: UART RX error restarts reception without aborting TX
+PASS: DMA fault stops both streams before RX restart and wakes TX task
+PASS: USART6 routing and USART1 TX completion remain independent
+APP_TX_MODE_DUAL_QUEUE
+PASS: multiple short commands, CRLF and no DMA restart on IDLE
+PASS: partial command across DMA wrap, HT/TC and IDLE
+PASS: exact full-buffer boundary and duplicate completion event
+PASS: delayed half-transfer event does not replay older bytes
+PASS: oversized line and full queue recover at the next command
+PASS: UART RX error restarts reception without aborting TX
+PASS: DMA fault stops both streams before RX restart and wakes TX task
+PASS: USART6 routing and USART1 TX completion remain independent

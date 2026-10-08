@@ -1,0 +1,12 @@
+PASS: delay blocks, tick wakes READY, scheduler selects RUNNING
+PASS: SysTick IRQ and delay API logs are hidden; task wake/switch still traced
+PASS: explicit suspend and resume produce distinct state transitions
+PASS: infinite queue wait is BLOCKED, ISR-style event wake becomes READY
+PASS: priority changes and mutex inheritance do not create false READY transitions
+PASS: mutex disinheritance does not restart the READY interval
+PASS: tick wrap uses the overflow delayed list and wakes correctly
+PASS: recording start/restart snapshots already-suspended, blocked and running tasks
+PASS: metadata refresh does not fabricate state transitions
+PASS: snapshot identifies IDLE separately
+PASS: real data queue create/send/receive/ISR/delete events remain visible
+PASS: semaphore operations emit no queue/function logs

@@ -1,0 +1,6 @@
+Captured test results, 2026-10-05
+SystemView: 10 PASS, 0 FAIL (real SEGGER/RTT/recorder, mocked HAL)
+USART1 RX, APP_TX_MODE_LARGE_FIFO: 8 PASS, 0 FAIL
+USART1 RX, APP_TX_MODE_DUAL_QUEUE: 8 PASS, 0 FAIL
+Includes RX wrap and duplicate callbacks, error recovery, handshake without polling, DMA buffer ownership, and STOP/START.
+No hardware execution performed for these changes.

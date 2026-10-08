@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-05",
+  "included": [
+    "task lifecycle and states",
+    "Idle",
+    "data queue operations",
+    "button EXTI IRQ"
+  ],
+  "excluded": [
+    "SysTick IRQ",
+    "TIM6 IRQ",
+    "USART1/6 IRQ",
+    "all DMA stream IRQs",
+    "ordinary RTOS API calls",
+    "semaphore and mutex API calls",
+    "stream buffer API calls"
+  ],
+  "tests": {
+    "task_states_and_filter": 12,
+    "uart_transport": 10,
+    "compiled_irq_handlers_checked": 9
+  },
+  "build": {
+    "configuration": "Debug",
+    "errors": 0,
+    "warnings": 0,
+    "text": 61204,
+    "data": 112,
+    "bss": 49688
+  },
+  "sources": [
+    {
+      "path": "Core/Src/app_systemview.c",
+      "sha256": "605fd3ab7746a07352baf321b6bc60ee7b520c1443b975ae4b92891606dd9821"
+    },
+    {
+      "path": "Core/Src/stm32f7xx_it.c",
+      "sha256": "e3973dde8318933fde61e4e0ebec9aeba1b449cc90c171492635514dfcbbb793"
+    },
+    {
+      "path": "Middlewares/Third_Party/SEGGER/FreeRTOS/SEGGER_SYSVIEW_FreeRTOS.h",
+      "sha256": "27e3295bf77ac74d4cf49bea50a53b81b9e13613f24d6d9264029ade803b9080"
+    }
+  ],
+  "hardware": "Not flashed; new recording required.",
+  "artifacts": {
+    "UART_RTOS_ODEV1.elf": "ac56915b6320cbc2c5c33e6203ffd77c49a25c9c3339e27005ba9045a8daa2b5",
+    "UART_RTOS_ODEV1.hex": "9f0704ed9beec3086e285bcbdba684618e4cbb4c78ca8022d1949e86e7d18783"
+  }
+}
